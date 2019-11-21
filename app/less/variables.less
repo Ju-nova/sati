@@ -1,0 +1,21 @@
+@mobile-width: 320px;
+@mobile-l-width: 425px;
+@tablet-width: 764px;
+@desktop-width: 1200px;
+
+@mobile-l-max-width: (@tablet-width - 1);
+
+@retina-dpi: 144dpi;
+
+@mobile: ~"(min-width: @{mobile-width})";
+@mobile-l: ~"(min-width: @{mobile-l-width})";
+@tablet: ~"(min-width: @{tablet-width})";
+@desktop: ~"(min-width: @{desktop-width})";
+
+@mobile-l-only: ~"(min-width: @{mobile-l-width}) and (max-width: @{mobile-l-max-width})";
+
+@retina: ~"(min-resolution: @{retina-dpi})";
+
+
+@black: #000000;
+@white: #ffffff;
