@@ -1,26 +1,40 @@
-body{
-font-family: PF BeauSans Pro;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 22px;
-color: #000000;	
-min-width: 375px;
+body
+{
+    
+
+    font-family: PF BeauSans Pro;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 22px;
+
+    color: #000;
 }
 
-.main-title{
-font-family: PF BeauSans Pro;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-text-transform:uppercase;
-line-height: 43px;
-text-align: center;
-color: #000000;
-margin:0;
-padding:68px 0 48px 0;
-}
+.main-title
+{
+    margin: 0;
+    padding: 68px 0 48px 0;
 
-.hidden{
-	display: none!important;
+    font-family: PF BeauSans Pro;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 43px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000;
+}
+@media(max-width: 426px)
+{
+    .main-title
+    {
+        font-size: 22px;
+        line-height: 130%;
+    }
+}
+.hidden
+{
+    display: none!important;
 }
