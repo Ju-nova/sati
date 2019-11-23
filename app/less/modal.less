@@ -1,0 +1,98 @@
+/*modal*/
+.modal{
+	width: 1200px;
+	padding: 29px 80px 51px 62px;
+	position:absolute;
+	background:#fff;
+	left:-9999px;
+	top:-9999px;
+	z-index:1000;
+	background: url(../img/bg-modal.jpg) 50% 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 14px;
+	line-height: 24px;
+}
+.modal .heading-holder{
+	color: #9a86ff;
+	border-bottom: 1px solid #9a86ff;
+	padding: 0 40px 17px 0;
+	margin: 0 0 41px;
+}
+.modal .heading-holder h2{
+	font: 60px/66px 'neuropolmedium', sans-serif;
+	margin:  0 0 5px;
+	text-align: left;
+	color: #9a86ff;
+}
+.modal .heading-holder .close{
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin: 22px -40px 0 0;
+	cursor: pointer;
+	-webkit-transition: transform 0.2s;
+	-moz-transition: transform 0.2s;
+	-ms-transition: transform 0.2s;
+	-o-transition: transform 0.2s;
+	transition: transform 0.2s;
+	text-indent: -999999px;
+	overflow: hidden;
+	background: url(../img/bg-close.png) 0 0 no-repeat;
+
+}
+.modal .close:hover{
+	-webkit-transform: scale(0.95);
+	-moz-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	-o-transform: scale(0.95);
+	transform: scale(0.95);
+}
+.modal .modal-wrap{
+	overflow: hidden;
+	margin: 0 -27px;
+}
+.modal .modal-wrap .modal-left,
+.modal .modal-wrap .modal-right{
+	float: left;
+	width: 42.7%;
+	padding: 0 27px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.modal .modal-wrap .modal-right{
+	width: 57.3%;
+}
+.modal .modal-wrap .img-holder,
+.modal .modal-wrap .video-holder{
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 3px;
+	overflow: hidden;
+	margin: 0 0 48px;
+	border: none;
+}
+.modal .modal-wrap .img-holder img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.modal .modal-wrap .video-holder iframe{
+	width: 100% !important;
+}
+@media (max-width: 1250px){
+	.modal{
+		width: 1000px;
+		padding: 24px 40px;
+	}
+	.modal .heading-holder h2{
+		font-size: 56px;
+		line-height: 60px;
+		margin: 0;
+	}
+	.modal .heading-holder .close{margin-top: 18px;}
+}
