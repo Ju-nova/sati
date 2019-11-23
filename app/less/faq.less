@@ -49,7 +49,9 @@
 font-weight: normal;
 font-size: 16px;
 line-height: 120%;
+padding: 22px 64px 22px 15px;
 }
+
 }
 .faq__question::after
 {
@@ -96,6 +98,14 @@ line-height: 120%;
     color: #000;
     background-color: #fff;
 }
+
+@media(max-width: 600px){
+ .faq__answer
+{
+ padding: 26px 26px 26px 35px;
+  
+}
+}
 @media(max-width: 426px){
 
 .faq__answer{
@@ -103,13 +113,9 @@ line-height: 120%;
 font-weight: normal;
 font-size: 16px;
 line-height: 120%;
-}
-}
-@media(max-width: 600px){
- .faq__answer
-{
- padding: 26px 26px 26px 35px;
-  
+ margin-top: 0;
+ padding: 22px 22px 22px 15px;
+ border-radius:2px
 }
 }
 .faq-block
