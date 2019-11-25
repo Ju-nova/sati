@@ -64,7 +64,7 @@ color: #000000;
 padding:42px 0;
 box-sizing:border-box;
 border:2px solid #E8FCFF;
-
+text-transform:uppercase;
   }
   .headliners__link:hover .headliners__title,
   .headliners__link:focus .headliners__title,
@@ -79,4 +79,12 @@ line-height: 22px;
 padding:15px 0;
 
   } 	
+   }
+   .headliners__fake-block{
+    opacity: 0;
+   }
+   @media(max-width: 782px){
+    .headliners__fake-block{
+    display: none;
+   }
    }

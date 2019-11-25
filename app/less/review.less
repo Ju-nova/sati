@@ -6,18 +6,29 @@ background: linear-gradient(360deg, #BA95E2 -13.75%, rgba(255, 255, 255, 0) 145%
 -ms-mix-blend-mode: screen;
 -o-mix-blend-mode: screen;
 mix-blend-mode: screen;
+height:1014px;
+overflow:hidden;
+position:relative;
 	
-}
-@media(max-width: 426px) {
-.review{
-	height: 100vh;
-    overflow-y: scroll;
-}
 }
 .review-gradient{
 	background: rgba(255, 255, 255, .25);	
 background-image:url(../img/back-2.svg);
+min-height:1014px;
 }
+@media(max-width: 426px) {
+.review{
+	// height: auto;
+    min-height: 100vh;
+ //    overflow-y: scroll;
+}
+.review-gradient{
+
+    min-height: 100%;
+ 
+}
+}
+
 .review__wrapper{
 	position:relative;
 	z-index:2;
@@ -50,6 +61,11 @@ background-image:url(../img/back-2.svg);
 }
 .review__button-wrapper{
     text-align: center;
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:11;
 }
 .review__button{
 	font-size: 1.1em;
@@ -121,9 +137,9 @@ border:2px solid #000;
 .sl-count__main{
 	display: none;
 }
-.review__button{
-	display: none;
-}
+// .review__button{
+// 	display: none;
+// }
 @media(max-width: 426px){
 .review-slider{
 	display: block;
@@ -147,7 +163,7 @@ line-height: 130%;
 }
 
 .review__button{
-	display: inline-block;
+	display: none;
 }
 }
 .review-slider .slick-next, .review-slider .slick-prev {
@@ -197,5 +213,8 @@ height:0px;
 }
 .hide{
 height:auto;
+}
+.opacity{
+	opacity: 0
 }
 // КОНЕЦ БЛОКА С ОТЗЫВАМИ
