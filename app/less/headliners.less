@@ -6,12 +6,17 @@ mix-blend-mode: screen;
 
 
 }
-.block{
+.headliners-gradient{
 // background-color:rgba(255, 255, 255, .1);
 background: rgba(255, 255, 255, .25);	
 background-image:url(../img/back-2.svg);
 	padding-bottom:50px;	
 
+}
+@media(max-width: 426px){
+  .headliners-gradient{
+  padding-bottom:0
+}
 }
 .headliners__list{
 	text-align: center;
@@ -57,7 +62,14 @@ text-align: center;
 background-color:#E8FCFF;
 color: #000000;
 padding:42px 0;
+box-sizing:border-box;
+border:2px solid #E8FCFF;
 
+  }
+  .headliners__link:hover .headliners__title,
+  .headliners__link:focus .headliners__title,
+  .headliners__link:active .headliners__title{
+border:2px solid #000;
   }
      @media(max-width: 1050px){
   .headliners__title{

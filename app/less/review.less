@@ -1,13 +1,22 @@
 // БЛОК С ОТЗЫВАМИ
 .review{
-
-background: linear-gradient(180deg, rgba(186, 149, 226, 0.6) -13.75%, rgba(255, 255, 255, 0.6) 145%), rgba(87, 162, 216, 0.6);
-// opacity: 0.6;
-	position:relative;
-	z-index:1;
-	background-image:url(../img/back-2.svg);
-// opacity: .6
-
+background: linear-gradient(360deg, #BA95E2 -13.75%, rgba(255, 255, 255, 0) 145%), #57A2D8;
+-webkit-mix-blend-mode: screen;
+-moz-mix-blend-mode: screen;
+-ms-mix-blend-mode: screen;
+-o-mix-blend-mode: screen;
+mix-blend-mode: screen;
+	
+}
+@media(max-width: 426px) {
+.review{
+	height: 100vh;
+    overflow-y: scroll;
+}
+}
+.review-gradient{
+	background: rgba(255, 255, 255, .25);	
+background-image:url(../img/back-2.svg);
 }
 .review__wrapper{
 	position:relative;
@@ -19,10 +28,10 @@ background: linear-gradient(180deg, rgba(186, 149, 226, 0.6) -13.75%, rgba(255, 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 65px;
+   padding-bottom: 65px;
 }
 .review__box-column{
-	width: 414px;
+	width: 363px;
     padding: 0 22px;
     margin: 0 0 42px;
     -webkit-box-sizing: border-box;
@@ -33,7 +42,7 @@ background: linear-gradient(180deg, rgba(186, 149, 226, 0.6) -13.75%, rgba(255, 
 	height:0px;
 }
 .review__block{
-    margin-bottom: 10px;
+	margin: 0 auto 10px;
     height:auto;
     transition:1s;
 
@@ -52,22 +61,25 @@ background: linear-gradient(180deg, rgba(186, 149, 226, 0.6) -13.75%, rgba(255, 
 	background-color:#fff;
 	margin-bottom: 65px;
 	cursor:pointer;
-	transition: 0.5s
+	transition: 0.5s;
+	box-sizing:border-box;
+	border:2px solid #fff; 
 }
 .review__button:hover,
 .review__button:active,
 .review__button:focus{
- box-shadow:1px 1px 35px 29px #fbffff;
--webkit-box-shadow:1px 1px 35px 29px #fbffff;
--moz-box-shadow:1px 1px 35px 29px #fbffff;
+//  box-shadow:1px 1px 35px 29px #fbffff;
+// -webkit-box-shadow:1px 1px 35px 29px #fbffff;
+// -moz-box-shadow:1px 1px 35px 29px #fbffff;
+border:2px solid #000; 
 }
 
-@media (max-width: 1250px){
-.review__box  {
+// @media (max-width: 1250px){
+// .review__box  {
  
-    justify-content: center;
-}
-}
+//     justify-content: center;
+// }
+// }
 @media (max-width: 1250px){
 .review__box-column{
 	margin:0 8% 10px;
@@ -83,9 +95,107 @@ background: linear-gradient(180deg, rgba(186, 149, 226, 0.6) -13.75%, rgba(255, 
 	margin:0 1% 10px;
 }
 }
+@media (max-width: 890px){
+.review__box  {
+ 
+    justify-content: center;
+}
+}
 @media (max-width: 846px){
 .review__box-column {
 	margin:0 10px;
 }
+}
+@media (max-width: 320px){
+.review__box-column {
+	margin:0;
+	padding:0;
+}
+}
+.review-slider{
+	 height:700px;
+	opacity:0;
+	overflow:hidden;
+	padding-bottom: 65px;
+}
+.sl-count__main{
+	display: none;
+}
+.review__button{
+	display: none;
+}
+@media(max-width: 426px){
+.review-slider{
+	display: block;
+	padding-bottom: 25px;
+}
+.sl-count__num__main{
+	color:#333333;
+	font-weight: 600;
+	opacity: 1;
+	font-size: 24px;
+}
+.sl-count__main{
+	display: block;
+	padding-bottom:45px;
+	text-align:center;
+	font-family: PF BeauSans Pro;
+font-style: normal;
+color:rgba(51, 51, 51, .6);
+font-size: 20px;
+line-height: 130%;
+}
+
+.review__button{
+	display: inline-block;
+}
+}
+.review-slider .slick-next, .review-slider .slick-prev {
+    position: absolute;
+    bottom:-27px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    color: transparent;
+    border: 0;
+    outline: 0;
+    background: #E8FCFF;
+    border-radius:2px;
+    left:50%;
+}
+.review-slider .slick-next{
+	transform:translateX(165%);
+		&:before{
+		top:50%;
+		left:50%;
+	    margin-top:10px;
+	    margin-left:10px;
+		width: 10px;
+    height: 10px;
+		border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    transform:rotate(135deg);
+	}
+}
+.review-slider .slick-prev{
+	transform:translateX(-272%);
+	&:before{
+		top:50%;
+		left:50%;
+	    margin-top:10px;
+	    margin-left:10px;
+		width: 10px;
+    height: 10px;
+		border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    transform:rotate(-45deg);
+	}
+}
+.hide.hidden{
+height:0px;
+}
+.hide{
+height:auto;
 }
 // КОНЕЦ БЛОКА С ОТЗЫВАМИ
