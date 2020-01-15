@@ -154,6 +154,7 @@ padding:0;
 .video-block__item
 {
     text-align: center;
+    position:relative;
 }
 .video-slider .slick-prev,
 .video-slider .slick-next
@@ -177,12 +178,37 @@ padding:0;
         -ms-transform: translate(0, -50%);
             transform: translate(0, -50%);
 }
-.video-slider .slick-next
+ .slick-prev,
+ .slick-next
+{
+    position: absolute;
+    z-index: 10;
+   
+    display: block;
+    width: 120px;
+    height: 120px;
+    padding: 0;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    cursor: pointer;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+}
+ .slick-prev:hover,
+ .slick-next:hover{
+    opacity:0.8;
+ }
+.video-slider .slick-prev
 {
     left: 0;
 }
 
-.video-slider .slick-prev
+.video-slider .slick-next
 {
     right: 0;
 }
@@ -195,7 +221,7 @@ padding:0;
     width: 120px;
     height: 120px;
 
-    background-image: url(../img/slide-left.svg);
+    background-image: url(../img/slide-right.svg);
     background-size:contain;
 
     content: '';
@@ -210,20 +236,44 @@ padding:0;
     width: 120px;
     height: 120px;
 
-    background-image: url(../img/slide-right.svg);
+    background-image: url(../img/slide-left.svg);
     background-size:contain;
 
     content: '';
 }
 .video-slider .slick-prev
 {
-    margin-right:10px;
+    margin-right:37px;
 
 }
 .video-slider .slick-next
 {
-    margin-left:10px;
+    margin-left:37px;
 
+}
+@media(max-width: 1400px){
+ .video-slider .slick-prev
+{
+    margin-right:7%;
+
+}
+.video-slider .slick-next
+{
+    margin-left:7%;
+
+}   
+}
+@media(max-width: 1100px){
+ .video-slider .slick-prev
+{
+    margin-right:2%;
+
+}
+.video-slider .slick-next
+{
+    margin-left:2%;
+
+}   
 }
 @media(max-width: 990px){
 .video-slider .slick-prev,
@@ -293,10 +343,10 @@ padding:0;
    
 
 }
-  .video-slider .slick-next{
+  .video-slider .slick-prev{
 left: 20px;
   }
-    .video-slider .slick-prev{
+    .video-slider .slick-next{
 right: 20px;
   }
 .slick-next:before
@@ -308,7 +358,7 @@ width: 20px;
 border-left:2px solid rgba(255, 255, 255, .4);
 border-top:2px solid rgba(255, 255, 255, .4);
 border-radius:2px;
-transform:rotate(-45deg);
+transform:rotate(135deg);
 }
 .slick-prev:before
 {
@@ -318,7 +368,7 @@ transform:rotate(-45deg);
  border-left:2px solid rgba(255, 255, 255, .4);
  border-top:2px solid rgba(255, 255, 255, .4);
  border-radius:2px;
- transform:rotate(135deg);
+ transform:rotate(-45deg);
 }
 }
 // КОНЕЦ БЛОКА С ВИДЕО

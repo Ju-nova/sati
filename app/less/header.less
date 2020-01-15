@@ -11,21 +11,60 @@
     background: linear-gradient(180deg, #BA95E2 -13.75%, rgba(255, 255, 255, 0) 145%), #57A2D8;
    
 }
+.header .logo,
+.header-social,
+#nav{
+    width:32%;
+}
 
 .header__logo{
 	width: 414px;
 	height: 51px;
 }
-@media(max-width:1120px){
-	.logo{
+
+@media(max-width: 1200px){
+
+.header-social,
+#nav{
+    width:50%;
+} 
+    .logo{
 display: none;
+}  
 }
+@media(max-width: 590px){
+
+.header-social,
+#nav{
+    width:100%;
+}   
 }
-.header__social-item svg{
+.header__social-item img{
 	width:40px;
 	height: 40px;
 	border-radius:9px;
+    vertical-align: middle;
+    transition: .5
 
+}
+.header-svg-hover1,
+.header-svg-hover2,
+.header-svg-hover3,
+.header-svg-hover4{
+display:none;
+}
+.header__social-item:hover .header-svg1,
+.header__social-item:hover .header-svg2,
+.header__social-item:hover .header-svg3,
+.header__social-item:hover .header-svg4{
+display:none;
+}
+.header__social-item:hover .header-svg-hover1,
+.header__social-item:hover .header-svg-hover2,
+.header__social-item:hover .header-svg-hover3,
+.header__social-item:hover .header-svg-hover4
+{
+display:block;
 }
 .header__social-item{
 	display: block;
@@ -43,15 +82,25 @@ display: none;
 	
 	margin: 0 15px;
 }
-.header__social-item svg{
+.header__social-item img{
 	width:35px;
 	height: 35px;
 
 }
 }
+.header__social-item .header-svg-hover1{
+display: none
+}
+.header__social-item:hover .header-svg1{
+display: none
+}
+.header__social-item:hover .header-svg-hover1{
+display: block
+}
 .header__social{
 	display: flex;
 	align-items:center;
+    justify-content: center
 }
 .header-flex {
     display: -webkit-box;
@@ -65,7 +114,7 @@ display: none;
     -ms-flex-align: center;
     align-items: center;
 }
-@media (max-width: 500px){
+@media (max-width: 590px){
 	.header-flex{
 		 justify-content: center;
 	}
@@ -73,9 +122,17 @@ display: none;
 .header-flex > #nav {
     text-align: right;
     display: flex;
+    justify-content:flex-end;
     // -webkit-box-flex: 1;
     // -ms-flex: 1 1 auto;
     // flex: 1 1 auto;
+}
+@media(max-width:590px){
+    .header-flex > #nav {
+
+    justify-content:center;
+ 
+}
 }
 .menu-holder{
 	display: flex;
@@ -86,10 +143,11 @@ display: none;
     margin: 0;
     list-style: none;
 }
-@media(max-width: 690px){
+@media(max-width: 755px){
 .nav-list {
   display: none;
 }
+
 }
 .nav-list li {
     display: inline-block;
@@ -133,12 +191,12 @@ text-decoration:none;
     width: 35px;
     z-index: 17;
 }
-@media (max-width:478px){
+@media (max-width:591px){
 	.header .buy-btn{
 		margin-top:10px;
 	}
 }
-@media (max-width:320px){
+@media (max-width:426px){
 	.header .buy-btn{
 		display:none;
 	}

@@ -4,21 +4,87 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Сказка - это волшебная фабрика уникальных впечатлений, что питают огонь восторга в сердцах, струящийся тёплыми улыбками ваших глаз">
+
+	    <meta name="keywords" content="фестиваль сказка" />
+	    
+	    <meta property="og:type" content="website">
+	    <meta property="og:site_name" content="ФЕСТИВАЛЬ СКАЗКА">
+	    <meta property="og:title" content="ФЕСТИВАЛЬ СКАЗКА">
+	    <meta property="og:description" content="Сказка - это волшебная фабрика уникальных впечатлений, что питают огонь восторга в сердцах, струящийся тёплыми улыбками ваших глаз">
+	    <meta property="og:url" content="http://www.skazkafestival.ru">
+	    <meta property="og:locale" content="ru_RU">
+	    <meta property="og:image" content="http://www.skazkafestival.ru/soc/winter_skazka_2020_968x504.jpg">
+	    <meta property="og:image:width" content="968">
+	    <meta property="og:image:height" content="504">
+	    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+		<link rel="manifest" href="img/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	   
+	    <title>Сказка</title>
 
 		<link rel="stylesheet" href="css/slick.css" media="all" />
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/main.min.css">
 		<link rel="stylesheet" href="css/normalize.css">
-
-			 
+		<script async src="https://ticketscloud.com/static/scripts/widget/tcwidget.js"></script>
 
 
 		<script src="js/jquery-3.4.1.min.js"></script>
-		<script src="js/jquery-migrate-3.0.1.min.js"></script>
-		<script src="js/slick.js"></script>
-        <script src="js/jquery.simplebox.min.js"></script>
+		<script src="js/jquery-migrate-3.0.1.min.js"></script>		 
+		<script src="js/slick.js"></script>       
 		<script src="js/main.js"></script>
+		<script src="js/lazyload.js"></script>
+		<script type="text/javascript">
+		  var total_pics_num = 8; // колличество изображений
+		  var interval = 5000;    // задержка между изображениями
+		  var time_out = 1;       // задержка смены изображений
+		  var i = 0;
+		  var timeout;
+		  var opacity = 100;
+		  function fade_to_next() {
+		    opacity--;
+		    var k = i + 1;
+		    var image_now = 'image_' + i;
+		    if (i == total_pics_num) k = 1;
+		    var image_next = 'image_' + k;
+		    document.getElementById(image_now).style.opacity = opacity/100;
+		    document.getElementById(image_now).style.filter = 'alpha(opacity='+ opacity +')';
+		    document.getElementById(image_next).style.opacity = (100-opacity)/100;
+		    document.getElementById(image_next).style.filter = 'alpha(opacity='+ (100-opacity) +')';
+		    timeout = setTimeout("fade_to_next()",time_out);
+		    if (opacity==1) {
+		      opacity = 100;
+		      clearTimeout(timeout);
+		    }
+		  }
+		  setInterval (
+		    function() {
+		      i++;
+		      if (i > total_pics_num) i=1;
+		      fade_to_next();
+		    }, interval
+		  );
+        </script>
+	     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+	    	
+	   
+	    <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?156",t.onload=function(){VK.Retargeting.Init("VK-RTRG-259510-5ZSCA"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-259510-5ZSCA" style="position:fixed; left:-999px;" alt=""/></noscript>
 
-		<title>Document</title>
+		
 
 </head>
 <body class="page">
@@ -27,35 +93,36 @@
 			<div class="container-1500">
 				<header id="header" class="header-flex">
 					<strong class="logo">
-						<a href="#"> <img class="header__logo" src="img/skazka_logo.png" alt=""></a> 						
+						<a href="#"> <img class="header__logo" src="img/skazka_logo1.png" alt=""></a> 						
 					</strong>
 					<span class="header__social">
-	        				<a class="header__social-item" href="#"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M38.6913 36.6103C38.6913 37.7613 37.762 38.7057 36.5967 38.7057H26.9054V23.979H31.8469L32.5845 18.2388H26.9054V14.5793C26.9054 12.9118 27.3627 11.7903 29.7523 11.7903H32.791V6.64036C32.26 6.56658 30.4604 6.41902 28.3657 6.41902C23.9848 6.41902 20.9904 9.08991 20.9904 14.0038V18.2388H16.0341V23.979H20.9904V38.7057H2.77308C1.62252 38.7057 0.678467 37.7761 0.678467 36.6103V2.77411C0.678467 1.62312 1.62252 0.678711 2.77308 0.678711H36.5967C37.7472 0.678711 38.6913 1.60836 38.6913 2.77411V36.6103Z" fill="#E8FCFF"/>
-</svg></a>
-	        				<a class="header__social-item" href="#"><svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M22.5843 21.7058C21.9529 21.3383 21.0753 21.3383 20.3623 21.3383H18.021V26.1629H20.1699C20.9654 26.1629 21.98 26.2199 22.6659 25.7383C23.2956 25.3145 23.6522 24.4825 23.6522 23.6903C23.6522 22.9543 23.214 22.0738 22.5843 21.7058ZM21.701 17.5856C22.222 17.1889 22.4952 16.4816 22.4952 15.8302C22.4952 15.1225 22.1666 14.4431 21.564 14.0755C20.9334 13.7079 19.781 13.7928 19.0409 13.7928H18.021V18.039H19.3703C20.1379 18.0386 21.0433 18.0952 21.701 17.5856ZM33.2308 0H7.69154C3.86877 0 0.769287 3.09949 0.769287 6.92308V32.4615C0.769287 36.2843 3.86877 39.3846 7.69154 39.3846H33.2308C37.0536 39.3846 40.1539 36.2843 40.1539 32.4615V6.92308C40.1539 3.09949 37.0536 0 33.2308 0ZM21.5299 29.7579H13.484V10.3389H22.2749C24.8214 10.3389 27.1709 11.9598 27.1709 14.8189C27.1709 17.0265 25.9385 18.5383 24.3664 19.008V19.065C26.6975 19.5467 28.3623 20.8127 28.3623 23.8671C28.3623 26.6937 26.4374 29.7579 21.5299 29.7579Z" fill="#E8FCFF"/>
-</svg>
-</a>
-	        				<a class="header__social-item" href="#"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M27.8685 13.5701L13.4222 22.5298C13.1679 22.6875 13.0522 22.9973 13.1409 23.2831L15.0787 29.5273C15.1194 29.6585 15.3106 29.6404 15.326 29.5039L15.797 25.317C15.8151 25.1552 15.8927 25.0059 16.0147 24.8981L28.2481 14.0802C28.5409 13.8213 28.2008 13.3639 27.8685 13.5701Z" fill="#E8FCFF"/>
-<path d="M10.5384 0.615356C5.0156 0.615356 0.538452 5.09251 0.538452 10.6154V30C0.538452 35.5228 5.01561 40 10.5385 40H29.9231C35.4459 40 39.9231 35.5228 39.9231 30V10.6154C39.9231 5.0925 35.4459 0.615356 29.9231 0.615356H10.5384ZM33.3681 10.8491L28.8716 32.3472C28.6605 33.3559 27.4774 33.809 26.6465 33.1992L23.8439 31.1419C21.5565 29.4629 18.3826 29.7215 16.3972 31.7487C15.7899 32.3688 14.7408 32.1178 14.4799 31.29L13.5824 28.4419C12.5821 25.2679 10.0684 22.7995 6.87685 21.8571L5.28978 21.3884C4.41174 21.1291 4.35998 19.905 5.21304 19.5725L31.55 9.30928C32.5525 8.91866 33.5884 9.79601 33.3681 10.8491Z" fill="#E8FCFF"/>
-</svg>
-</a>
-	        				<a class="header__social-item" href="#"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M39.5902 14.0863C35.8536 14.0863 32.1153 14.0863 28.3788 14.0863C32.7541 21.2952 27.7429 30.7803 18.7001 29.8979C13.1757 29.3592 8.12143 23.422 10.3627 16.6738C10.5036 16.247 10.8042 15.7812 11.0332 15.3323C11.2507 14.9055 11.6174 14.4049 11.5123 14.0862C7.83822 14.0862 0.396118 14.0862 0.396118 14.0862V32.5813C0.768913 36.1989 3.61413 39.0422 7.29534 39.3846H20.0401H32.7856C36.4736 39.0045 39.2239 35.9347 39.5889 32.6772C39.5902 32.6774 39.5902 17.2971 39.5902 14.0863Z" fill="#E8FCFF"/>
-<path d="M18.9877 12.2657C17.4816 12.4467 16.6722 12.7723 15.9203 13.2239C14.1938 14.2605 12.5694 16.1935 12.279 18.7818C11.6918 24.0067 15.525 27.5982 19.9453 27.5982C23.4668 27.5982 27.7512 25.0823 27.7074 19.8367C27.6675 15.0598 23.8563 11.6803 18.9877 12.2657ZM25.5997 21.3688C24.9578 24.0129 22.0235 26.0126 18.9877 25.5851C16.0855 25.1771 12.9665 21.5703 14.6742 17.5363C15.3033 16.0515 16.7219 14.3858 19.6575 14.1823C23.2636 13.9322 26.6212 17.1549 25.5997 21.3688Z" fill="#E8FCFF"/>
-<path d="M37.3863 2.20382C36.3296 1.14711 34.6002 0.178039 32.6909 0H19.9843H19.9491H10.8442V9.96727H9.21494V0H8.20936V9.96727H6.57877V0.094781C6.21798 0.163432 5.86466 0.258214 5.52514 0.375392V9.96727H3.89584V1.14971C3.37731 1.46976 2.91996 1.83103 2.54651 2.20334C0.379694 4.37064 0.20555 8.09697 0.34269 12.8409H12.5131C13.0068 12.7261 13.5995 12.1164 14.0465 11.7866C15.6862 10.5793 17.7952 9.92053 19.9359 9.89732H19.9966C22.1373 9.92036 24.247 10.5793 25.886 11.7866C26.3336 12.1164 26.925 12.7261 27.4188 12.8409H39.5892C39.6449 8.05006 39.5543 4.37113 37.3863 2.20382ZM35.7152 8.66825C35.7152 9.22687 35.2627 9.67935 34.7052 9.67935H30.4949C29.9374 9.67935 29.4849 9.22687 29.4849 8.66825V4.45925C29.4849 3.90112 29.9374 3.44929 30.4949 3.44929H34.7052C35.2627 3.44929 35.7152 3.90112 35.7152 4.45925V8.66825Z" fill="#E8FCFF"/>
-</svg>
-</a>
+	        				<a class="header__social-item" href="https://www.facebook.com/events/614880268919973/" target="blank">
+	        					<img class="header-svg1" src="img/facebook-header-logo.png" alt="">
+	        					<img class="header-svg-hover1" src="img/facebook-header-logo-hover.png" alt="">
+	        			
+							</a>
+	        				<a class="header__social-item" href="https://vk.com/shpongleinmoscow" target="blank">
+	        					<img class="header-svg2" src="img/vk-header.png" alt="">
+	        					<img class="header-svg-hover2" src="img/vk-header-hover.png" alt="">
+	        					
+							</a>
+	        				<a class="header__social-item" href="https://t.me/skazkafestival" target="blank">
+	        					<img class="header-svg3" src="img/telegram-header.png" alt="">
+	        					<img class="header-svg-hover3" src="img/telegram-header-hover.png" alt="">
+	        				
+                  			</a>
+	        				<a class="header__social-item" href="https://www.instagram.com/skazkafestival.ru/" target="blank">
+	        				<img class="header-svg4" src="img/instagram-header.png" alt="">
+	        				<img class="header-svg-hover4" src="img/instagram-header-hover.png" alt="">
+                            </a>
         			    </span>
 
 					<nav id="nav"><!--  open  -->
-						<div class="menu-holder">
-							<ul class="menu nav-list">								
+						<div class="menu-holder" >
+						<!-- 	<ul class="menu nav-list">								
 								<li><a href="#">Фото</a></li>
 								<li><a href="#">Видео</a></li>
-							</ul>
+							</ul> -->
 						</div>
 						<a href="#" class="toogle-menu">
 							<span class="t">&nbsp;</span>
@@ -74,15 +141,217 @@
 	<div class="main-block content">
 			<div class="main-block__wrapper" >
 					<img class="main-block__img-desktop" src="img/skazka_header.png" alt="">
-					<img class="main-block__img-mobile" src="img/BG-img.png" alt="">
+					<img class="main-block__img-mobile" src="img/header-mob3.png" alt="">
 					<img class="main-block__logo" src="img/skazka_logo.png" alt="">
-					
+					<div class="logo-slider__wrapper" >
+							
+								<img  id="image_1" src="img/simon_posford_dj_set.png" alt="" style="position: absolute; width:300px">
+								<img id="image_2" src="img/simon_posford_dj_set2.png" alt="" style="opacity:0; filter: alpha(opacity=0); position: absolute; width: 240px">
+								<img id="image_3" src="img/simon_posford_dj_set3.png" alt="" style="opacity: 0; filter: alpha(opacity=0); position: absolute;width:300px">
+								<img id="image_4" src="img/entheogenic-logo.png" alt="" style="opacity: 0; filter: alpha(opacity=0); position: absolute; width:300px">
+								<img id="image_5" src="img/astral-projection-logo.png" alt="" style="opacity: 0; filter: alpha(opacity=0); position: absolute;width: 300px;">
+								<img id="image_6" src="img/tas-logo.png" alt="" style="opacity: 0; filter: alpha(opacity=0); position: absolute;width:200px;">
+								<img  id="image_7" src="img/mmd-logo.png" alt="" style="opacity: 0; filter: alpha(opacity=0); position: absolute;width:200px;">
+								<img id="image_8" src="img/sag-logo.png" alt="" style="opacity: 0; filter: alpha(opacity=0); position: absolute;width:200px;">
+						  
+					</div>
+						
 						<a href="#buy-widget" class="main-block__btn buy-btn">КУПИТЬ БИЛЕТ</a>
 					
 			</div>
 		
 	</div>
+<!-- МОДАЛЬНЫЕ ОКНА -->	  
+<div class="modal-container" id="modal01">
+	<div class="modal modal" >
+			<div class="heading-holder">
+				<span class="close">close</span>
+				<h2>SIMON POSFROD</h2>
+			</div>
+			<div class="modal-wrap ">				
+					<div class="video-holder">
+						<iframe id="if1.1" class="video2 iframe" data-src="//vk.com/video_ext.php?oid=-185564561&id=456239024&hash=b65b3d73049f096b" width="426" height="240" frameborder="0" allowfullscreen ></iframe> 
+						  	
+					</div>
+				
+			</div>
+			<div class="heading-holder">
+				<h2>SHPONGLE</h2>
+			</div>
+			<div class="modal-wrap">
+				<div class="modal-left">
+					<iframe id="if1.2" width="100%" height="166" scrolling="no" frameborder="no" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/310075334&amp;color=ff5500"></iframe>
+				
+				</div>
+				<div class="modal-right">
+					<div class="video-holder">
+						 <iframe id="if1.3" class="iframe " data-src="https://www.youtube.com/embed/JU7fzqOxy8s?autoplay=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+	
+						<!-- <div class="youtube iframe" id="JU7fzqOxy8s"></div>  -->
+					</div>
+				</div>
+			</div>
+			<div class="heading-holder">
+				<h2>HALLUCINOGEN</h2>
+			</div>
+			<div class="modal-wrap">
+				<div class="modal-left">
+					<iframe id="if1.4" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/653150831&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+					
+				</div>
+				<div class="modal-right">
+					<div class="video-holder">
+						<iframe id="if1.5" class="iframe " data-src="https://www.youtube.com/embed/b5SSHK-mIF8?autoplay=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+	
+						<!-- <div class="youtube iframe" id="b5SSHK-mIF8"></div> --> 
+					</div>
+				</div>
+			</div>
+				<div class="heading-holder">
+				<h2>YOUNGER BROTHER</h2>
+			</div>
+			<div class="modal-wrap">
+				<div class="modal-left">
+					<iframe id="if1.6" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/6883649&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+					
+				</div>
+				<div class="modal-right">
+					<div class="video-holder">
+						<iframe id="if1.7" class="iframe " data-src="https://www.youtube.com/embed/rkMt4GudJzg?autoplay=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<!-- <div class="youtube iframe" id="rkMt4GudJzg"></div>  -->
+					</div>
+				</div>
+			</div>
+	
+	
+		</div>
+</div>
+              
+<div class="modal-container" id="modal02">
+	<div class="modal" >
+			<div class="heading-holder">
+				<span class="close">close</span>
+				<h2>entheogenic</h2>
+			</div>
+		<div class="modal-wrap">
+				<div class="modal-left">
+					<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/297055233&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+					
+				</div>
+				<div class="modal-right">
+					<div class="video-holder">
+						<iframe  class="iframe " data-src="https://www.youtube.com/embed/3pLWskANffo?autoplay=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<!-- <div class="youtube iframe" id="3pLWskANffo"></div>  -->
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+	<div class="modal-container" id="modal03">
+		<div class="modal" >
+			<div class="heading-holder">
+				<span class="close">close</span>
+				<h2>astral projection</h2>
+			</div>
+			<div class="modal-wrap">
+				<div class="modal-left">
+					<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/588299187&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+					
+				</div>
+				<div class="modal-right">
+					<div class="video-holder">
+						<iframe  class="iframe " data-src="https://www.youtube.com/embed/T6U9UcCA3Qw?autoplay=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<!-- <div class="youtube iframe" id="T6U9UcCA3Qw"></div> --> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div class="modal-container" id="modal04">
+		<div class="modal" >
+			<div class="heading-holder">
+				<span class="close">close</span>
+				<h2>Music Media Dome</h2>
+			</div>
+			<div class="modal-wrap">
+				<div class="modal-right">
+					<div class="video-holder">
+						<iframe class="video1 iframe"  data-src="//vk.com/video_ext.php?oid=469978988&id=456239246&hash=9f9089d71e221f7d&hd=2"  frameborder="0" allowfullscreen></iframe>
+					
+					</div>
+				</div>
+				<div class="modal-left text">
+					Площадка дважды вошедшая в книгу рекордов Гиннесса<br>
+					Самый большой в мире экран 360°<br>
+					Просторный VIP с лучшим видом на сцену<br>
+					Передовое техническое оснащение<br>
+					Высокая пропускная способность<br>
+		
+					Адрес: г. Москва, Шоссе Энтузиастов, дом 5 <br>
+					Время проведения: 23:00 - 07:00<br>
+		
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+<div class="modal-container" id="modal05">
+	<div class="modal">
+		<div class="heading-holder">
+			<span class="close">close</span>
+			<h2>TAS VISUALS</h2>
+		</div>
+		<div class="modal-wrap">
+			<div class="modal-right">
+				<div class="video-holder">
+					<iframe class="video1 iframe" data-src="//vk.com/video_ext.php?oid=469978988&id=456239251&hash=6e4a0f7971de70b0&hd=2" frameborder="0" allowfullscreen></iframe>
+					
+				</div>
+			</div>
+			<div class="modal-left text">
+				TAS aka The Adventurous Spark - графический дизайнер, визуальный художник и VJ из Австрии. TAS создает уникальный мир современного искусства, сочетая неповторимые цветовые палитры с динамическими формами. За свою пятилетнюю историю этот художник стал известен всему миру благодаря своему неповторимому стилю. 
+	
+	Несмотря на то, что TAS позиционирует себя как VJ и визуальный артист, его работы привлекают внимание и вдохновляют многих художников и motion артистов разных жанров во всем мире.
+	
+	
+			</div>
+			
+		</div>
+	</div>
+</div>
+	<div class="modal-container" id="modal06">
+		<div class="modal" >
+			<div class="heading-holder">
+				<span class="close">close</span>
+				<h2>skazka art</h2>
+			</div>
+			<div class="modal-wrap">
+				<div class="modal-right">
+					<div class="img-holder">
+						<div class="foto-slider">
+							<div class="foto-slide">
+								<img src="img/photo-01.jpg" alt="">
+							</div>
+							<div class="foto-slide">
+								<img src="img/photo-02.jpg" alt="">
+							</div>
+						 </div>
+					</div>
+				</div>
+				<div class="modal-left text">
+					Сказка - это волшебная фабрика уникальных впечатлений, что питают огонь восторга в сердцах, струящийся тёплыми улыбками ваших глаз. Расширяя границы возможного, мы следуем своей миссии: удивлять, вдохновлять, дарить вам тёплые эмоции, радость и счастье. Год за годом развиваясь вместе с вами, мы доросли до события планетарного масштаба. 
+		
+		                Самый большой в мире проекционный экран 360° расцветёт пейзажами параллельных миров под кистью легендарного художника TAS Visuals, в сопровождении именитых гостей
+		
+		
+		
+				</div>
+				
+			</div>
+		</div>
+	</div>	
 <!-- БЛОК С АРТИСТАМИ -->
 			<div class="headliners content">
 		<div class="headliners-gradient">	
@@ -92,7 +361,7 @@
 				
 						<a class="simplebox headliners__link headliners__list-item" href="#modal01">
 							<span class="img-holder"><img src="img/simon-posford.png" alt="image"></span>
-							<span class="headliners__title">SIMON POSFROD</span>
+							<span class="headliners__title">SIMON POSFORD</span>
 						</a>
 					
 					
@@ -135,16 +404,21 @@
 				<div class="video-block__wrapper container video-slider">
 
 					 <div class="video-block__item ">              			
-                 				 <!-- <iframe class="iframe" src="https://www.youtube.com/embed/5DrExnI-oaE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  --> 
-                 				 <div class="youtube iframe" data-params="&fs=1" id="5DrExnI-oaE"></div>              			
+                 			<iframe class="iframe " src="https://www.youtube.com/embed/5DrExnI-oaE?autoplay=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+                 		 
+                 				<!--  <div class="youtube iframe" data-params="&fs=1" id="5DrExnI-oaE"></div>  -->             			
+           			 </div>
+           			 <div class="video-block__item ">
+           			 <iframe class="iframe " src="https://www.youtube.com/embed/Gmbs86isXFU?autoplay=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           			  	               			
+                 				 
+                 				<!--  <div class="youtube iframe" data-params="&fs=1" id="Gmbs86isXFU"></div>      -->            			
            			 </div>
            			 <div class="video-block__item ">              			
-                 				 <!-- <iframe class="iframe" src="https://www.youtube.com/embed/5DrExnI-oaE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   -->  
-                 				 <div class="youtube iframe" data-params="&fs=1" id="Gmbs86isXFU"></div>                 			
-           			 </div>
-           			 <div class="video-block__item ">              			
-                 				 <!-- <iframe class="iframe" src="https://www.youtube.com/embed/5DrExnI-oaE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   --> 
-                 				 <div class="youtube iframe" data-params="&fs=1" id="bmyWFrMJfCY"></div>                  			
+                 				<iframe class="iframe " src="https://www.youtube.com/embed/bmyWFrMJfCY?autoplay=0&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+             					  
+                 					
+                 				<!--  <div class="youtube iframe" data-params="&fs=1" id="bmyWFrMJfCY"></div>  -->                 			
            			 </div>
 
 
@@ -152,111 +426,10 @@
 		
 	</section>
 
- <!-- БЛОК С ОТЗЫВАМИ  -->
-		   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
-   <script type="text/javascript">
+
   
-    VK.Widgets.Post("vk_post_-177487301_2721", -177487301, 2721, 'xRhhII1_gV97A4iV9c-XDvdqXJY', {width: 320});
-      VK.Widgets.Post("vk_post_-177487301_2682", -177487301, 2682, '0nWjfyNuaMw7ClyUqB5I-wzTkvA', {width: 320});
-       VK.Widgets.Post("vk_post_-177487301_2586", -177487301, 2586, 'kXH8OBawKQ9ZeNAn9MVSqfbLBQ8', {width: 320});
-      VK.Widgets.Post("vk_post_-177487301_2555", -177487301, 2555, 'RoRUBnmVj3xxAWlrCpP9mb5EC4Q', {width: 320});
-      VK.Widgets.Post("vk_post_-177487301_2511", -177487301, 2511, 'U0HF5BwUBsjD5dQDrv6VnEsMSoo', {width: 320});
-      VK.Widgets.Post("vk_post_-177487301_2366", -177487301, 2366, '4PQm_C3HxVBVddy5UxYL-f7FNlA', {width: 320});
-      // VK.Widgets.Post("vk_post_3148705_4670", 3148705, 4670, 'FoFZzADYmEBPd2LJjO5Wq_rQVw', {width: 320});
-      // VK.Widgets.Post("vk_post_-172254384_587", -172254384, 587, 'YumzbSxLrWxB4bqfl1_Y7Zu1GA', {width: 320});
-      // VK.Widgets.Post("vk_post_-185567954_198", -185567954, 198, 'icphdADUZrVJLDi8pgfvXfkMdw', {width: 320});
-      // VK.Widgets.Post("vk_post_-185567954_136", -185567954, 136, 'TieQiRbIjGNBkIJgNVNKZ9VKMA', {width: 320});
-      // VK.Widgets.Post("vk_post_-6284321_1003", -6284321, 1003, 'dltMyuZC9e9kepxRmfB1jQZ8Mg', {width: 320});
-      // VK.Widgets.Post("vk_post_260448492_878", 260448492, 878, 'iBtoEg_5cnjAEQddTKo-d7riYw', {width: 320});
-      // VK.Widgets.Post("vk_post_-146357500_805", -146357500, 805, 'IqBr4US_BCcreW0mtVVQxcChvg', {width: 320});
-      // VK.Widgets.Post("vk_post_1472247_10997", 1472247, 10997, 'RHLi-QlYz_vTVSiBqPG0oIhBJw', {width: 320});
    
-  
-  </script>
-		<div class="review content">
-		
-				<div class="review-gradient">
-					<h2 class="main-title">Почему стоит пойти</h2>
-							
-					<div class="review__wrapper container">
-					
-							<div class="review__box sl-rb">
-
-								   <div class="review__box-column">
-								   	  <div class="review__slide ">
-								   	  	<div class="review__block  " id="vk_post_-177487301_2366"></div>
-								   	  </div>
-								   	  	
-								   	  
-								   	  <div class="review__slide opacity">
-								   	  	<div class="review__block " id="vk_post_-177487301_2511"></div>
-								   	  </div>
-<!-- 					                  <div class="review__slide ">
-					                  	<div class="review__block " id="vk_post_3148705_4670"></div>
-					                  </div>
-					                  <div class="review__slide ">
-					                  	<div class="review__block" id="vk_post_260448492_878"></div>
-					                  </div>
-					                  <div class="review__slide ">
-					                  	<div class="review__block " id="vk_post_1472247_10997"></div>
-					                  </div> -->
-					                 
-								   </div>
-					
-								   <div class="review__box-column">
-								
-								   	<div class="review__slide">
-								   		<div class="review__block" id="vk_post_-177487301_2586"></div>
-								   	</div>
-								   	  	
-								   	 
-								   	   <div class="review__slide opacity" >
-								   	   	<div class="review__block "  id="vk_post_-177487301_2682"></div>
-								   	   </div>
-					                <!-- <div class="review__slide ">
-					                  	<div class="review__block "  id="vk_post_-172254384_587"></div>
-					                  </div>
-					                  <div class="review__slide ">
-					                  	<div class="review__block "  id="vk_post_-185567954_198"></div>
-					                  </div> -->
-								   </div> 
-					
-								   <div class="review__box-column">
-					
-								   	  
-								   	  	<div class="review__slide">
-								   	  		<div class="review__block  " id="vk_post_-177487301_2721"></div>
-								   	  	</div>
-								   	 
-								   	  <div class="review__slide opacity">
-								   	  	<div class="review__block " id="vk_post_-177487301_2555"></div>
-								   	  </div>
-					                  <!-- <div class="review__slide ">
-					                  	<div class="review__block "  id="vk_post_-185567954_136"></div>
-					                  </div>
-					                  <div class="review__slide ">
-					                  	<div class="review__block "  id="vk_post_-6284321_1003"></div>
-					                  </div>
-					                  <div class="review__slide">
-					                  	<div class="review__block"  id="vk_post_-146357500_805"></div>
-					                  </div> -->
-								   </div>		 				     										
-							</div>
-							<div class="sl-count__main"><span class="sl-count__num__main">1</span> из <span class="sl-count__total__main"></span></div>
-					
-
-						
-					
-       </div>
-									
-		</div>
-
-							<div class="review__button-wrapper">
-								<div class="review__button">Показать все</div>
-							</div>
-	</div>
-   
- 
+ 		  
 	
 <!-- БЛОК СО СПОЙЛЕРАМИ -->
 		<div class="faq content">
@@ -306,14 +479,196 @@
 						</div>
         		</div>
 		</div>
+ <!-- БЛОК С ОТЗЫВАМИ  -->
 
+ <script type="text/javascript">
+	     	 
+	      VK.Widgets.Post("vk_post_-177487301_2721", -177487301, 2721, 'xRhhII1_gV97A4iV9c-XDvdqXJY', {width: 320});
+	      // VK.Widgets.Post("vk_post_-177487301_2682", -177487301, 2682, '0nWjfyNuaMw7ClyUqB5I-wzTkvA', {width: 320});
+	       VK.Widgets.Post("vk_post_-177487301_2586", -177487301, 2586, 'kXH8OBawKQ9ZeNAn9MVSqfbLBQ8', {width: 320});
+	      // VK.Widgets.Post("vk_post_-177487301_2555", -177487301, 2555, 'RoRUBnmVj3xxAWlrCpP9mb5EC4Q', {width: 320});
+	      // VK.Widgets.Post("vk_post_-177487301_2511", -177487301, 2511, 'U0HF5BwUBsjD5dQDrv6VnEsMSoo', {width: 320});
+	      VK.Widgets.Post("vk_post_-177487301_2366", -177487301, 2366, '4PQm_C3HxVBVddy5UxYL-f7FNlA', {width: 320});
+	      // VK.Widgets.Post("vk_post_3148705_4670", 3148705, 4670, 'FoFZzADYmEBPd2LJjO5Wq_rQVw', {width: 320});
+	      // VK.Widgets.Post("vk_post_-172254384_587", -172254384, 587, 'YumzbSxLrWxB4bqfl1_Y7Zu1GA', {width: 320});
+	      // VK.Widgets.Post("vk_post_-185567954_198", -185567954, 198, 'icphdADUZrVJLDi8pgfvXfkMdw', {width: 320});
+	      // VK.Widgets.Post("vk_post_-185567954_136", -185567954, 136, 'TieQiRbIjGNBkIJgNVNKZ9VKMA', {width: 320});
+	      // VK.Widgets.Post("vk_post_-6284321_1003", -6284321, 1003, 'dltMyuZC9e9kepxRmfB1jQZ8Mg', {width: 320});
+	      // VK.Widgets.Post("vk_post_260448492_878", 260448492, 878, 'iBtoEg_5cnjAEQddTKo-d7riYw', {width: 320});
+	      // VK.Widgets.Post("vk_post_-146357500_805", -146357500, 805, 'IqBr4US_BCcreW0mtVVQxcChvg', {width: 320});
+	      // VK.Widgets.Post("vk_post_1472247_10997", 1472247, 10997, 'RHLi-QlYz_vTVSiBqPG0oIhBJw', {width: 320});
+	      // VK.Widgets.Post('vk_post_-185567954_464', -185567954, 464, 'QUDv9psyilGgA7DZxzZGttTuJOE', {width: 320});
+	      // VK.Widgets.Post('vk_post_-185567954_466', -185567954, 466, 'r_sU9ySV-XXl0cO2l8FxvzrsQes', {width: 320});
+	      // VK.Widgets.Post('vk_post_-185567954_467', -185567954, 467, 'Y-Ch10qrPYrz7A5Ng7Ek3QygxYA', {width: 320});
+	      // VK.Widgets.Post('vk_post_-185567954_458', -185567954, 458, 'bFWDyjy5CKbUitDgJvUR5o9nR0M', {width: 320});
+	      // VK.Widgets.Post('vk_post_-185567954_433', -185567954, 433, 'ZMs4W61fN0WnC_0OvkSTpZLKpRQ', {width: 320});
+               
+        </script>
+   
+		<div class="review content">
+
+
+		
+				<div class="review-gradient">
+					<h2 class="main-title">Почему стоит пойти</h2>
+							
+					<div class="review__wrapper container">
+					
+							<div class="review__box  sl-rb">
+
+								   <div class="review__box-column">
+								   	  <div class="review__slide ">
+								   	  	<div class="review__block  " id="vk_post_-177487301_2366"></div>
+								   	  </div>
+
+								   	 <!--  <div class="review__slide opacity">
+								   	  	<div class="review__block " id="vk_post_-177487301_2511"></div>
+								   	  </div>
+								   	  <div class="review__slide opacity">
+								   	  	<div class="review__block " id="vk_post_-185567954_466"></div>
+								   	  </div>
+								   	   <div class="review__slide opacity">
+								   	  	<div class="review__block " id="vk_post_-185567954_458"></div>
+								   	  </div>
+					                  <div class="review__slide opacity">
+					                  	<div class="review__block " id="vk_post_3148705_4670"></div>
+					                  </div>
+					                  <div class="review__slide opacity">
+					                  	<div class="review__block" id="vk_post_260448492_878"></div>
+					                  </div>
+					                  <div class="review__slide opacity">
+					                  	<div class="review__block " id="vk_post_1472247_10997"></div>
+					                  </div> -->
+					                 
+								   </div>
+					
+								   <div class="review__box-column">
+								
+									   	<div class="review__slide">
+									   		<div class="review__block" id="vk_post_-177487301_2586"></div>
+									   	</div>
+										   	  	
+									   	 <!-- <div class="review__slide opacity" >
+									   	   	<div class="review__block "  id="vk_post_-177487301_2682"></div>
+									   	 </div>
+						                <div class="review__slide opacity">
+						                  	<div class="review__block "  id="vk_post_-172254384_587"></div>
+						                 </div>
+						                 <div class="review__slide opacity">
+						                  	<div class="review__block "  id="vk_post_-185567954_198"></div>
+						                 </div>
+						                 <div class="review__slide opacity" >
+									   	   	<div class="review__block "  id="vk_post_-185567954_464"></div>
+									   	 </div>
+									   	  <div class="review__slide opacity">
+							                  	<div class="review__block"  id="vk_post_-146357500_805"></div>
+							                  </div> -->
+					                  
+								   </div> 
+					
+								   <div class="review__box-column">											   	  
+									   	  	  <div class="review__slide">
+									   	  		 <div class="review__block  " id="vk_post_-177487301_2721"></div>
+									   	      </div>								   	 
+										   	  <!-- <div class="review__slide opacity">
+										   	  	<div class="review__block " id="vk_post_-177487301_2555"></div>
+										   	  </div>
+										   	   <div class="review__slide opacity">
+										   	  	<div class="review__block " id="vk_post_-185567954_467"></div>
+										   	  </div>
+										   	  <div class="review__slide opacity">
+										   	  	<div class="review__block " id="vk_post_-185567954_433"></div>
+										   	  </div>
+							                  <div class="review__slide opacity">
+							                  	<div class="review__block "  id="vk_post_-185567954_136"></div>
+							                  </div>
+							                  <div class="review__slide opacity">
+							                  	<div class="review__block "  id="vk_post_-6284321_1003"></div>
+							                  </div> -->
+							                 
+								   </div>
+								  
+		 				     										
+							</div>
+							<!-- <div class="sl-count__main"><span class="sl-count__num__main">1</span> из <span class="sl-count__total__main"></span></div> -->
+		
+            </div>
+									
+		</div>
+
+							<!-- <div style="opacity:0" class="review__button-wrapper">
+								<div class="review__button">Показать все</div>
+							</div> -->
+	</div>
 <!-- КАРТА -->
         <div class="map content">
         	<h2 class="main-title">Карта проезда</h2>
         	
         	<div id="map" style="width: 100%; height: 400px"></div>
 
-			<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+			
+        </div>
+
+		 
+<!-- БЛОК КУПИТ БИЛЕТ	 -->	
+        <div class="buy-ticket content" id="buy-widget">
+        	     <h2 class="main-title">Купить билет</h2>
+
+        	     <div class="buy-ticket__wrapper container-1500">
+	        	    <div class="buy-widget">
+	        	    	<span data-tc-event-inline="5d56ba00ceda4cf747df195b" data-tc-token="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImlzcyI6InRpY2tldHNjbG91ZC5ydSJ9.eyJwIjoiNWI1OWQzZGIwYjdlMGQwMDBiZTY3ZTZiIn0.gF_AxKsd2cfbnQMAopUXnQRc7xiqNkvdUclfjTsBGFA"> </span>
+	        	    	
+	        	    	 
+	        	    </div>
+        	     </div>
+        	    
+        </div>	
+
+<!-- ПОДВАЛ САЙТА   -->   
+        <footer class="footer content">
+        	<div class="footer__wrapper container-1500">
+        		<div class="footer__block footer__block--1" ><a href="#"><img src="img/footer-logo.svg" alt=""></a>
+        		</div>
+
+        		<div class="footer__block footer__block--2">
+        			<div class="footer__block-text ">Дополнительная информация:</div>
+        			<div class="footer__social">
+        				<a class="footer__social-item footer__social-item1" href="https://www.facebook.com/events/614880268919973/" target="blank">
+        					<img class="footer-facebook" src="img/facebook-logo.png" alt="Facebook">
+        					<img class="footer-facebook-hover" src="img/facebook-logo-hover.png" alt="Facebook">
+        				</a>
+        				<a class="footer__social-item footer__social-item2" href="https://vk.com/shpongleinmoscow" target="blank">
+        					<img class="footer-vk" src="img/vk-logo.png" alt="Vkontakte">
+        					<img class="footer-vk-hover" src="img/vk-logo-hover.png" alt="Vkontakte">
+        				</a>
+        				<a class="footer__social-item footer__social-item3" href="https://t.me/skazkafestival" target="blank">
+        					<img class="footer-telegram" src="img/telegram-logo.png" alt="Telegram">
+        					<img class="footer-telegram-hover" src="img/telegram-logo-hover.png" alt="Telegram">
+        				</a>
+        				<a class="footer__social-item footer__social-item4" href="https://www.instagram.com/skazkafestival.ru/" target="blank">
+        					<img class="footer-instagram" src="img/instagram-logo.png" alt="Instagram">
+        					<img class="footer-instagram-hover" src="img/instagram-logo-hover.png" alt="Instagram">
+        				</a>
+        			</div>
+        		</div>
+
+        		<div class="footer__block footer__block--3">
+        			<a class="footer__link" href="http://mystar.ru/" target="blank"><img src="img/my-stars-logo.svg" alt=""></a>
+        			<a class="footer__link" href="#" target="blank"><img src="img/music-media-dome-logo.svg" alt=""></a>
+        		</div>
+
+
+
+        		
+        	</div>
+        	
+        </footer> 
+
+
+ 
+<script src="js/youtube.js"></script>
+<!-- ЭТОТ СКРИПТ ДЛЯ УПРАВЛЕНИЯ КАРТОЙ -->
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 			<script type="text/javascript">
 			ymaps.ready(init);
 
@@ -352,103 +707,44 @@
 			    myMap.geoObjects.add(clusterer);
 			    // Отлючаем возможность изменения масштаба
 			    myMap.behaviors.disable('scrollZoom');
+			    //так отключаются мультитач жесты
+                myMap.behaviors.disable('multiTouch');
+                // а так перетаскивание карты
+				myMap.behaviors.disable('drag');
+			    myMap.controls.add('zoomControl');
 
 			}
 			</script> 
-        </div>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  
+     ym(49486963, "init", {
+          id:49486963,
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+     });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/49486963" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+  
+  
+  <script type="text/javascript">
+          ! function () {
+              var t = document.createElement("script");
+              t.type = "text/javascript", t.async = !0, t.src = "https://vk.com/js/api/openapi.js?156", t.onload = function () {
+                  VK.Retargeting.Init("VK-RTRG-259510-5ZSCA"), VK.Retargeting.Hit()
+              }, document.head.appendChild(t)
+          }();
+    </script>
+    <noscript>
+      <img src="https://vk.com/rtrg?p=VK-RTRG-259510-5ZSCA" style="position:fixed; left:-999px;" alt=""/>
+    </noscript>
 
-		 
-<!-- БЛОК КУПИТ БИЛЕТ	 -->	
-        <div class="buy-ticket content">
-        	     <h2 class="main-title">Купить билет</h2>
-        	    
-        </div>	
 
-<!-- ПОДВАЛ САЙТА   -->   
-        <footer class="footer content">
-        	<div class="footer__wrapper container-1500">
-        		<div class="footer__block footer__block--1" ><a href="#"><img src="img/footer-logo.svg" alt=""></a>
-        		</div>
-
-        		<div class="footer__block footer__block--2">
-        			<div class="footer__block-text ">Дополнительная информация:</div>
-        			<div class="footer__social">
-        				<a class="footer__social-item" href="#"><img src="img/facebook-logo.svg" alt="Facebook"></a>
-        				<a class="footer__social-item" href="#"><img src="img/vk-logo.svg" alt="Vkontakte"></a>
-        				<a class="footer__social-item" href="#"><img src="img/telegram-logo.svg" alt="Telegram"></a>
-        				<a class="footer__social-item" href="#"><img src="img/instagram-logo.png" alt="Instagram"></a>
-        			</div>
-        		</div>
-
-        		<div class="footer__block footer__block--3">
-        			<a class="footer__link" href="#"><img src="img/my-stars-logo.svg" alt=""></a>
-        			<a class="footer__link" href="#"><img src="img/music-media-dome-logo.svg" alt=""></a>
-        		</div>
-
-
-
-        		
-        	</div>
-        	
-        </footer>   
-<div class="modal" id="modal01">
-		<div class="heading-holder">
-			<span class="close">close</span>
-			<h2>SIMON POSFROD</h2>
-		</div>
-		<div class="modal-wrap">
-			<div class="modal-left">
-				<div class="img-holder">
-					<img src="img/astral-projection.png" alt="image">
-				</div>
-			</div>
-			<div class="modal-right">
-				<div class="video-holder">
-					<iframe src="//vk.com/video_ext.php?oid=-185564561&id=456239024&hash=b65b3d73049f096b" width="426" height="240" frameborder="0" allowfullscreen></iframe> 
-				</div>
-			</div>
-		</div>
-	</div>
-              
-<div class="modal" id="modal02">
-		<div class="heading-holder">
-			<span class="close">close</span>
-			<h2>SIMON POSFROD</h2>
-		</div>
-		<div class="modal-wrap">
-			<div class="modal-left">
-				<div class="img-holder">
-					<img src="img/astral-projection.png" alt="image">
-				</div>
-			</div>
-			<div class="modal-right">
-				<div class="video-holder">
-
-					<div class="youtube iframe" id="5DrExnI-oaE"></div> 
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal" id="modal03">
-		<div class="heading-holder">
-			<span class="close">close</span>
-			<h2>ОДНО НО</h2>
-		</div>
-		<div class="modal-wrap">
-			<div class="modal-left">
-				<div class="img-holder">
-					<img  alt="image">
-				</div>
-			</div>
-			<div class="modal-right">
-				<div class="video-holder">	
-				<div class="youtube iframe" id="5DrExnI-oaE"></div> 	
-					</div>
-			</div>
-		</div>
-	</div>
-
-	 
-<script src="js/youtube.js"></script>
 </body>
 </html>
