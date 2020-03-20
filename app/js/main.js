@@ -1,20 +1,47 @@
 
 
 $(document).ready(function(){
+// ПЕРЕКЛЮЧЕНИЕ ТАБОВ
+$('.tab-link').on('click', function () {
+        var container = $(this).parent().parent();
+        var curid = $(this).data('id'),
+                tabs = $('.tab-link'),
+                holderTab = $('.tab-info');
+        // holderTab.hide();
+        // $('#'+ curid).fadeIn(700);
+        container.find('.tab-info').addClass('hide');
+        $('#' + curid).removeClass('hide');
+        container.find('.tab-link').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    });
+ // СЛАЙДЕР СТРАНИЦЫ ПРОДУКТА
+   $('.product__slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.product__slider-nav'
+  });
+  $('.product__slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.product__slider-for',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true
+  });
 
-// СЛАЙДЕР С ФОТО
 
-// $('.foto-slider').css({
-//        overflow: 'visible',
-//        opacity: '1',
-//        height: 'auto'
+    $('.decisions__slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    centerMode: false,
 
-//      });
-
-
-// МОДАЛКИ
-
-      var link = $('.simplebox');
+  });
+// МОДАЛЬНЫЕ ОКНА
+    var link = $('.simplebox');
      
       $(link).click(function() {
         event.preventDefault();
@@ -23,130 +50,26 @@ $(document).ready(function(){
         $('body').css({
       overflow: 'hidden'
     });
-        $('.foto-slider').slick({
-
-  slidesToShow: 1,
-  arrows:true,
-  infinite:false,
-  autoplay:false
-});
   });    
-
-        
-
-//при закрытии модалки останавливать и видео
-$('.close').click(function() {
-  $(".modal-container").fadeOut(300);
-   location.reload();
-
-});
-
-
-
-// СПОЙЛЕРЫ
-
-$( '.faq__question').click(
-  function() {
-    $(this).next('.faq__answer').slideToggle(500);
-    $(this).toggleClass('faq-rotate');
-
-  }
-);
-// ПОЯВЛЕНИЕ ОТЗЫВОВ ПО КЛИКУ
-$('.review__button').click(function() {
-
-	  // $('.review__slide.hidden').removeClass('hidden');
-   //  $('.review__block.hidden').removeClass('hidden');
-     $('.review').css({
-       height: 'auto',
-       overflow: 'visible'
-     });
-    $('.review__slide.opacity').removeClass('opacity');
-	  $(this).addClass('hidden');
-});
-
-
-
-// // СЛАЙДЕР С ОТЗЫВАМИ
-// function checkWidth() {
-//     var windowWidth = $('body').innerWidth(),
-//         elem = $(".review__slide"); // лучше сохранять объект в переменную, многократно чтобы не насиловать 
-//                                     // страницу для поиска нужного элемента
-//     if(windowWidth < 426){
-//       elem.unwrap(); 
-//        $('.review__slide.opacity').removeClass('opacity'); 
-//       $('.review__box').addClass('review-slider'); 
-//       $('.review-slider').slick({
-
-//   slidesToShow: 1,
-//   arrows:true,
-//   infinite:true,
-//   autoplay:false,
-//   adaptiveHeight:true
-
-  
-// });
-// $('.review-slider').css({
-//        overflow: 'visible',
-//        opacity: '1',
-//        height: 'auto'
-//      });
-
-// var slider4 = $('.sl-rb');
-//   $('.sl-count__total__main').text( slider4.slick("getSlick").slideCount);
-//   $(".sl-rb").on('afterChange', function(event, slick, currentSlide){
-//        $(".sl-count__num__main").text(currentSlide + 1);
-//   });
-//     }
-//   }
-//   checkWidth(); // проверит при загрузке страницы
-//  $(window).resize(function(){
-//     checkWidth(); // проверит при изменении размера окна клиента
-//   });
-
-
-// var slider4 = $('.sl-rb');
-//   $('.sl-count__total__main').text( slider4.slick("getSlick").slideCount);
-//   $(".sl-rb").on('afterChange', function(event, slick, currentSlide){
-//        $(".sl-count__num__main").text(currentSlide + 1);
-//   });
- $('.video-slider').slick({
-
-  slidesToShow: 1,
-  arrows:true,
-  infinite:false,
-  autoplay:false
-  
-});
-
-
-
-$('.video-slider').css({
-       overflow: 'visible',
-       opacity: '1',
-       height: 'auto'
-
-     });
- // ОСТАНОВКА ВИДЕО ПРИ ПЕРЕЛИСТЫВАНИИ СЛАЙДОВ
-$('.video-slider').on('init', function(event, slick){
-    //init code goes here
-}).on('afterChange',function(e,o){
-    //on change slide = do action
-    $('iframe').each(function(){
-        $(this)[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');    
+  $('.modal-container').click(function(e) {
+         $(this).fadeOut(300);
+         $('body').css({
+      overflow: 'visible'
     });
-}).slick();
+    // location.reload();
+     console.log('parent function');
+     })
+    .on('click','div', function(e) { 
+       e.stopPropagation();       
+   });
+    $('.close').click(function() {
+  $(".modal-container").fadeOut(300);
+$('body').css({
+      overflow: 'visible'
+    });
 
-
- // СЛАЙДЕР С ВИДЕО
-
-  
-
- 
-
-
-
-
+});
+// 
 });
 
 
