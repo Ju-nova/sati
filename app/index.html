@@ -34,19 +34,43 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
- -->	   
+ -->
+  <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+ <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+ <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+ <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+ <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="fav/android-icon-192x192.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+<link rel="manifest" href="fav/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"> 	   
 	    <title>Homeworks</title>
 
 		<link rel="stylesheet" href="css/slick.css" media="all" />
-		<link rel="stylesheet" href="css/slick-theme.css" media="all" />
-		<link rel="stylesheet" href="css/main.min.css">
+<!-- 		<link rel="stylesheet" href="css/slick-theme.css" media="all" /> -->
+
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/normalize.css">
+		
+		<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 
-
-
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>		 
-		<script src="js/slick.js"></script>       
+		<script src="js/slick.js"></script>
+
+		<script src="js/lazyload.js"></script>  
+
+		<script src="js/fancybox/jquery.fancybox.min.js"></script> 		
+
 		<script src="js/main.js"></script>
 
 
@@ -56,11 +80,11 @@
 <body>
 
 	<header>
-		МЕНЮ
+	
 	</header>
 
 
-	<main>
+	<main class="container">
 		<div class="product">
 
   			<div class="breadcrumbs">
@@ -88,28 +112,33 @@
             	<div class="product__block-wrapper">
 
             		<!-- СЛАЙДЕР ПРОДУКТА -->
-            		<div class="product__block-slider product-slider">
+            		<div class="product__block-slider product-slider slider">
 						 <div  class="product__slider-for">
-
+                                <a  data-fancybox="gallery"  data-src="img/hubstaff1.png" class="fancybox">
 								<img src="img/hubstaff1.png" alt="">
-							
+							    </a>
+							    <a  data-fancybox="gallery"   data-src="img/hubstaff2.png" class="fancybox">
 								<img src="img/hubstaff2.png" alt="">
-							
+							    </a>
+							    <a  data-fancybox="gallery"  data-src="img/hubstaff1.png" class="fancybox">
 								<img src="img/hubstaff1.png" alt="">							
-							
+							    </a>
+							    <a  data-fancybox="gallery"   data-src="img/hubstaff2.png" class="fancybox">
 								<img src="img/hubstaff1.png" alt="">
-						
+						        </a>
 						</div>
             			<div class="product__slider-nav">
-
-            				<img src="img/hubstaff1.png" alt="">
-  
+                             <a  data-fancybox="item"   data-src="img/hubstaff1.png" class="fancybox">
+            				<img src="img/hubstaff1.png" alt="" >
+                            </a>
+                            
+                            <a  data-fancybox="item"   data-src="img/hubstaff2.png" class="fancybox">
             				<img src="img/hubstaff2.png" alt="">
-
+							</a>
+            				<img src="img/hubstaff1.png1" alt="">
+								 <a  data-fancybox="item"   data-src="img/hubstaff1.png" class="fancybox">
             				<img src="img/hubstaff1.png" alt="">
- 
-            				<img src="img/hubstaff1.png" alt="">
-
+							</a>
             			</div>						
 					</div>	
 
@@ -120,21 +149,21 @@
             				<img src="img/logo-hubstaff.png" alt="">
             			</div>
             			<div class="product__block-text">
-            				<p>Hubstaff — это система для отслеживания времени с функциями захвата скриншотов, мониторинга работы, автоматического начисления заработной платы, расширенными отчётами, отслеживанием в реальном времени и GPS.
-            				<br>
-            				<br>
-            				 Сервис интегрируется с более чем 30 популярными инструментами. Hubstaff подходит для удалённых команд, малому бизнесу и консультантам / фрилансерам. </p>
+            				<p>Hubstaff — это система для отслеживания времени с функциями захвата скриншотов, мониторинга работы, автоматического начисления заработной платы, расширенными отчётами, отслеживанием в реальном времени и GPS.</p>
+<p>
+	Сервис интегрируется с более чем 30 популярными инструментами. Hubstaff подходит для удалённых команд, малому бизнесу и консультантам / фрилансерам.</p>
+<p>Сервис интегрируется с более чем 30 популярными инструментами. Hubstaff подходит для удалённых.</p>
             				 <div class="product__block-link-wrapper">
             				 	<div class="product__block-link-name"> Сайт системы:</div>
-            				 	<div class="product__block-link-name"> <a href="https://hubstaff.com/" target="blank">https://hubstaff.com/</a></div>
+            				 	<div class="product__block-link"> <a href="https://hubstaff.com/" target="blank">https://hubstaff.com/</a></div>
             				 </div>
             				 <div class="product__block-link-wrapper">
             				 	<div class="product__block-link-name">Тарифы</div>
-            				 	<div class="product__block-link-name"><a href="https://hubstaff.com/pricing" target="blank">https://hubstaff.com/pricing</a></div>
+            				 	<div class="product__block-link"><a href="https://hubstaff.com/pricing" target="blank">https://hubstaff.com/pricing</a></div>
             				 </div>
             				 <div class="product__block-link-wrapper">
             				 	<div class="product__block-link-name">API</div>
-            				 	<div class="product__block-link-name"><a href="https://developer.hubstaff.com" target="blank">https://developer.hubstaff.com</a></div>
+            				 	<div class="product__block-link"><a href="https://developer.hubstaff.com" target="blank">https://developer.hubstaff.com</a></div>
             				 </div>
             				 <div class="product__block-btns">
             				 	<a class="simplebox btn btn--blue" href="#modal-form"> Хочу использовать</a>
@@ -160,44 +189,223 @@
 		                  <a href="#" id="menu-tab-review" class=" tab-link" data-id="tab-review">Отзывы(5)</a>
 		                </div>
 
-	                    <div class="tab-info" id="tab-opportunity">
+	                    <div class="tab-info product__tab-info" id="tab-opportunity">
 
 	                    	<ul>
-	                    		<li>
-	                    			Уровни активности.
-	                    		</li>
-	                    		<li>
-	                    			Уровни активности.
-	                    		</li>
-	                    		<li>
-	                    			Уровни активности.
-	                    		</li>
-	                    		<li>
-	                    			Уровни активности.
-	                    		</li>
-	                    		<li>
-	                    			Уровни активности.
-	                    		</li>
-	                    		<li>
-	                    			Уровни активности.
-	                    		</li>
-	                    		<li>
-	                    			Уровни активности.
-	                    		</li>
+	                    		<li>Отслеживание времени, затраченного на решение отдельных задач, на весь проект или на клиента.</li>
+<li>Создание и отправка инвойсов, а также напоминаний должникам.</li>
+<li>Совместная работа над проектами/задачами группой сотрудников.</li>
+<li>Редактирование одного документа разными членами команды.</li>
+<li>Регулируемый доступ к проекту и данным для сотрудников и клиентов.</li>
+<li>Хранение логов активности.</li>
+<li>Настраиваемые события в календаре, в том числе повторяющиеся.</li>
+<li>Продвинутые отчеты, позволяющие отслеживать переводы, а также таймлайны по командам и клиентам, сравнивать плановое и затраченное время на реализацию проекта / решение задачи.</li>
+<li>Интеграция с e-mail (уведомления сотрудникам).</li>
+<li>Компьютерная и мобильная версии.</li>
+<li> Хранение логов активности.</li>
+<li> Настраиваемые события в календаре, в том числе повторяющиеся.</li>
+<li> Продвинутые отчеты, позволяющие отслеживать переводы, а также таймлайны по командам и клиентам, сравнивать плановое и затраченное время на реализацию проекта / решение задачи.</li>
+<li>  Интеграция с e-mail (уведомления сотрудникам).</li>
+<li>Компьютерная и мобильная версии.</li>
+
 	                    	</ul>
+	                    	<div class="product__block-link--mobile">
+	                    		
+            				 <div class="product__block-link-wrapper">
+            				 	<div class="product__block-link-name"> Сайт системы:</div>
+            				 	<div class="product__block-link"> <a href="https://hubstaff.com/" target="blank">https://hubstaff.com/</a></div>
+            				 </div>
+            				 <div class="product__block-link-wrapper">
+            				 	<div class="product__block-link-name">Тарифы</div>
+            				 	<div class="product__block-link"><a href="https://hubstaff.com/pricing" target="blank">https://hubstaff.com/pricing</a></div>
+            				 </div>
+            				 <div class="product__block-link-wrapper">
+            				 	<div class="product__block-link-name">API</div>
+            				 	<div class="product__block-link"><a href="https://developer.hubstaff.com" target="blank">https://developer.hubstaff.com</a></div>
+            				 </div>	               
+	                    	</div>
 			
 	                    </div>
 
-		                <div class="tab-info hide" id="tab-integration">
+		                <div class="tab-info product__tab-info  hide" id="tab-integration">
+		                	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit rerum inventore, molestias suscipit repellendus ex neque totam molestiae illo eveniet dolor, quibusdam in labore tempore quidem voluptatum ullam soluta! Maiores!</p>
 
 		                </div>
 
-		                <div class="tab-info hide" id="tab-tarifs">
+		                <div class="tab-info product__tab-info  hide" id="tab-tarifs">
 		                   
 		                </div>
 		  
-	                    <div class="tab-info hide" id="tab-review">
-	                    
+	                    <div class="tab-info product__tab-info hide" id="tab-review">
+		                	<div class="review">
+		                		<div class="review__title">
+		                		   <div class="review__title-name">Иван Иванов</div>
+		                		   <div class="review__title-raiting">
+			                		   	<div class="review__title-using review__title-using--orange">Постоянно использую</div>
+										  <div class="review__title-rate">
+											<div class="rating-result">
+												<span class="active"></span>	
+												<span class="active"></span>    
+												<span class="active"></span>  
+												<span></span>    
+												<span></span>
+											</div>
+											<div class="review__title-mark">5/5</div>
+	
+			                		   </div>
+
+		                		   </div>
+		                		</div>   
+                                <div class="review__block-title">Название</div>
+                                <div class="review__block-text">
+	                                <p>	Этот сервис использовали как инструмент повышения эффективности и продуктивности. В первое время возникало ощущение, что «за нами следят». Система с определенной периодичностью снимает скриншоты рабочего стола. </p>
+	                             	 <p> Со временем к этому привыкаешь. В основном использовали для того, чтобы чекать время, которое уходит у каждого сотрудника на выполнение задач по проектам клиентов. Он помог выявить обезжиренные проекты, которые требуют много внимания, но приносят мало денег. </p>
+	                             	 <p>Если видели, что на какую-то задачу уходит прям много времени, разбирали и находили решение, как эту задачу сделать проще и лучше.</p>
+                                </div>
+
+		                	</div>  
+
+
+		                	<div class="review">
+		                		<div class="review__title">
+		                		   <div class="review__title-name">Иван Иванов</div>
+		                		   <div class="review__title-raiting">
+			                		   	<div class="review__title-using review__title-using--red">Иногда использую</div>
+										  <div class="review__title-rate">
+											<div class="rating-result">
+												<span class="active"></span>	
+												<span class="active"></span>    
+												<span class="active"></span>  
+												<span></span>    
+												<span></span>
+											</div>
+											<div class="review__title-mark">5/5</div>
+	
+			                		   </div>
+
+		                		   </div>
+		                		</div>   
+                                <div class="review__block-title">Название</div>
+                                <div class="review__block-text">
+	                                <p>	Этот сервис использовали как инструмент повышения эффективности и продуктивности. В первое время возникало ощущение, что «за нами следят». Система с определенной периодичностью снимает скриншоты рабочего стола. </p>
+	                             	 <p> Со временем к этому привыкаешь. В основном использовали для того, чтобы чекать время, которое уходит у каждого сотрудника на выполнение задач по проектам клиентов. Он помог выявить обезжиренные проекты, которые требуют много внимания, но приносят мало денег. </p>
+	                             	 <p>Если видели, что на какую-то задачу уходит прям много времени, разбирали и находили решение, как эту задачу сделать проще и лучше.</p>
+                                </div>
+
+		                	</div> 
+
+		                	<div class="review">
+		                		<div class="review__title">
+		                		   <div class="review__title-name">Иван Иванов</div>
+		                		   <div class="review__title-raiting">
+			                		   	<div class="review__title-using review__title-using--green">Являюсь экспертом</div>
+										  <div class="review__title-rate">
+											<div class="rating-result">
+												<span class="active"></span>	
+												<span class="active"></span>    
+												<span class="active"></span>  
+												<span></span>    
+												<span></span>
+											</div>
+											<div class="review__title-mark">5/5</div>
+	
+			                		   </div>
+			                	</div>
+		                		</div>   
+                                <div class="review__block-title">Название</div>
+                                <div class="review__block-text">
+	                                <p>	Этот сервис использовали как инструмент повышения эффективности и продуктивности. В первое время возникало ощущение, что «за нами следят». Система с определенной периодичностью снимает скриншоты рабочего стола. </p>
+	                             	 <p> Со временем к этому привыкаешь. В основном использовали для того, чтобы чекать время, которое уходит у каждого сотрудника на выполнение задач по проектам клиентов. Он помог выявить обезжиренные проекты, которые требуют много внимания, но приносят мало денег. </p>
+	                             	 <p>Если видели, что на какую-то задачу уходит прям много времени, разбирали и находили решение, как эту задачу сделать проще и лучше.</p>
+                                </div>
+
+		                	</div> 
+                            
+                            <form class="review__form">
+                            	<div class="review__form-title">Добавить отзыв</div>	
+                            	<div class="review__form-rating">
+
+										<div class="review__form__radio-wrapper">
+												<div class="review__form__radio-title">Ваш опыт использования продукта <span class="red">*</span></div>
+												<div class="review__form__radio">   
+													<div class="review-radbtn_wrapper">
+														<input class="review-radbtn__input" name="use" type="radio" id="simple">
+														<label class="review-radbtn__label review-radbtn__label--orange" for="simple">Иногда использую</label>	
+													</div>
+
+													<div class="review-radbtn_wrapper">
+													<input class="review-radbtn__input" name="use" type="radio" id="middle" data-id="price1" >
+													<label class="review-radbtn__label review-radbtn__label--red" for="middle"> Постоянно использую</label>
+													</div>
+
+													<div class="review-radbtn_wrapper">
+													<input  class="review-radbtn__input" name="use" type="radio" id="hard" data-id="price2" checked="">
+													<label class="review-radbtn__label review-radbtn__label--green" for="hard"> Являюсь экспертом</label>
+													</div>
+												</div>
+	                            	   </div>
+
+										<div class="rating-area__block">
+											<div class="rating-area__marks">Ваша оценка продукта<span class="red">*</span></div>
+										    <div class="rating-area__bal">4 </div>	
+											<div class="rating-area">
+													<input type="radio" id="star-5" name="rating" value="5">
+													<label for="star-5" title="Оценка «5»"></label>	
+													<input type="radio" id="star-4" name="rating" value="4">
+													<label for="star-4" title="Оценка «4»"></label> 														
+													<input type="radio" id="star-3" name="rating" value="3">
+													<label for="star-3" title="Оценка «3»"></label>
+													<input type="radio" id="star-2" name="rating" value="2">
+													<label for="star-2" title="Оценка «2»"></label> 													
+													<input type="radio" id="star-1" name="rating" value="1">
+													<label for="star-1" title="Оценка «1»"></label>	
+						
+											</div>
+	
+                                        </div>
+
+                            	</div>
+
+                                <div class="review__form-input-title">Общие впечатления (Заголовок отзыва)<span class="red">*</span></div>
+								<input type="text" class="review__form-text-title">
+								<div class="review__form-input-title">Текст отзыва<span class="red">*</span></div>
+								<textarea class="review__form-text"></textarea>
+								 <div class="review__form-coordinat">
+								 	<div>
+								 		<div class="review__form-input-title">Имя<span class="red">*</span></div>
+								 		<input type="text" required="">
+								 	</div>
+								 	<div>
+								 		<div class="review__form-input-title">E-mail<span class="red">*</span></div>
+								 		<input type="e-mail" required="">
+								 	</div>								 	
+								 </div>
+
+								<div class="review__form-privacy-wrapper">
+									<div class="review__form-privacy">
+										<input type="radio" id="privacy" name="privacy">
+										<label for="privacy">Согласен с <a href="#">политикой конфиденциальности и пользовательским соглашением</a></label>
+									</div>
+									<input class="review__form-submit btn btn--blue" type="submit" value="Оставить отзыв">
+								 </div>                    
+                     	        </form>
+
+		                	<div class="review__under-block">
+		                		
+		                			<ul class="review__pagination">
+									  <li><a href="#" class="prev"></a></li>
+									  <li><a href="#" class="active">1</a></li>
+									  <li> <a href="#">2</a></li>
+									  <li> <a href="#">3</a></li>
+									  <li> <a href="#">4</a></li>
+									  <li> <a href="#">5</a></li>
+
+									  <li><a href="#" class="next"></a></li>
+	                               </ul>
+                          <a class="review__btn btn btn--blue" href="#"> Оставить отзыв</a>								
+		                		
+		                	</div> 	       
+
 	                    </div>
 		               
 		           </div>
@@ -208,8 +416,10 @@
 		           	   <div class="product_consultation-img">
 		           	   	<img src="img/img1.png" alt="">
 		           	   </div>
-		           	   	<h4 class="product_consultation-title">Экспертная консультация</h4>  
-		           	   	<p>по выбору, настройке и особенностям интеграции ПО для оптимизации ваших бизнес-процессов</p>
+		           	   	<div class="product_consultation-wrapper">
+		           	   		<h4 class="product_consultation-title">Экспертная консультация</h4>  
+		           	   		<p>по выбору, настройке и особенностям интеграции ПО для оптимизации ваших бизнес-процессов</p>
+		           	   	</div>
                          <a class="simplebox btn btn--blue" href="#modal-form"> Отправить заявку</a>
 		           </div>
 					
@@ -217,8 +427,8 @@
 
 			<!-- СЛАЙДЕР С ПОХОЖИМИ РЕШЕНИЯМИ -->
 			<section class="decisions">
-				<h5 class="decisions__title">Похожие решения</h5>
-				<div class="decisions__slider">
+				<h5 class="decisions__title"><a href="">Похожие решения</a></h5>
+				<div class="decisions__slider slider">
 					<a class="decisions__slide">
 						<div class="decisions_slide-logo">
 							<img src="img/logo-hubstaff.png" alt="">
@@ -231,7 +441,7 @@
 							<img src="img/logo-hubstaff.png" alt="">
 						</div>
 						<h3 class="decisions__title">Hubstaff</h3>
-						<p>Сервис для учёта рабочего времени, создания скриншотов и уровнями активности</p>
+						<p>Сервис для учёта рабочего времени, создания скриншотов и уровнями активности Сервис для учёта рабочего времени, создания скриншотов и уровнями активности </p>
 					</a>
 					<a class="decisions__slide">
 						<div class="decisions_slide-logo">
