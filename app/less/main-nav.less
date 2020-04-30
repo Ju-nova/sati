@@ -1,0 +1,127 @@
+// ВЕРХНЯЯ НАВИГАЦИЯ САЙТА	
+
+.main-nav{
+
+	// padding:10px;
+	// box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.16);
+	position:relative;
+}
+.main-nav--closed .main-nav__menu{
+// display:none;
+
+}
+.main-nav__toggle {
+position:relative;
+    width: 21px;
+    height: 21px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    margin-left: auto;
+    -webkit-tap-highlight-color: transparent;
+    outline: none
+}
+.main-nav--closed .main-nav__toggle:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 3px;
+    background-color: @main-blue;
+    box-shadow: 0 6px 0 0 @main-blue, 0 12px 0 0 @main-blue;
+}
+.main-nav--closed .main-nav__toggle::after{
+	content:none
+}
+
+.main-nav__toggle::before, .main-nav__toggle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 28px;
+    height: 3px;
+    background-color:@main-blue;
+}
+.main-nav__toggle::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.main-nav__toggle::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.main-nav__mob{
+	display: flex;
+	align-items: center;
+
+	padding:10px;
+	box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.16);
+
+}
+.main-nav__logo{
+	margin-right:15px ;
+	width:70px;
+}
+
+.main-nav__tel a{
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+color:#000;
+text-decoration: none;
+
+}
+.main-nav__address {
+	margin-top: 7px;
+	font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+padding-left:18px;
+position:relative;
+&:before{
+	content:'';
+	display: inline-block;
+	width: 10px;
+	height:14px;
+	background-image:url(../img/location.svg);
+	background-repeat:no-repeat;
+	position:absolute;
+	left:0;
+}
+}
+.main-nav__menu{
+	padding:10px;
+position: fixed;
+    overflow-y: scroll !important;
+    background-color: #fff;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+}
+.main-nav__menu-btns{
+	display:flex;
+	justify-content: center
+}
+.main-nav__menu-lk  a,
+.main-nav__menu-connect a{
+	display: flex;
+	margin:0 10px;
+	font-size: 12px;
+line-height: 12px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+background: #FFFFFF;
+border: 1px solid #46A6E4;
+box-sizing: border-box;
+border-radius: 100px;
+text-decoration: none;
+width:140px;
+height:35px;
+align-items: center;
+justify-content: center
+
+}
