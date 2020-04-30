@@ -28,13 +28,25 @@ body {
   background-color: #fff;
   color: #000000;
 }
+body.hidden {
+  overflow: hidden;
+}
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
 .main-nav {
-  position: relative;
+  background-color: #fff;
+}
+.main-nav--closed .main-nav__menu {
+  display: none;
 }
 .main-nav__toggle {
   position: relative;
@@ -127,7 +139,7 @@ img {
   left: 0;
 }
 .main-nav__menu {
-  padding: 10px;
+  padding: 10px 0;
   position: fixed;
   overflow-y: scroll !important;
   background-color: #fff;
@@ -135,7 +147,6 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  height: auto;
 }
 .main-nav__menu-btns {
   display: -webkit-box;
@@ -175,4 +186,60 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.main-nav__menu-connect a {
+  color: #fff;
+  background-color: #46A6E4;
+}
+.site-nav__list {
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #46A6E4;
+}
+.with-submenu {
+  position: relative;
+}
+.with-submenu:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 57px;
+  background: url(../img/arrow.svg) no-repeat right 10px center;
+  background-size: 16px 19px;
+  right: 0;
+  top: 0;
+}
+.with-submenu.open:after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: url(../img/arrow.svg) no-repeat left 10px center;
+  background-size: 16px 19px;
+}
+.site-nav__list-item a {
+  display: block;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #46A6E4;
+  padding: 20px 50px 20px 25px;
+}
+.site-nav__submenu {
+  display: none;
+  padding-left: 0px;
+  border-bottom: 1px solid #46A6E4;
+}
+.site-nav__submenu-item {
+  padding: 0;
+  list-style: none;
+}
+.site-nav__submenu-item a {
+  padding: 10px 0 10px 40px ;
+  border: none;
+}
+.site-nav__submenu.open {
+  display: block;
 }
