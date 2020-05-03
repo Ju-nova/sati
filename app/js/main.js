@@ -20,13 +20,16 @@ $('body').toggleClass('hidden');
  $(subMenu).removeClass('open'); 
  $(ThisSubMenu).toggleClass('open');
  $(this).toggleClass('open');
+ $(subItem).not(this).removeClass('open');
+
 });
-           $('.site-nav__list-item a').on('click', function(event) {
-            event.stopPropagation();
+ $('.site-nav__list-item a').on('click', function(event) {
+ event.stopPropagation();
          
         });
 })
-
+ // if($("#lot .item").hasClass("waste"))
+ //    $("#state").text("Партия содержит брак!");
 
          //  var menuTab = $('.header-menu__nav > ul > .menu-item');
          //  var menuTabParent = $('.header-menu__nav > ul > li.current-menu-parent');
