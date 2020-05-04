@@ -27,6 +27,11 @@ $('body').toggleClass('hidden');
  event.stopPropagation();
          
         });
+
+
+$('.main-slider').slick({
+  dots:true,
+});
 })
  // if($("#lot .item").hasClass("waste"))
  //    $("#state").text("Партия содержит брак!");

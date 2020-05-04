@@ -16,3 +16,29 @@ border-radius: 100px;
 .btn.btn--blue{
 	background-color:@main-blue
 }
+.big-btn{
+	display: inline-block;
+box-shadow: 0px 32px 32px rgba(195, 198, 200, 0.3);
+border-radius: 100px;
+font-weight: 500;
+font-size: 15px;
+line-height: 15px;
+/* identical to box height */
+padding:23px 33px;
+text-align: center;
+text-transform: uppercase;
+background-color:#fff;
+
+color: #595959;
+@media(max-width: 1000px){
+font-size: 12px;
+line-height: 12px;
+/* identical to box height */
+padding:15px;	
+}
+}
+
+.big-btn.big-btn--blue{
+	color:#fff;
+	background-color:@main-blue
+}

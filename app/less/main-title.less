@@ -1,0 +1,37 @@
+.main-title h3{
+	margin:0;
+	padding:0;
+	font-weight: 700;
+font-size: 32px;
+line-height: 32px;
+}
+.main-title{
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+}
+.main-title__all{
+font-size: 16px;
+line-height: 16px;
+color: #060606;
+text-decoration: none;
+padding-right:17px;
+text-align: right;
+position:relative;
+&:after{
+	content:'';
+	display: inline-block;
+	position:absolute;
+	width: 6px;
+	height:8px;
+	background-image:url(../img/tringle.svg);
+	right:0;
+	top:50%;
+	margin-top: -4px
+}
+&:hover,
+&:active,
+&:focus{
+	color:@main-blue;
+}
+}
