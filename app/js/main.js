@@ -32,27 +32,34 @@ $('body').toggleClass('hidden');
 $('.main-slider').slick({
   dots:true,
 });
+
+$('#btn-check').click(function(){
+        var radio = $('input[name="radio"]:checked').data('id');
+      var level = "#" + radio;
+  // event.preventDefault();
+  if ($('input[name="radio"]').is(':checked')){
+
+ $('.faq__main').css('display','none');
+   $(level).css('display','block');
+   // $('body').css("background-color", "red");
+  } else {
+
+   $(level).addClass('class');
+  }
+  //   if ($('input[name="radio1"]').is(':checked')){
+  //   alert('Включен');
+  // } else {
+  //   alert('Выключен');
+  // }
+});
+//       var radioCheck = $('input[name="radio"]:checked').data('id');
+//       var levelCheck = "#" + radioCheck;
+// var btne = $(levelCheck).find('.btn');
+$('.btn-return').on('click',(function() {
+ // $(levelCheck).css('display','none'); 
+ $(this).parent().css('display','none');
+  $('.faq__main').css('display','block');
+}));
+
+
 })
- // if($("#lot .item").hasClass("waste"))
- //    $("#state").text("Партия содержит брак!");
-
-         //  var menuTab = $('.header-menu__nav > ul > .menu-item');
-         //  var menuTabParent = $('.header-menu__nav > ul > li.current-menu-parent');
-         //  var menuTabCurrent = $('.header-menu__nav > ul > li.current-menu-item');
-
-         //   // $(menuTabParent).find('.sub-menu').toggleClass('open');
-         //   $(menuTabCurrent).find('.sub-menu').addClass('open');
-         //   $(menuTabCurrent).addClass('white');
-         //   // $(menuTabCurrent).addClass('reverse');
-         //  $(menuTab).click(function() { 
-         //    var city = $(this).find('.sidebar-filtr__menu-links');
-         //    var town = $('.sidebar-filtr__menu-links').not(city);
-         //    var country  = $('.header-menu__nav > ul > .menu-item').not(this); 
-         //     $(town).removeClass('open');
-         //      $(city).toggleClass('open');
-         //      $(country).removeClass('white');
-         //     $(this).toggleClass('white');
-         //  });
-         //  $('.header-menu__nav > ul > .menu-item a').on('click', function(event) {
-         //    event.stopPropagation();
-         // 

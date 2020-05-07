@@ -240,7 +240,7 @@ min-height: auto;
     {
         position: absolute;
         right: -342px;
-        bottom: 40px;
+        bottom: 37px;
 
         display: block;
         width: 341px;
@@ -252,6 +252,21 @@ min-height: auto;
         content: '';
         transform: translateY(50%);
         @media(max-width: 1000px)
+        {
+            content: none;
+        }
+    }
+    &:before{
+    	position: absolute;
+    z-index: 2;
+    bottom: 4px;
+    right: -250px;
+    display: block;
+    width: 50px;
+    height: 50px;
+background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #EFF9FF 23.96%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+            @media(max-width: 1000px)
         {
             content: none;
         }

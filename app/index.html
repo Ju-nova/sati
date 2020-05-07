@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		
 
-
+ <script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script>
 
 
 		
@@ -26,7 +26,7 @@
      		<nav class="main-nav main-nav--closed main-nav__container">
      			<div class="main-nav__mob">
      				<div class="main-nav__logo">
-     					<img src="img/logo-net-nord.svg" alt="" >
+     					<a href="#"><img src="img/logo-net-nord.svg" alt="" ></a>
      				</div>
      				
      				<div class="main-nav__contacts">
@@ -183,32 +183,34 @@
 
      	<!-- СЛАЙДЕР -->
      	<div class="main-slider">
-	     	<div class="main-slider__slide">
-	     		<div class="container ">
-                    <div class="main-slider__content">
-                    	<h2>Интернет в каждый дом</h2>
-                    	<div>
-                    		<p>«Нэт-Норд» — это безлимитный интернет в московской области для владельцев частных домов и дач, жителей коттеджных поселков и небольших населенных пунктов, а также для бизнеса. </p>
-                    		<p>У нас можно подключить телевидение и домашний интернет быстро в десятках населенных пунктов по всему Подмосковью.</p>
-                    	</div>
-                    	<div class="main-sliders__content-btns">
-                    		<a class="big-btn " href="#">Карта покрытия</a>
-                    		<a  class="big-btn big-btn--blue"  href="#">Подключиться</a>
-                    	</div>
-                    </div>
-
+	     	
+	     		<div class="main-slider__slide">
+	     			<div class="container ">
+	                    <div class="main-slider__content">
+	                    	<h2>Интернет в каждый дом</h2>
+	                    	<div>
+	                    		<p>«Нэт-Норд» — это безлимитный интернет в московской области для владельцев частных домов и дач, жителей коттеджных поселков и небольших населенных пунктов, а также для бизнеса. </p>
+	                    		<p>У нас можно подключить телевидение и домашний интернет быстро в десятках населенных пунктов по всему Подмосковью.</p>
+	                    	</div>
+	                    	<div class="main-sliders__content-btns">
+	                    		<a class="big-btn " href="#">Карта покрытия</a>
+	                    		<a  class="big-btn big-btn--blue"  href="#">Подключиться</a>
+	                    	</div>
+	                    </div>
+	     		
+	     			</div>
+	     			<img class="main-slider__img" src="img/slide-3.png" alt="">
+	     		
 	     		</div>
-	     		<img class="main-slider__img" src="img/slide-3.png" alt="">
-
-	     	</div>
-	     	<div class="main-slider__slide">
-	     		<div class="container"></div>
-
-	     	</div>
-	     	<div class="main-slider__slide">
-	     		<div class="container"></div>
-
-	     	</div>
+	     		<div class="main-slider__slide">
+	     			<div class="container"></div>
+	     		
+	     		</div>
+	     		<div class="main-slider__slide">
+	     			<div class="container"></div>
+	     		
+	     		</div>
+	     	
      	</div>
 
      	<!-- МЫ ПРЕДЛАГАЕМ -->
@@ -432,8 +434,181 @@
             	</div>
             	
             </div>
+            <div class="faq">
+            	<div class="container" >
+	            	<form class="faq__main faq__wrapper" action="" onsubmit="return false">
+	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
+	            		<p>
+	            			Выберите пункт и нажмите кнопку “Следующий шаг"
+	            		</p>
+	            		
+	            			
+	            				<div class="faq__radio-button">
+	            				<input type="radio" name="radio" id="radio1" data-id="level1">	            					
+	            					<label for="radio1"> Страницы не грузятся, но Вы можете зайти в личный кабинет?</label>
+	            				</div>
+	            				<div class="faq__radio-button">
+	            				 <input type="radio" name="radio" id="radio2" data-id="level2">	            					
+	            					<label for="radio2">Страницы не грузятся или браузер выдает ошибку</label>
+	            				</div>
+	            				<div class="faq__radio-button">	 
+	            				      <input type="radio" name="radio" id="radio3" data-id="level3">      					
+	            					<label for="radio3">Устройство с которого Вы пытаетесь выйти в интернет не реагирует на нажатия</label>
+	            				</div>
+	            				<div class="faq__radio-button">
+	            				<input type="radio" name="radio" id="radio4" data-id="level4">	            					
+	            					<label for="radio4">У меня другая проблема</label>
+	            				</div>
+	            				<button type="submit" id="btn-check" class="faq__main-btn">Следующий шаг</button>
+	            			</form>
+	            		
+	            	
 
+
+	            	<div class="faq__second faq__wrapper" id="level1">
+	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
+	            		<p>
+	            			Выберите пункт и нажмите кнопку “Следующий шаг"
+	            		</p>
+	            		<p>Попробуйте перезагрузить модем, нажав на кнопку “reboot” позади устройства,
+	            			при этом сигнал подключения загорится красным, через несколько секунд желтым и при восстановлении подключения сменится на зеленый.</p>
+<p>
+	Если сигнал подключения по прежнему горит желтым и подключение к интентернет не восстановилось, попробуйте “ВЕРНУТЬСЯ НАЗАД” и попробовать другой способ. </p>
+
+<p>Если решить проблему не удалось позвоните в службу технической поддержки по тел.: +7 (495) 783-28-33 или</p> 
+	            		<button  class="faq__main-btn btn-return" >Проверить Radio</button>
+	            	</div>
+            	</div>
+            </div>
+
+<p class="text-center">
+	<label><input type="radio" name="radio" value="1"> Radio Button 1</label><br>
+	<label><input type="radio" name="radio" value="2"> Radio Button 2</label><br>
+	<label><input type="radio" name="radio" value="3"> Radio Button 3</label>
+</p>
+
+<p class="text-center">
+	<button id="btn-check" class="btn btn-sm btn-outline-dark">Проверить Radio</button>
+	<button id="btn-off" class="btn btn-sm btn-outline-dark">Снять</button>
+</p>
+		<div class="main-form">
+			<div class="container main-form__wrapper ">
+				<form action="" class="main-form__form">
+					<div class="main-form__form-title">
+						Онлайн заявка на подключение
+					</div>
+					
+						<div class="main-form__input main-form__input--name">
+							<label for="">Имя*</label>
+							<input type="text">
+						</div>
+						<div class="main-form__input main-form__input--phone">
+							<label for="">Телефон*</label>
+							<input type="tel">
+						</div>
+						<div class="main-form__input main-form__input--mail">
+							<label for="">E-mail*</label>
+							<input type="mail">
+						</div>	
+						<div class="main-form__select ">
+							<label for="main-address">Адрес подключения:*</label>
+						 	<select id="main-address" name="main-address">
+			                    <option value="Бережки">Бережки</option>
+			                    <option value="Москва">Москва</option>
+                			</select>
+						</div>	
+						<div class="main-form__select ">
+							<label for="main-address">Тип подключения:*</label>
+						 	<select id="main-address" name="main-address">
+			                    <option value="Дом">Частный дом</option>
+			                    <option value="Квартира">Квартира</option>
+                			</select>
+						</div>
+						<div class="main-form__input main-form__input--address">
+							<label for="">Прочий адрес</label>
+							<input type="text">
+						</div>	
+						<div class="main-form__select ">
+							<label for="main-tarif">Тарифный план, если определен</label>
+						 	<select id="main-tarif" name="main-address">
+			                    <option value="Домашний">Домашний</option>
+			                    <option value="Турбо">Турбо</option>
+                			</select>
+						</div>
+						<div class="main-form__input">
+							<label for="main-address">Сообщение</label>
+							<textarea name="" id="" cols="30" rows="2"></textarea>
+						</div>
+						<div class="main-form__input main-form__input-privacy">
+							<input type="checkbox">
+							<label for="">Даю согласие на обработку персональных данных</label>
+						</div>	
+						<div class="main-form_submit">
+							<div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+							<input type="submit" value="Подключиться">
+						</div>											
+					</form>
+				
+				
+			</div>
+		</div>
      </main>
+     <footer class="main-footer">
+     	<div class="container">
+     		<div class="main-footer__wrapper">
+     			<div class="main-footer__menu">
+     				<div class="main-footer__logo">
+     					<a href="#"><img src="img/logo-net-nord-white.svg" alt=""></a>
+     				</div>
+     				<ul class="main-footer__nav">
+     					
+     						<li>
+     							<a href="">Интернет</a>
+     						</li>
+     						<li>
+     							<a href="">Телевидение</a>
+     						</li>
+     						<li>
+     							<a href="">Абонентам</a>
+     						</li>
+     						<li>
+     							<a href="">Оплата</a>
+     						</li>
+     						<li>
+     							<a href="">Услуги</a>
+     						</li>
+     						
+     					
+     				</ul>
+     				<a class="main-footer__lk" href="">Личный кабинет</a>
+     			</div>
+     			<div class="main-footer__info">
+
+     				<div class="main-footer__contacts">
+     				<div class="main-footer__info-logo">
+     					<a href="#"><img src="img/logo-net-nord-white.svg" alt=""></a>
+     				</div>
+      					<a class="main-footer__tel" href="tel:+74957832833">+7 495 783-28-33</a>
+     					<div class="main-footer__address">Московская обл.,<br class="br"> пгт&nbsp;Поварово, ул. Ленинградская, д.&nbsp;2а,&nbsp;офис&nbsp;36</div>
+    					<div class="main-footer__plat">
+    					 <img src="img/master-card.svg" alt=""> 
+    					 <img src="img/visa.svg" alt="">
+    					 <img src="img/pay-keeper.svg" alt="">
+    					</div>    					
+     				</div>
+     				<div class="main-footer__docs">
+     					<h3>Скачать документы</h3>
+     					<div class="main-footer__docs-wrapper">
+     						<a download href="">Лицензия на Телематические услуги связи;</a>
+     						<a download href=""> Лицензия на Оказание услуг связи по предоставлению каналов связи.</a>
+     						<a download href="">Лицензия на Услуги связи по передаче данных, за исключением услуг связи по передаче данных для целей передачи голосовой информации;</a>
+     					</div>
+
+     				</div>	     						
+     			</div>	
+     		</div>
+     	</div>
+     </footer>
 </div>
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>		 
