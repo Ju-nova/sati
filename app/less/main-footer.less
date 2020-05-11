@@ -1,4 +1,5 @@
 .main-footer{
+	min-width: 320px;
 	color:#fff;
     position:relative;
 	background: linear-gradient(328.34deg, #74C0F2 0%, #6CB6E7 10.17%, #51A8D9 29.39%, #4DA8DB 48.35%, #4E90CD 66.71%, #1D6EBA 84.23%, #4177C9 100%);
@@ -88,6 +89,10 @@ color: #000000;
 background: #FFFFFF;
 border-radius: 100px;
 white-space: nowrap;
+transition:.2s;
+&:hover{
+	box-shadow: 0px 32px 32px rgba(255, 255, 255, 0.3);	
+}
 	@media(max-width: 1024px){
 	display:none;
 }
@@ -121,6 +126,10 @@ line-height: 28px;
 display: block;
 color: #FFFFFF;
 margin-bottom:28px;
+transition:.2s;
+&:hover{
+	text-decoration:underline;
+}
 	@media(max-width: 1024px){
 	display:none;
 }
@@ -193,7 +202,10 @@ padding-left:35px;
 color: #FFFFFF;
 margin-bottom:5px;
 position:relative;
-
+transition:.2s;
+&:hover{
+	text-decoration:underline;
+}
 &:before{
 	content:'';
 	display: inline-block;

@@ -42,7 +42,7 @@
      			<div class="main-nav__menu">
      				<div class="main-nav__menu-btns">
      					<div class="main-nav__menu-lk"><a href="#">Личный кабинет</a></div>
-     					<div class="main-nav__menu-connect"><a href="#">Подключиться</a></div>
+     					<div class="main-nav__menu-connect"><a class="simplebox" href="#form-connect">Подключиться</a></div>
      				</div>
      				<div class="main-nav__menu-list site-nav">
      					<ul class="site-nav__list">
@@ -182,36 +182,66 @@
      <main>
 
      	<!-- СЛАЙДЕР -->
-     	<div class="main-slider">
+     	<div class="main-slider__wrapper">
 	     	
-	     		<div class="main-slider__slide">
-	     			<div class="container ">
-	                    <div class="main-slider__content">
-	                    	<h2>Интернет в каждый дом</h2>
-	                    	<div>
-	                    		<p>«Нэт-Норд» — это безлимитный интернет в московской области для владельцев частных домов и дач, жителей коттеджных поселков и небольших населенных пунктов, а также для бизнеса. </p>
-	                    		<p>У нас можно подключить телевидение и домашний интернет быстро в десятках населенных пунктов по всему Подмосковью.</p>
-	                    	</div>
-	                    	<div class="main-sliders__content-btns">
-	                    		<a class="big-btn " href="#">Карта покрытия</a>
-	                    		<a  class="big-btn big-btn--blue"  href="#">Подключиться</a>
-	                    	</div>
-	                    </div>
-	     		
+	     		<div class="main-slider">
+	     			<div class="main-slider__slide">
+	     				<div class="container ">
+		                    <div class="main-slider__content">
+		                    	<h2>Интернет в каждый дом</h2>
+		                    	<div>
+		                    		<p>«Нэт-Норд» — это безлимитный интернет в московской области для владельцев частных домов и дач, жителей коттеджных поселков и небольших населенных пунктов, а также для бизнеса. </p>
+		                    		<p>У нас можно подключить телевидение и домашний интернет быстро в десятках населенных пунктов по всему Подмосковью.</p>
+		                    	</div>
+		                    	<div class="main-sliders__content-btns">
+		                    		<a class="big-btn " href="#">Карта покрытия</a>
+		                    		<a  class="big-btn big-btn--blue simplebox" href="#form-connect">Подключиться</a>
+		                    	</div>
+		                    </div>
+	     			
+	     				</div>
+	     				<img class="main-slider__img" src="img/slide-3.png" alt="">
+	     			
 	     			</div>
-	     			<img class="main-slider__img" src="img/slide-3.png" alt="">
-	     		
-	     		</div>
-	     		<div class="main-slider__slide">
-	     			<div class="container"></div>
-	     		
-	     		</div>
-	     		<div class="main-slider__slide">
-	     			<div class="container"></div>
-	     		
-	     		</div>
-	     	
-     	</div>
+	     			<div class="main-slider__slide">
+	     				<div class="container">
+	     					    <div class="main-slider__content">
+		                    	<h2>Интернет в каждый дом</h2>
+		                    	<div>
+		                    		<p>«Нэт-Норд» — это безлимитный интернет в московской области для владельцев частных домов и дач, жителей коттеджных поселков и небольших населенных пунктов, а также для бизнеса. </p>
+		                    		<p>У нас можно подключить телевидение и домашний интернет быстро в десятках населенных пунктов по всему Подмосковью.</p>
+		                    	</div>
+		                    	<div class="main-sliders__content-btns">
+		                    		<a class="big-btn " href="#">Карта покрытия</a>
+		                    		<a  class="big-btn big-btn--blue"  href="#form-connect">Подключиться</a>
+		                    	</div>
+		                    </div>
+	     			
+	     				</div>
+	     				<img class="main-slider__img" src="img/slide-3.png" alt="">
+	     			
+	     			</div>
+	     			<div class="main-slider__slide">
+	     				<div class="container">
+	     					    <div class="main-slider__content">
+		                    	<h2>Интернет в каждый дом</h2>
+		                    	<div>
+		                    		<p>«Нэт-Норд» — это безлимитный интернет в московской области для владельцев частных домов и дач, жителей коттеджных поселков и небольших населенных пунктов, а также для бизнеса. </p>
+		                    		<p>У нас можно подключить телевидение и домашний интернет быстро в десятках населенных пунктов по всему Подмосковью.</p>
+		                    	</div>
+		                    	<div class="main-sliders__content-btns">
+		                    		<a class="big-btn " href="#">Карта покрытия</a>
+		                    		<a  class="big-btn big-btn--blue"  href="#form-connect">Подключиться</a>
+		                    	</div>
+		                    </div>
+	     			
+	     				</div>
+	     				<img class="main-slider__img" src="img/slide-3.png" alt="">
+	     			
+	     			</div>
+	     		</div>	     			
+	     	</div>
+
 
      	<!-- МЫ ПРЕДЛАГАЕМ -->
      	<div class="offer">
@@ -367,13 +397,14 @@
            				  </ul>           			
            			</div>
            			<div class="company__btn-wrapper">
-           				<a class="company__btn" href="#">Подробнее	</a>
+           				<a class="company__btn btn" href="#">Подробнее	</a>
            			</div>
            		</div>
            	</div>
            </div>
            <!-- ОПЛАТА БАНКОВСКОЙ КАРТОЙ -->
-           <div class=" container main-pay">
+
+             <div class=" container main-pay">
            	<div class="main-pay_text">
            		<h3 class="main-pay__title title">
            					Быстрая оплата услуг банковской картой
@@ -405,6 +436,84 @@
 
            	</div>
            </div>
+          
+            <div class="faq">
+            	<div class="container" >
+	            	<form class="faq__main faq__wrapper" action="" onsubmit="return false">
+	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
+	            		<p>
+	            			Выберите пункт и нажмите кнопку “Следующий шаг"
+	            		</p>
+	            		
+	            			
+	            				<div class="faq__radio-button">
+	            				<input type="radio" name="radio" id="radio1" data-id="level1">	            					
+	            					<label for="radio1"> Страницы не грузятся, но Вы можете зайти в личный кабинет?</label>
+	            				</div>
+	            				<div class="faq__radio-button">
+	            				 <input type="radio" name="radio" id="radio2" data-id="level2">	            					
+	            					<label for="radio2">Страницы не грузятся или браузер выдает ошибку</label>
+	            				</div>
+	            				<div class="faq__radio-button">	 
+	            				      <input type="radio" name="radio" id="radio3" data-id="level3">      					
+	            					<label for="radio3">Устройство с которого Вы пытаетесь выйти в интернет не реагирует на нажатия</label>
+	            				</div>
+	            				<div class="faq__radio-button">
+	            				<input type="radio" name="radio" id="radio4" data-id="level4">	            					
+	            					<label for="radio4">У меня другая проблема </label> -->
+	            				</div>
+	            				<button type="submit" id="btn-check" class="faq__main-btn">Следующий шаг</button>
+	            			</form>
+	            		
+	            	
+
+
+	            	<div class="faq__second faq__wrapper" id="level1">
+	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
+	            		<div class="faq__second-content">
+	            			<p>Попробуйте перезагрузить модем, нажав на кнопку “reboot” позади устройства,
+	            				при этом сигнал подключения загорится красным, через несколько секунд желтым и при восстановлении подключения сменится на зеленый.</p>
+	            			<p>
+	            										Если сигнал подключения по прежнему горит желтым и подключение к интентернет не восстановилось, попробуйте “ВЕРНУТЬСЯ НАЗАД” и попробовать другой способ. </p>
+	            			
+	            			<p>Если решить проблему не удалось позвоните в службу технической поддержки по тел.: +7&nbsp;(495)&nbsp;783-28-33 или <a class="simplebox faq__help" href="#form-help"> "напишите оператору онлайн"</a></p>
+	            		</div>
+	            		<button  class="faq__main-btn btn-return" >попробовать другой способ</button>
+	            	</div>
+
+	            		            	<div class="faq__second faq__wrapper" id="level2">
+	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
+	            		<div class="faq__second-content">
+	            			<p>
+	            				контент2
+	            			</p>
+	            		</div>
+	            		<button  class="faq__main-btn btn-return" >попробовать другой способ</button>
+	            	</div>
+
+
+	            	<div class="faq__second faq__wrapper" id="level3">
+	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
+	            		<div class="faq__second-content">
+	            			<p>контент3</p>
+	            		</div>
+	            		<button  class="faq__main-btn btn-return" >попробовать другой способ</button>
+	            	</div>
+
+
+	            	<div class="faq__second faq__wrapper" id="level4">
+	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
+	            		<div class="faq__second-content">
+	            			<p>контент4</p>
+	            		</div>
+	            		<button  class="faq__main-btn btn-return" >попробовать другой способ</button>
+	            	</div>
+
+
+            	</div>
+            </div>
+
+
            <!-- НОВОСТИ -->
             <div class="news">
             	<div class="container news__wrapper main-wrapper">
@@ -429,68 +538,10 @@
             				</a>
             				<div class="news__block-data">9 марта 2020</div>
             			</div>
-                      </div>  		
-            		
-            	</div>
-            	
-            </div>
-            <div class="faq">
-            	<div class="container" >
-	            	<form class="faq__main faq__wrapper" action="" onsubmit="return false">
-	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
-	            		<p>
-	            			Выберите пункт и нажмите кнопку “Следующий шаг"
-	            		</p>
-	            		
-	            			
-	            				<div class="faq__radio-button">
-	            				<input type="radio" name="radio" id="radio1" data-id="level1">	            					
-	            					<label for="radio1"> Страницы не грузятся, но Вы можете зайти в личный кабинет?</label>
-	            				</div>
-	            				<div class="faq__radio-button">
-	            				 <input type="radio" name="radio" id="radio2" data-id="level2">	            					
-	            					<label for="radio2">Страницы не грузятся или браузер выдает ошибку</label>
-	            				</div>
-	            				<div class="faq__radio-button">	 
-	            				      <input type="radio" name="radio" id="radio3" data-id="level3">      					
-	            					<label for="radio3">Устройство с которого Вы пытаетесь выйти в интернет не реагирует на нажатия</label>
-	            				</div>
-	            				<div class="faq__radio-button">
-	            				<input type="radio" name="radio" id="radio4" data-id="level4">	            					
-	            					<label for="radio4">У меня другая проблема</label>
-	            				</div>
-	            				<button type="submit" id="btn-check" class="faq__main-btn">Следующий шаг</button>
-	            			</form>
-	            		
-	            	
-
-
-	            	<div class="faq__second faq__wrapper" id="level1">
-	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
-	            		<p>
-	            			Выберите пункт и нажмите кнопку “Следующий шаг"
-	            		</p>
-	            		<p>Попробуйте перезагрузить модем, нажав на кнопку “reboot” позади устройства,
-	            			при этом сигнал подключения загорится красным, через несколько секунд желтым и при восстановлении подключения сменится на зеленый.</p>
-<p>
-	Если сигнал подключения по прежнему горит желтым и подключение к интентернет не восстановилось, попробуйте “ВЕРНУТЬСЯ НАЗАД” и попробовать другой способ. </p>
-
-<p>Если решить проблему не удалось позвоните в службу технической поддержки по тел.: +7 (495) 783-28-33 или</p> 
-	            		<button  class="faq__main-btn btn-return" >Проверить Radio</button>
-	            	</div>
-            	</div>
+                      </div>  		            		
+            	</div>           	
             </div>
 
-<p class="text-center">
-	<label><input type="radio" name="radio" value="1"> Radio Button 1</label><br>
-	<label><input type="radio" name="radio" value="2"> Radio Button 2</label><br>
-	<label><input type="radio" name="radio" value="3"> Radio Button 3</label>
-</p>
-
-<p class="text-center">
-	<button id="btn-check" class="btn btn-sm btn-outline-dark">Проверить Radio</button>
-	<button id="btn-off" class="btn btn-sm btn-outline-dark">Снять</button>
-</p>
 		<div class="main-form">
 			<div class="container main-form__wrapper ">
 				<form action="" class="main-form__form">
@@ -553,6 +604,7 @@
 			</div>
 		</div>
      </main>
+
      <footer class="main-footer">
      	<div class="container">
      		<div class="main-footer__wrapper">
@@ -576,8 +628,7 @@
      						</li>
      						<li>
      							<a href="">Услуги</a>
-     						</li>
-     						
+     						</li>     						
      					
      				</ul>
      				<a class="main-footer__lk" href="">Личный кабинет</a>
@@ -610,6 +661,107 @@
      	</div>
      </footer>
 </div>
+
+  <!-- МОДАЛЬНЫЕ ОКНА-ФОРМЫ Подключиться--> 
+  <div class="modal-container" id="form-connect">
+  	<div class="modal">
+				<form action="" class="main-form__form">
+					<span class="close">close</span>
+					<div class="main-form__form-title">
+						Онлайн заявка на подключение
+					</div>
+					
+						<div class="main-form__input main-form__input--name">
+							<label for="">Имя*</label>
+							<input type="text" >
+						</div>
+						<div class="main-form__input main-form__input--phone">
+							<label for="">Телефон*</label>
+							<input type="tel">
+						</div>
+						<div class="main-form__input main-form__input--mail">
+							<label for="">E-mail*</label>
+							<input type="mail">
+						</div>	
+						<div class="main-form__select ">
+							<label for="main-address">Адрес подключения:*</label>
+						 	<select id="main-address" name="main-address">
+			                    <option value="Бережки">Бережки</option>
+			                    <option value="Москва">Москва</option>
+                			</select>
+						</div>	
+						<div class="main-form__select ">
+							<label for="main-connect">Тип подключения:*</label>
+						 	<select id="main-connect" name="main-connect">
+			                    <option value="Дом">Частный дом</option>
+			                    <option value="Квартира">Квартира</option>
+                			</select>
+						</div>
+						<div class="main-form__input main-form__input--address">
+							<label for="">Прочий адрес</label>
+							<input type="text">
+						</div>	
+						<div class="main-form__select ">
+							<label for="main-tarif">Тарифный план, если определен</label>
+						 	<select id="main-tarif" name="main-address">
+			                    <option value="Домашний">Домашний</option>
+			                    <option value="Турбо">Турбо</option>
+                			</select>
+						</div>
+						<div class="main-form__input">
+							<label for="main-message">Сообщение</label>
+							<textarea name="" id="" cols="30" rows="2"></textarea>
+						</div>
+						<div class="main-form__input main-form__input-privacy">
+							<input type="checkbox">
+							<label for="">Даю согласие на обработку персональных данных</label>
+						</div>	
+						<div class="main-form_submit">
+							<div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+							<input type="submit" value="Подключиться">
+						</div>											
+					</form>
+				
+  	</div>
+  </div>
+
+
+  <!-- МОДАЛЬНЫЕ ОКНА-ФОРМЫ Вопрос оператору --> 
+    <div class="modal-container" id="form-help">
+  	<div class="modal">
+				<form action="" class="main-form__form">
+					<span class="close">close</span>
+					<div class="main-form__form-title">
+						Вопрос оператору
+					</div>
+					
+						<div class="main-form__input main-form__input--name">
+							<label for="">Ваш номер лицевого счета*</label>
+							<input type="text">
+						</div>
+						<div class="main-form__select ">
+							<label for="main-address">Способ для связи*</label>
+						 	<select id="main-address" name="main-address">
+			                    <option value="Бережки">Перезвонить</option>
+			                    <option value="Москва">Написать</option>
+                			</select>
+						</div>	
+						<div class="main-form__input">
+							<label for="main-address">Текст проблемы</label>
+							<textarea name="" id="" cols="30" rows="2"></textarea>
+						</div>
+						<div class="main-form__input main-form__input-privacy">
+							<input type="checkbox">
+							<label for="">Даю согласие на обработку персональных данных</label>
+						</div>	
+						<div class="main-form_submit">
+							<div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+							<input type="submit" value="Подключиться">
+						</div>											
+					</form>
+				
+  	</div>
+  </div> 
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>		 
 

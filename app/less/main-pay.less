@@ -1,6 +1,6 @@
 .main-pay{
 	background-color:#fff;
-
+min-width: 320px;
 	display: flex;
 	padding-top:112px;
 	padding-bottom:112px;
@@ -112,6 +112,14 @@ margin-right: 20px}
 }
 .main-pay__form-submit input{
 	width: 180px;
+	    transition:.5s;
+    &:hover,
+     &:active,
+      &:focus{
+
+	box-shadow: 0px 20px 32px  rgba(70, 166, 228, 0.3);	
+}
+
 				@media(max-width: 1170px){
 order:7;
 margin-left:auto;
@@ -155,9 +163,16 @@ box-sizing: border-box;
 border-radius: 100px;
 font-size: 14px;
 line-height: 16px;
-padding:18px 22px;
+padding:18px 18px;
 color: #000000;
 margin-right: 14px;
+    transition:.5s;
+    &:hover,
+     &:active,
+      &:focus{
+
+	box-shadow: 0px 20px 32px  rgba(70, 166, 228, 0.3);	
+}
 		@media(max-width: 1170px){
 		
 		margin-right: 0
@@ -236,8 +251,11 @@ margin-top:32px;
 	}
 
 			@media(max-width: 426px){
-		display: block;
+		 display: block;
 		margin-top: 10px;
 		text-align: center
+	}
+				@media(max-width: 330px){
+		 display: inline;
 	}
 }

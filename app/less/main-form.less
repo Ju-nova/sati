@@ -1,5 +1,5 @@
 .main-form{
-
+min-width: 320px;
 	// background: url(../img/);
 	background-image:
 		url(../img/img-form.png),
@@ -81,6 +81,12 @@ line-height: 21px;
 
 cursor:pointer;
 color: #000000;
+transition:.2s;
+&:hover,
+&:active,
+&:focus{
+border-bottom: 1px solid @main-blue;	
+}
     		@media(max-width: 426px){
 	font-size: 16px;
 line-height: 19px;
@@ -249,6 +255,11 @@ color: #A2A2A2;
     padding: 19px 28px 20px;
     cursor: pointer;
     margin-left:35px;
+    transition:.5s;
+    &:hover{
+
+	box-shadow: 0px 20px 32px  rgba(70, 166, 228, 0.3);	
+}
     	@media(max-width:678px){
 		margin:20px 0 0;
 	}
