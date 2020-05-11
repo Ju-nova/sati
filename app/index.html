@@ -261,7 +261,7 @@
             			<img  src="img/offer-2.png" alt="">
             		</div>
             		<div class="offer__block-little offer__block3">
-            		<!-- 	<img class="offer__block-back" src="img/back1.jpg" alt=""> -->
+            			<img class="offer__block-back" src="img/1.png" alt="">
             			<img class="offer__block-icon" src="img/icon-3.svg" alt="">
             			<a  href="">Сдаем в аренду роутеры</a>
             			<div class="offer__block-links">
@@ -270,9 +270,11 @@
             			</div>
             		</div>
             		<div class="offer__block-little  offer__block4">
+            			<img class="offer__block-back" src="img/2.png" alt="">
             			<img class="offer__block-icon" src="img/icon-4.svg" alt="">
             			<a href=""> Ремонт компьютеров</a></div>
             		<div class="offer__block-little  offer__block5">
+            			<img class="offer__block-back" src="img/3.png" alt="">
             			<img class="offer__block-icon" src="img/icon-5.svg" alt="">
             			<a href=""> Антивирусы</a>
             			 <div class="offer__block-links">
@@ -282,6 +284,7 @@
             			</div>
             		</div>
             		<div class="offer__block-little  offer__block6">
+            			<img class="offer__block-back" src="img/4.png" alt="">
             			<img class="offer__block-icon" src="img/icon-6.svg" alt="">
             			<a href=""> Видео наблюдение</a>
             			 <div class="offer__block-links">
@@ -418,7 +421,7 @@
            		<form class="main-pay__form">
            			<input class="main-pay__form-input main-pay__form-input--dogovor" type="text" placeholder="Номер договора">
            			<input class="main-pay__form-input main-pay__form-input--summa" type="text" placeholder="Сумма">
-           			<input class="main-pay__form-input main-pay__form-input--mail"  type="mail" placeholder="E-mail">
+           			<input class="main-pay__form-input main-pay__form-input--mail"  type="email" placeholder="E-mail">
            			<div class="main-pay__form-submit">
            				<img  src="img/master-card.svg" alt="">
            				<img  src="img/visa.svg" alt="">
@@ -436,7 +439,7 @@
 
            	</div>
            </div>
-          
+          <!-- БЛОК ПОМОЩЬ/FAQ -->
             <div class="faq">
             	<div class="container" >
 	            	<form class="faq__main faq__wrapper" action="" onsubmit="return false">
@@ -465,7 +468,7 @@
 	            				<button type="submit" id="btn-check" class="faq__main-btn">Следующий шаг</button>
 	            			</form>
 	            		
-	            	
+	             	
 
 
 	            	<div class="faq__second faq__wrapper" id="level1">
@@ -541,70 +544,71 @@
                       </div>  		            		
             	</div>           	
             </div>
-
+    <!-- БЛОК С ФОРМОЙ ПОДКЛЮЧЕНИЯ -->
 		<div class="main-form">
 			<div class="container main-form__wrapper ">
-				<form action="" class="main-form__form">
-					<div class="main-form__form-title">
-						Онлайн заявка на подключение
-					</div>
-					
-						<div class="main-form__input main-form__input--name">
-							<label for="">Имя*</label>
-							<input type="text">
-						</div>
-						<div class="main-form__input main-form__input--phone">
-							<label for="">Телефон*</label>
-							<input type="tel">
-						</div>
-						<div class="main-form__input main-form__input--mail">
-							<label for="">E-mail*</label>
-							<input type="mail">
-						</div>	
-						<div class="main-form__select ">
-							<label for="main-address">Адрес подключения:*</label>
-						 	<select id="main-address" name="main-address">
-			                    <option value="Бережки">Бережки</option>
-			                    <option value="Москва">Москва</option>
-                			</select>
-						</div>	
-						<div class="main-form__select ">
-							<label for="main-address">Тип подключения:*</label>
-						 	<select id="main-address" name="main-address">
-			                    <option value="Дом">Частный дом</option>
-			                    <option value="Квартира">Квартира</option>
-                			</select>
-						</div>
-						<div class="main-form__input main-form__input--address">
-							<label for="">Прочий адрес</label>
-							<input type="text">
-						</div>	
-						<div class="main-form__select ">
-							<label for="main-tarif">Тарифный план, если определен</label>
-						 	<select id="main-tarif" name="main-address">
-			                    <option value="Домашний">Домашний</option>
-			                    <option value="Турбо">Турбо</option>
-                			</select>
-						</div>
-						<div class="main-form__input">
-							<label for="main-address">Сообщение</label>
-							<textarea name="" id="" cols="30" rows="2"></textarea>
-						</div>
-						<div class="main-form__input main-form__input-privacy">
-							<input type="checkbox">
-							<label for="">Даю согласие на обработку персональных данных</label>
-						</div>	
-						<div class="main-form_submit">
-							<div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
-							<input type="submit" value="Подключиться">
-						</div>											
-					</form>
+		                <form action="" class="main-form__form" id="site-connect-form">
+							
+							<div class="main-form__form-title">
+								Онлайн заявка на подключение
+							</div>
+							
+								<div class="main-form__input main-form__input--name">
+									<label for="">Имя*</label>
+									<input type="text" name="name" required>
+								</div>
+								<div class="main-form__input main-form__input--phone">
+									<label for="">Телефон*</label>
+									<input class="js-phone" type="tel" name="phone" required>
+								</div>
+								<div class="main-form__input main-form__input--mail">
+									<label for="">E-mail*</label>
+									<input type="email" name="email" required email>
+								</div>	
+								<div class="main-form__select ">
+									<label for="main-address">Адрес подключения:*</label>
+								 	<select id="main-address" name="main-address">
+					                    <option value="Бережки">Бережки</option>
+					                    <option value="Москва">Москва</option>
+		                			</select>
+								</div>	
+								<div class="main-form__select ">
+									<label for="main-connect">Тип подключения:*</label>
+								 	<select id="main-connect" name="main-connect" >
+					                    <option value="Дом">Частный дом</option>
+					                    <option value="Квартира">Квартира</option>
+		                			</select>
+								</div>
+								<div class="main-form__input main-form__input--address">
+									<label for="">Прочий адрес</label>
+									<input type="text">
+								</div>	
+								<div class="main-form__select ">
+									<label for="main-tarif">Тарифный план, если определен</label>
+								 	<select id="main-tarif" name="main-address">
+					                    <option value="Домашний">Домашний</option>
+					                    <option value="Турбо">Турбо</option>
+		                			</select>
+								</div>
+								<div class="main-form__input">
+									<label for="main-message">Сообщение</label>
+									<textarea name="" id="" cols="30" rows="2"></textarea>
+								</div>
+								<div class="main-form__input main-form__input-privacy">
+									<input type="checkbox" required name="privacy">
+									<label for="">Даю согласие на обработку персональных данных</label>
+								</div>	
+								<div class="main-form_submit">
+									<div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+									<input type="submit" value="Подключиться">
+								</div>											
+							</form>
 				
 				
 			</div>
 		</div>
      </main>
-
+<!-- Подвал сайта -->
      <footer class="main-footer">
      	<div class="container">
      		<div class="main-footer__wrapper">
@@ -665,7 +669,7 @@
   <!-- МОДАЛЬНЫЕ ОКНА-ФОРМЫ Подключиться--> 
   <div class="modal-container" id="form-connect">
   	<div class="modal">
-				<form action="" class="main-form__form">
+				<form action="" class="main-form__form" id="modal-connect-form">
 					<span class="close">close</span>
 					<div class="main-form__form-title">
 						Онлайн заявка на подключение
@@ -673,15 +677,15 @@
 					
 						<div class="main-form__input main-form__input--name">
 							<label for="">Имя*</label>
-							<input type="text" >
+							<input type="text" name="name" required>
 						</div>
 						<div class="main-form__input main-form__input--phone">
 							<label for="">Телефон*</label>
-							<input type="tel">
+							<input class="js-phone" type="tel" name="phone" required>
 						</div>
 						<div class="main-form__input main-form__input--mail">
 							<label for="">E-mail*</label>
-							<input type="mail">
+							<input type="email" name="mail" required>
 						</div>	
 						<div class="main-form__select ">
 							<label for="main-address">Адрес подключения:*</label>
@@ -692,7 +696,7 @@
 						</div>	
 						<div class="main-form__select ">
 							<label for="main-connect">Тип подключения:*</label>
-						 	<select id="main-connect" name="main-connect">
+						 	<select id="main-connect" name="main-connect" >
 			                    <option value="Дом">Частный дом</option>
 			                    <option value="Квартира">Квартира</option>
                 			</select>
@@ -713,7 +717,7 @@
 							<textarea name="" id="" cols="30" rows="2"></textarea>
 						</div>
 						<div class="main-form__input main-form__input-privacy">
-							<input type="checkbox">
+							<input type="checkbox" required name="privacy">
 							<label for="">Даю согласие на обработку персональных данных</label>
 						</div>	
 						<div class="main-form_submit">
@@ -729,7 +733,7 @@
   <!-- МОДАЛЬНЫЕ ОКНА-ФОРМЫ Вопрос оператору --> 
     <div class="modal-container" id="form-help">
   	<div class="modal">
-				<form action="" class="main-form__form">
+				<form action="" class="main-form__form" id="form-online">
 					<span class="close">close</span>
 					<div class="main-form__form-title">
 						Вопрос оператору
@@ -737,11 +741,11 @@
 					
 						<div class="main-form__input main-form__input--name">
 							<label for="">Ваш номер лицевого счета*</label>
-							<input type="text">
+							<input type="text" required name="number" minlength="10">
 						</div>
 						<div class="main-form__select ">
 							<label for="main-address">Способ для связи*</label>
-						 	<select id="main-address" name="main-address">
+						 	<select id="main-address" name="main-address" required>
 			                    <option value="Бережки">Перезвонить</option>
 			                    <option value="Москва">Написать</option>
                 			</select>
@@ -751,7 +755,7 @@
 							<textarea name="" id="" cols="30" rows="2"></textarea>
 						</div>
 						<div class="main-form__input main-form__input-privacy">
-							<input type="checkbox">
+							<input type="checkbox" name="privacy" required>
 							<label for="">Даю согласие на обработку персональных данных</label>
 						</div>	
 						<div class="main-form_submit">
@@ -763,8 +767,9 @@
   	</div>
   </div> 
 		<script src="js/jquery-3.4.1.min.js"></script>
-		<script src="js/jquery-migrate-3.0.1.min.js"></script>		 
-
+		<script src="js/jquery-migrate-3.0.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>		 
+        <script src="js/jquery.validate.js"></script>
 		<script src="js/slick.js"></script>
 		<script src="js/main.js"></script>
 	

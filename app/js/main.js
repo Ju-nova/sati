@@ -87,5 +87,52 @@ $('body').css({
       overflow: 'visible'
     });
 });
+    // ВАЛИДАЦИЯ ФОРМ
+   jQuery.validator.addMethod("checkMask", function(value, element) {
+    return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value); 
+});
+  $('#form-online').validate({
+    messages: {
+      number: {
+        required: "Поле обязательно к заполнению",
+      },
+      privacy: {
+        required: "Необходимо дать согласие",
+      }
+    }
+  });
+
+    $('#modal-connect-form').validate({
+    messages: {
+      email: {
+        email: "Необходим формат адреса email"  
+      },
+      privacy: {
+        required: "Необходимо дать согласие",
+      }
+    }
+  });
+        $('#site-connect-form').validate({
+    messages: {
+       email: {
+        email: "Необходим формат адреса email"  
+      },
+       phone: {
+
+        tel: "Неверный номер телефона"  
+      },
+      privacy: {
+        required: "Необходимо дать согласие",
+      }
+    }
+  });
+
+$.validator.addClassRules({
+    'js-phone': {
+        checkMask: true
+    }
+});
+
+$('.js-phone').mask("+7(999)999-9999", {autoclear: false});
 
 })
