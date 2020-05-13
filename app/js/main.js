@@ -38,6 +38,10 @@ $('.main-slider__slide').css({
      opacity: '1'
    });
 
+$('.slider').css({
+     overflow: 'visible',
+     opacity: '1'
+   });
 // ПЕРЕКЛЮЧЕНИЕ БЛОКОВ В FAQ
 $('#btn-check').click(function(){
       var radio = $('input[name="radio"]:checked').data('id');
@@ -135,4 +139,41 @@ $.validator.addClassRules({
 
 $('.js-phone').mask("+7(999)999-9999", {autoclear: false});
 
-})
+
+$('.btn-front').click(function() {
+  $(this).parent().parent().addClass('tariff--flipped');
+});
+$('.btn-back').click(function() {
+  $(this).parent().parent().removeClass('tariff--flipped');
+});
+
+    $('.products__slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    centerMode: false,
+    rows: 0,
+    responsive: [
+
+       {
+      breakpoint: 1025,
+      settings: {
+          centerMode: true,
+        slidesToShow:1,
+        slidesToScroll: 1,
+      }
+    },
+           {
+      breakpoint: 350,
+      settings: {
+          centerMode: false,
+        slidesToShow:1,
+        slidesToScroll: 1,
+      }
+    }
+
+  ]
+
+  });
+});
+
