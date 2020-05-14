@@ -1,19 +1,31 @@
 .usluga{
 	padding-top:35px;
 	padding-bottom:55px;
-}
 
+    background-image: url(../img/figure2.png);
+    background-repeat: no-repeat;
+    background-position: left -1px top 45px;
+    background-size:150px auto;
+@media(max-width:1024px){
+	background:none;
+}
+}
 .usluga-content{
 	padding-top:20px;
 	display:flex;
 	justify-content: space-around;
+	flex-wrap: wrap
 
 }
 .usluga-content__block{
 	width:54%;
 	display: flex;
 	flex-wrap: wrap;
-	align-items:center
+	align-items:center;
+	@media(max-width:1020px){
+		width:100%;
+		margin-top: 20px
+	}
 }
 
 .usluga-content__title{
@@ -23,6 +35,10 @@ line-height: 37px;
 color: #000000;
 margin: 0 0 25px;
 width:100%;
+	@media(max-width: 426px){
+		font-size: 22px;
+    line-height: 24px;
+	}
 }
 .usluga-content__block p{
 	font-weight: normal;
@@ -31,16 +47,28 @@ line-height: 21px;
 color: #000000;
 padding:0;
 margin: 0 0 45px;
+	@media(max-width: 426px){
+		font-size: 16px;
+    line-height: 19px;
+	}
 }
 .usluga-content__price{
 font-weight: bold;
 font-size: 32px;
 line-height: 37px;
 color: #000000;
+@media(max-width: 600px){
+	width:100%;
+	text-align: center;
+	margin-bottom:20px
+}
 
 }
 .usluga-content__btns{
-	margin-left: auto
+	margin-left: auto;
+	@media(max-width: 600px){
+margin:0 auto;
+}
 }
 .usluga-content__btns a{
 	display: inline-block;
@@ -54,11 +82,22 @@ box-shadow: 0px 36px 32px rgba(195, 198, 200, 0.3);
 font-weight: 500;
 font-size: 15px;
 line-height: 18px;
+	@media(max-width: 460px){
+width:160px;
+padding:15px 10px;
+}
+	@media(max-width: 375px){
+width:140px;
+padding:15px 10px;
+}
 } 
 .usluga-content__btns .btn-buy{
 	color: #FFFFFF;
 	background:@main-blue;
-	margin-right:25px
+	margin-right:25px;
+		@media(max-width: 375px){
+margin-right:10px;
+}
 }
 .usluga-content__btns .btn-arend{
 	border: 1px solid #4094C9;

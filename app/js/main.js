@@ -175,5 +175,10 @@ $('.btn-back').click(function() {
   ]
 
   });
+
+    $('.features__btn').click(function(event) {
+      $('tfoot').slideToggle(10);
+      $('.features__btn span').toggleClass('features__btn-show');
+    });
 });
 
