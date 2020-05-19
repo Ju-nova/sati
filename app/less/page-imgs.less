@@ -1,0 +1,13 @@
+    // НЕСКОЛЬКО КАРТИНОК В ТЕКСТЕ 
+.page-imgs{
+	display: flex;
+	margin:0 -10px;
+	flex-wrap:wrap
+}
+.page-image{
+margin:10px;
+width:calc(25% - 2*10px);
+@media(max-width: 426px){
+width:calc(50% - 2*10px);	
+}
+}

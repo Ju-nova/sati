@@ -180,5 +180,12 @@ $('.btn-back').click(function() {
       $('tfoot').slideToggle(10);
       $('.features__btn span').toggleClass('features__btn-show');
     });
+
+     $( '.page-faq__quest' ).click(
+  function() {
+    $(this).next('.page-faq__answer').slideToggle();
+    $(this).toggleClass('rotate');
+  }, 
+);
 });
 

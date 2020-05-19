@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">   
+	    <title>NetNord</title>
+		<link rel="stylesheet" href="css/slick.css" media="all" />
+<!--         <link rel="stylesheet" href="css/slick-theme.css" media="all" /> -->
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		
+
+         <script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script>
+
+
+		
+
+</head>
+<body>
+
+     <div class="site">
+     	<header >
+     		<nav class="main-nav main-nav--closed main-nav__container">
+     			<div class="main-nav__mob">
+     				<div class="main-nav__logo">
+     					<a href="#"><img src="img/logo-net-nord.svg" alt="" ></a>
+     				</div>
+     				
+     				<div class="main-nav__contacts">
+     					<div class="main-nav__tel">
+     						<a href="tel:+77777777777">+7 (495) 783-28-33 </a>
+     					</div>
+     					<div class="main-nav__address">пгт.Поварово</div>
+     				</div>
+     				
+     				<button class="main-nav__toggle main-nav__toggle--off" id="toggle-button" type="button" aria-label="Меню"></button>
+     			</div>
+     	
+     			<div class="main-nav__menu">
+     				<div class="main-nav__menu-btns">
+     					<div class="main-nav__menu-lk"><a href="#">Личный кабинет</a></div>
+     					<div class="main-nav__menu-connect"><a class="simplebox" href="#form-connect">Подключиться</a></div>
+     				</div>
+     				<div class="main-nav__menu-list site-nav">
+     					<ul class="site-nav__list">
+     						<li class="site-nav__list-item with-submenu active"><a href="http://kosmas.flowers/">Интернет</a>
+     							<div class="site-nav__submenu ">
+     								<div class="  mob-container">
+     									<ul class="site-nav__submenu-list">
+     										<li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+     										<li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+     									</ul>
+     									<div class="site-nav__submenu-block">
+     										<div class="site-nav__submenu-block-title">
+     											<h3>Оплата</h3>
+     											<p>Оплачивайте различные услуги в одном месте Оплачивайте различные услуги в одном месте</p>
+     											<a class="btn btn--blue" href="#">Оплатить</a>
+     										</div>
+     										<div class="site-nav__submenu-block-img">
+     											<img src="img/menu-img1.svg" alt="">
+     										</div>
+     								</div>
+     									
+     								</div>
+     							</div>
+     						</li>
+     	                   <li class="site-nav__list-item with-submenu"><a href="#">Телевидение</a>
+     							<div class="site-nav__submenu ">
+     								<div class="  mob-container">
+     									<ul class="site-nav__submenu-list">
+     										<li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+     										<li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+     									</ul>
+     									<div class="site-nav__submenu-block">
+     										<div class="site-nav__submenu-block-title">
+     											<h3>Оплата</h3>
+     											<p>Оплачивайте различные услуги в одном месте </p>
+     											<a class="btn btn--blue" href="#">Оплатить</a>
+     										</div>
+     										<div class="site-nav__submenu-block-img">
+     											<img src="img/menu-img1.svg" alt="">
+     										</div>
+     								</div>
+     									
+     								</div>
+     							</div>
+     						</li>
+     						<li class="site-nav__list-item with-submenu"><a href="http://kosmas.flowers/">Абонентам</a>
+     							<div class="site-nav__submenu ">
+     								<div class="  mob-container">
+     									<ul class="site-nav__submenu-list">
+     										<li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+     										<li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+     									</ul>
+     									<div class="site-nav__submenu-block">
+     										<div class="site-nav__submenu-block-title">
+     											<h3>Оплата</h3>
+     											<p>Оплачивайте различные услуги в одном месте </p>
+     											<a class="btn btn--blue" href="#">Оплатить</a>
+     										</div>
+     										<div class="site-nav__submenu-block-img">
+     											<img src="img/menu-img1.svg" alt="">
+     										</div>
+     								</div>
+     									
+     								</div>
+     							</div>
+     						</li>
+     	                   <li class="site-nav__list-item with-submenu"><a href="#">Оплата</a>
+     							<div class="site-nav__submenu ">
+     								<div class="  mob-container">
+     									<ul class="site-nav__submenu-list">
+     										<li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+     										<li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+     									</ul>
+     									<div class="site-nav__submenu-block">
+     										<div class="site-nav__submenu-block-title">
+     											<h3>Оплата</h3>
+     											<p>Оплачивайте различные услуги в одном месте </p>
+     											<a class="btn btn--blue" href="#">Оплатить</a>
+     										</div>
+     										<div class="site-nav__submenu-block-img">
+     											<img src="img/menu-img1.svg" alt="">
+     										</div>
+     								</div>
+     									
+     								</div>
+     							</div>
+
+     						</li>
+
+     						<li class="site-nav__list-item with-submenu"><a href="#">Услуги</a>
+     							<div class="site-nav__submenu ">
+     								<div class="  mob-container">
+     									<ul class="site-nav__submenu-list">
+     										<li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+     										<li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+     									</ul>
+     									<div class="site-nav__submenu-block">
+     										<div class="site-nav__submenu-block-title">
+     											<h3>Оплата</h3>
+     											<p>Оплачивайте различные услуги в одном месте </p>
+     											<a class="btn btn--blue" href="#">Оплатить</a>
+     										</div>
+     										<div class="site-nav__submenu-block-img">
+     											<img src="img/menu-img1.svg" alt="">
+     										</div>
+     								</div>
+     									
+     								</div>
+     							</div>
+     						</li>
+     					</ul>
+     				</div>
+     			</div>
+     		</nav >
+     	</header>
+    
+     <main>
+      <!-- ЗАГОЛОВОК СТРАНИЦЫ -->
+        <div class="page-title">
+            <div class="page-title__wrapper"> 
+                 <div class="page-title__img">
+                    <img  src="img/page-title1.png" alt="">
+                </div>
+                <div class="container page-title__content">
+                  <h3>Картинка с коротким текстом в заголовке </h3>  
+                  <p>Нэт-Норд» — это безлимитный интернет в московской области для владельцев частных домов и дач, жителей коттеджных поселков и небольших населенных пунктов, а также для бизнеса.</p>
+                </div>
+
+            </div>    
+        </div>
+       <!--  ХЛЕБНЫЕ КРОШКИ -->
+                <div class="container">
+                    <ul class="breadcrumbs">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a class="active" href="">Продажа IP-TV приставок</a></li>
+                    </ul>
+                </div>
+       <!-- ТЕКСТ -->
+       <div class="page-text">
+           <div class="container">
+               <h3>Текст</h3>
+               <p>Для удобства наших Абонентов мы разработали гибкую систему тарификации. Для просмотра тарифной сетки, Вам необходимо указать населенный пункт, в которым Вы проживаете, а затем посетить вкладку «тарифы». </p>
+               <p>В случае, если Вас заинтересовали наши тарифы, Вы можете подключиться к нашей сети позвонив по телефону: 8 (495) 783-28-33 (звонок бесплатный с любого телефона) или заполнив всплывающую форму, нажав на кнопку «Подключиться». Наши специалисты обязательно свяжутся с Вами в кратчайшие сроки.</p>
+           </div>
+       </div>
+      <!-- БЛОК СПЕЦПРЕДЛОЖЕНИЕ -->
+      <div class="special container">
+         <div class="special__wrapper">
+            <h3>Блок спецпредложение</h3>
+              <p>Мы делаем все, чтобы вы могли наслаждаться онлайн-сёрфингом, просмотром любимых фильмов, общением в сети без негатива, поэтому работаем без сбоев и оперативно устраняем любые проблемы.</p>
+
+              <a class="big-btn big-btn--blue simplebox" href="#form-connect" tabindex="0">Подключиться</a>
+              
+         </div>
+         <div class="special__img-wrapper">
+                  <img class="special__img" src="img/special-img.jpg" alt="">
+              </div>
+      </div>
+    <!-- КАРТИНКА В ТЕКСТЕ -->
+           <div class="page-text">
+           <div class="container">
+               <h3>Картинка в тексте</h3>
+               <div class="page-text__wrapper">
+                <img class="page-text__img-left" src="img/img-left.png" alt="">
+                   
+                       <div>
+                          <p> Для удобства наших Абонентов мы разработали гибкую систему тарификации. Для просмотра тарифной сетки, Вам необходимо указать населенный пункт, в которым Вы проживаете, а затем посетить вкладку «тарифы». </p>
+                          <p>В случае, если Вас заинтересовали наши тарифы, Вы можете подключиться к нашей сети позвонив по телефону: 8 (495) 783-28-33 (звонок бесплатный с любого телефона) или заполнив всплывающую форму, нажав на кнопку «Подключиться». Наши специалисты обязательно свяжутся с Вами в кратчайшие сроки.</p>
+                          <p>Стоимость подключения Абонентов проживающих в частном секторе рассчитывается индивидуально.</p>
+                          <p>В безлимитных тарифных планах, скорость, указанная в тарифном плане, является величиной максимально возможной. Это означает, что скорость доступа к сети Интернет зависит не только от технических особенностей услуги, предоставляемой ООО «Нэт-Норд», но и от действий третьих операторов связи, организаций и лиц, управляющих сегментами сети Интернет, не принадлежащих ООО «Нэт-Норд». Скорость доступа к сети Интернет является величиной неопределенной и зависит от ряда параметров, в том числе, технических характеристик подключения данных точек, маршрута и текущей загрузки каналов. Все параметры являются переменными и не гарантируются ООО «Нэт-Норд» за пределами своей сети.</p>
+                       </div>
+                   
+               </div>
+           </div>
+       </div>
+     <!-- НЕСКОЛЬКО КАРТИНОК В ТЕКСТЕ -->
+       <div class="page-text">
+           <div class="container">
+               <h3>Несколько картинок в тексте</h3>
+               <p>Для удобства наших Абонентов мы разработали гибкую систему тарификации. Для просмотра тарифной сетки, Вам необходимо указать населенный пункт, в которым Вы проживаете, а затем посетить вкладку «тарифы». </p>
+               <p>В случае, если Вас заинтересовали наши тарифы, Вы можете подключиться к нашей сети позвонив по телефону: 8 (495) 783-28-33 (звонок бесплатный с любого телефона) или заполнив всплывающую форму, нажав на кнопку «Подключиться». Наши специалисты обязательно свяжутся с Вами в кратчайшие сроки.</p>
+               <div class="page-imgs">
+               <div class="page-image">
+                   <img src="img/page-img1.jpg" alt="">
+               </div>
+               <div class="page-image">
+                   <img src="img/page-img2.jpg" alt="">
+               </div>
+               <div class="page-image">
+                   <img src="img/page-img3.jpg" alt="">
+               </div>
+               <div class="page-image">
+                   <img src="img/page-img4.jpg" alt="">
+               </div>
+
+           </div>
+
+       </div>
+     </div> 
+    <!-- ТЕКСТ С МЕНЮ -->
+    <div class="container page-sidebar">
+        <div class="page-sidebar__left">
+            <ul>
+                <li class="active"><a href="#">Тарифы</a></li>
+                <li><a href="#">Тарифы</a></li>
+                <li><a href="#">Тарифы</a></li>
+                <li><a href="#">Тарифы</a></li>
+            </ul>
+        </div>
+        <div class="page-sidebar__right">
+         <h3>Текст</h3>
+        <p> Для удобства наших Абонентов мы разработали гибкую систему тарификации. Для просмотра тарифной сетки, Вам необходимо указать населенный пункт, в которым Вы проживаете, а затем посетить вкладку «тарифы». </p>
+
+        <p>В случае, если Вас заинтересовали наши тарифы, Вы можете подключиться к нашей сети позвонив по телефону: 8 (495) 783-28-33 (звонок бесплатный с любого телефона) или заполнив всплывающую форму, нажав на кнопку «Подключиться». Наши специалисты обязательно свяжутся с Вами в кратчайшие сроки.</p>
+
+        <p>Стоимость подключения Абонентов проживающих в частном секторе рассчитывается индивидуально.
+            В безлимитных тарифных планах, скорость, указанная в тарифном плане, является величиной максимально возможной. Это означает, что скорость доступа к сети Интернет зависит не только от технических особенностей услуги, предоставляемой ООО «Нэт-Норд», но и от действий третьих операторов связи, организаций и лиц, управляющих сегментами сети Интернет, не принадлежащих ООО «Нэт-Норд». Скорость доступа к сети Интернет является величиной неопределенной и зависит от ряда параметров, в том числе, технических характеристик подключения данных точек, маршрута и текущей загрузки каналов. Все параметры являются переменными и не гарантируются ООО «Нэт-Норд» за пределами своей сети.</p>
+      <!-- БЛОК СПЕЦПРЕДЛОЖЕНИЕ -->
+      <div class="special ">
+         <div class="special__wrapper">
+            <h3>Блок спецпредложение</h3>
+              <p>Мы делаем все, чтобы вы могли наслаждаться онлайн-сёрфингом, просмотром любимых фильмов, общением в сети без негатива, поэтому работаем без сбоев и оперативно устраняем любые проблемы.</p>
+
+              <a class="big-btn big-btn--blue simplebox" href="#form-connect" tabindex="0">Подключиться</a>
+              
+         </div>
+         <div class="special__img-wrapper">
+                  <img class="special__img" src="img/special-img.jpg" alt="">
+              </div>
+      </div>
+        </div>
+    </div>
+
+    <!-- ПЕРЕЧИСЛЕНИЕ С ПОДЛОЖКОЙ -->
+       <div class="page-text">
+           <div class="container">
+               <h3>Перечисление с подложкой</h3>
+               <p>Для удобства наших Абонентов мы разработали гибкую систему тарификации. Для просмотра тарифной сетки, Вам необходимо указать населенный пункт, в которым Вы проживаете, а затем посетить вкладку «тарифы». </p>
+               <p>В случае, если Вас заинтересовали наши тарифы, Вы можете подключиться к нашей сети позвонив по телефону: 8 (495) 783-28-33 (звонок бесплатный с любого телефона) или заполнив всплывающую форму, нажав на кнопку «Подключиться». Наши специалисты обязательно свяжутся с Вами в кратчайшие сроки.</p>
+               <h4>В подключение входит:</h4>
+               <ul class="page-text__ul">
+                   <li>Протяжка кабеля до квартиры;</li>
+                   <li>Протяжка кабеля до квартиры;</li>
+                   <li>Настройка компьютера с операционной системой семейства Windows.</li>                 
+                   <li>Настройка компьютера с операционной системой семейства Windows.</li>
+               </ul>
+           </div>
+       </div>
+    <!-- Нумерованный список на подложке -->
+       <div class="page-text page-text--blue">
+           <div class="container">
+               <h3>Нумерованный список на подложке</h3>
+               <p>Для удобства наших Абонентов мы разработали гибкую систему тарификации. Для просмотра тарифной сетки, Вам необходимо указать населенный пункт, в которым Вы проживаете, а затем посетить вкладку «тарифы». </p>
+               <p>В случае, если Вас заинтересовали наши тарифы, Вы можете подключиться к нашей сети позвонив по телефону: 8 (495) 783-28-33 (звонок бесплатный с любого телефона) или заполнив всплывающую форму, нажав на кнопку «Подключиться». Наши специалисты обязательно свяжутся с Вами в кратчайшие сроки.</p>
+               <h4>В подключение входит:</h4>
+               <ul class="page-text__ol">
+                   <li>Протяжка кабеля до квартиры;</li>
+                   <li>Протяжка кабеля до квартиры;</li>
+                   <li>Настройка компьютера с операционной системой семейства Windows.</li>                 
+                   <li>Настройка компьютера с операционной системой семейства Windows.</li>
+               </ul>
+           </div>
+       </div>
+           <!-- Нумерованный список без подложки -->
+       <div class="page-text page-text--transparent">
+           <div class="container">
+               <h3>Нумерованный список без подложки</h3>
+               <p>Для удобства наших Абонентов мы разработали гибкую систему тарификации. Для просмотра тарифной сетки, Вам необходимо указать населенный пункт, в которым Вы проживаете, а затем посетить вкладку «тарифы». </p>
+               <p>В случае, если Вас заинтересовали наши тарифы, Вы можете подключиться к нашей сети позвонив по телефону: 8 (495) 783-28-33 (звонок бесплатный с любого телефона) или заполнив всплывающую форму, нажав на кнопку «Подключиться». Наши специалисты обязательно свяжутся с Вами в кратчайшие сроки.</p>
+               <h4>В подключение входит:</h4>
+               <ul class="page-text__ol">
+                   <li>Протяжка кабеля до квартиры;</li>
+                   <li>Протяжка кабеля до квартиры;</li>
+                   <li>Настройка компьютера с операционной системой семейства Windows.</li>                 
+                   <li>Настройка компьютера с операционной системой семейства Windows.</li>
+               </ul>
+           </div>
+       </div>
+    <!-- ЧАСТОЗАДАВАЕМЫЕ ВОПРОСЫ  -->
+    <div class="container page-sidebar">
+        <div class="page-sidebar__left">
+            <ul>
+                <li class="active"><a href="#">Тарифы</a></li>
+                <li><a href="#">Тарифы</a></li>
+                <li><a href="#">Тарифы</a></li>
+                <li><a href="#">Тарифы</a></li>
+            </ul>
+        </div>
+        <div class="page-sidebar__right">
+         <div class="page-faq">
+             <div class="page-faq__block">
+                 <div class="page-faq__quest">Где можно получить заказанные вознаграждения?</div>
+                 <div class="page-faq__answer"> Забрать подарки можно по адресу: Автомобильный проезд, д.4 (ст.м. Волгоградский проспект, последний вагон из центра, далее маршрутное такси 86М). При себе необходимо иметь паспорт, для оформления пропуска</div>
+
+             </div>
+                 <div class="page-faq__block">
+                 <div class="page-faq__quest">Где можно получить заказанные вознаграждения?</div>
+                 <div class="page-faq__answer"> Забрать подарки можно по адресу: Автомобильный проезд, д.4 (ст.м. Волгоградский проспект, последний вагон из центра, далее маршрутное такси 86М). При себе необходимо иметь паспорт, для оформления пропуска</div>
+
+             </div>
+                 <div class="page-faq__block">
+                 <div class="page-faq__quest">Где можно получить заказанные вознаграждения?</div>
+                 <div class="page-faq__answer"> Забрать подарки можно по адресу: Автомобильный проезд, д.4 (ст.м. Волгоградский проспект, последний вагон из центра, далее маршрутное такси 86М). При себе необходимо иметь паспорт, для оформления пропуска</div>
+
+             </div>
+         </div>    
+        </div>
+    </div>
+    <!-- Скачать pdf doc -->
+    <div class="download-section">
+          <div class="container">
+              <h3>Скачать pdf doc</h3>
+              <div class="download-block__wrapper">
+                  <div class="download-block">
+                      <a class="download-block__link" href="">Лицензия на Телематические услуги связи</a>
+                  </div>
+                  <div class="download-block">
+                      <a class="download-block__link" href="">Лицензия на Услуги связи по передаче данных, за исключением услуг связи по передаче данных для целей передачи голосовой информации; </a>
+                  </div>
+                  <div class="download-block">
+                      <a class="download-block__link" href="">Лицензия на Телематические услуги связи</a>
+                  </div>
+                  <div class="download-block">
+                      <a class="download-block__link" href="">Лицензия на Телематические услуги связи</a>
+                  </div>
+              </div>
+          </div>
+    </div>
+         
+    </main>
+         <footer class="main-footer">
+        <div class="container">
+            <div class="main-footer__wrapper">
+                <div class="main-footer__menu">
+                    <div class="main-footer__logo">
+                        <a href="#"><img src="img/logo-net-nord-white.svg" alt=""></a>
+                    </div>
+                    <ul class="main-footer__nav">
+                        
+                            <li>
+                                <a href="">Интернет</a>
+                            </li>
+                            <li>
+                                <a href="">Телевидение</a>
+                            </li>
+                            <li>
+                                <a href="">Абонентам</a>
+                            </li>
+                            <li>
+                                <a href="">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="">Услуги</a>
+                            </li>                           
+                        
+                    </ul>
+                    <a class="main-footer__lk" href="">Личный кабинет</a>
+                </div>
+                <div class="main-footer__info">
+
+                    <div class="main-footer__contacts">
+                    <div class="main-footer__info-logo">
+                        <a href="#"><img src="img/logo-net-nord-white.svg" alt=""></a>
+                    </div>
+                        <a class="main-footer__tel" href="tel:+74957832833">+7 495 783-28-33</a>
+                        <div class="main-footer__address">Московская обл.,<br class="br"> пгт&nbsp;Поварово, ул. Ленинградская, д.&nbsp;2а,&nbsp;офис&nbsp;36</div>
+                        <div class="main-footer__plat">
+                         <img src="img/master-card.svg" alt=""> 
+                         <img src="img/visa.svg" alt="">
+                         <img src="img/pay-keeper.svg" alt="">
+                        </div>                      
+                    </div>
+                    <div class="main-footer__docs">
+                        <h3>Скачать документы</h3>
+                        <div class="main-footer__docs-wrapper">
+                            <a download href="">Лицензия на Телематические услуги связи;</a>
+                            <a download href=""> Лицензия на Оказание услуг связи по предоставлению каналов связи.</a>
+                            <a download href="">Лицензия на Услуги связи по передаче данных, за исключением услуг связи по передаче данных для целей передачи голосовой информации;</a>
+                        </div>
+
+                    </div>                              
+                </div>  
+            </div>
+        </div>
+     </footer>
+  </div> 
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/jquery-migrate-3.0.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script src="js/wow.js"></script>
+		<script src="js/slick.js"></script>
+		<script src="js/main.js"></script>
+	
+
+</body>
+</html>

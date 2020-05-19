@@ -1,0 +1,126 @@
+
+.page-text ~ div{
+	clear:both;
+}
+.page-text{
+	padding-bottom:25px;
+	padding-top:25px
+}
+.page-text__ul{
+	margin: 0;
+	padding:45px 45px 35px;
+	background: #FFFFFF;
+box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.12);
+border-radius: 10px;
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin-bottom: 20px;
+margin-top:20px;
+@media(max-width: 600px){
+	padding:25px 25px 15px;	
+}
+& li{
+	margin-bottom: 10px;
+font-size: 18px;
+line-height: 20px;
+color: #000000;
+padding-left:22px;
+box-sizing:border-box;
+width:50%;
+position:relative;
+@media(max-width: 600px){
+width:100%;
+font-size: 16px;
+line-height: 19px;
+}
+&:before{
+	content:'';
+	position:absolute;
+	width:5px;
+	height:10px;
+	left:0px;
+	top:2px;
+	border-bottom:2px solid #46A6E4;
+	border-right:2px solid #46A6E4;
+	transform: rotate(45deg)
+}
+}
+}
+
+// Нумерованный список на подложке 
+.page-text.page-text--blue{
+	background: linear-gradient(314.54deg, #74C0F2 0%, #6CB6E7 10.17%, #51A8D9 29.39%, #4DA8DB 48.35%, #4E90CD 66.71%, #1D6EBA 84.23%, #4177C9 100%);
+	padding-top:55px;
+	color:#fff;
+}
+.page-text__ol{
+margin:20px 0 10px;
+padding:0;
+display: flex;
+flex-wrap: wrap;
+counter-reset: myCounter;
+& li{
+	margin-bottom: 20px;
+font-size: 18px;
+line-height: 20px;
+
+ padding-left:68px;
+box-sizing:border-box;
+width:50%;
+position:relative;
+list-style: none;
+min-height:46px;
+@media(max-width: 600px){
+width:100%;
+font-size: 16px;
+line-height: 19px;	
+}
+&:before{
+  counter-increment: myCounter;
+  content:counter(myCounter);
+
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+font-weight: 500;
+font-size: 22px;
+line-height: 24px;
+color: #46A6E4;
+  line-height: 46px;
+  width: 46px;
+  height: 46px;
+border-radius:100%;
+ position:absolute;
+  left:0;
+  top:-13px;
+  margin-right: 20px;
+  vertical-align:center
+}
+}
+}
+// Нумерованный список без подложки 
+.page-text.page-text--transparent{
+	padding-top:55px;
+		.page-text__ol{
+
+		& li{
+			&:before{
+			border: 2px solid #46A6E4;
+			}
+		}
+	}
+}
+
+
+.page-text__img-left{
+float:left;
+margin: 0px 60px 10px 0; 
+@media(max-width: 768px){
+	margin: 0px 10px 10px 0; 
+}
+@media(max-width: 600px){
+	margin: 0 auto 20px; 
+	float:none;
+}
+}
