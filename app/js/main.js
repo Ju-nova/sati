@@ -95,6 +95,13 @@ $('body').css({
    jQuery.validator.addMethod("checkMask", function(value, element) {
     return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value); 
 });
+  $('.main-pay__form').validate({
+    messages: {
+      email: {
+        email: "Необходим формат адреса email"  
+      }
+    }
+  });
   $('#form-online').validate({
     messages: {
       number: {
@@ -175,6 +182,42 @@ $('.btn-back').click(function() {
   ]
 
   });
+    $('.foto-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: false,
+    centerMode: false,
+    rows: 0,
+    responsive: [
+
+       {
+      breakpoint: 1025,
+      settings: {
+          centerMode: true,
+        slidesToShow:1,
+        slidesToScroll: 1,
+      }
+    },
+           {
+      breakpoint: 350,
+      settings: {
+          centerMode: false,
+        slidesToShow:1,
+        slidesToScroll: 1,
+      }
+    }
+
+  ]
+
+  });
+
+     $('.fancybox').fancybox({
+        'transitionIn' : 'none',
+        'transitionOut' : 'none',
+        'titlePosition' : 'over',
+
+    });
 
     $('.features__btn').click(function(event) {
       $('tfoot').slideToggle(10);
@@ -187,5 +230,11 @@ $('.btn-back').click(function() {
     $(this).toggleClass('rotate');
   }, 
 );
+  $('.js-example-basic-single').select2({
+        placeholder: 'Select an Industry',
+        allowClear: false,
+        tags: true,
+        maximumSelectionLength: 5
+    });
 });
 

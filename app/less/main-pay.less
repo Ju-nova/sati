@@ -165,8 +165,9 @@ font-size: 14px;
 line-height: 16px;
 padding:18px 18px;
 color: #000000;
-margin-right: 14px;
+
     transition:.5s;
+    width:100%;
     &:hover,
      &:active,
       &:focus{
@@ -178,7 +179,13 @@ margin-right: 14px;
 		margin-right: 0
 	}
 }
-
+.main-pay__form-input-wrapper {
+	display:inline-block;
+	vertical-align: top
+}
+// .main-pay__form label{
+// 	position:absolute;
+// }
 .main-pay__form-input::placeholder {
 color: #000000;
 }
@@ -187,6 +194,8 @@ color: #000000;
 .main-pay__form-input:-moz-placeholder {color:#000000;}
 .main-pay__form-input:-ms-input-placeholder {color:#000000;}
 .main-pay__form-input--dogovor{
+	margin-right: 14px;
+	box-sizing:border-box;
 width:150px;
 		@media(max-width: 1170px){
 		width:30%;
@@ -199,6 +208,8 @@ width:150px;
 	}
 }
 .main-pay__form-input--summa{
+	margin-right: 14px;
+	box-sizing:border-box;
 width:140px;
 		@media(max-width: 1170px){
 		width:30%;
@@ -211,6 +222,7 @@ width:140px;
 	}
 }
 .main-pay__form-input--mail{
+	box-sizing:border-box;
 width:180px;
 		@media(max-width: 1170px){
 		width:30%;
