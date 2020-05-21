@@ -5,15 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">   
 	    <title>NetNord</title>
-		<link rel="stylesheet" href="css/slick.css" media="all" />
-		<link rel="stylesheet" href="css/main.css">
-
-		<link rel="stylesheet" href="css/normalize.css">
-		
+        <link rel="stylesheet" href="css/slick.css" media="all" />
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css" media="all" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="css/main.css">
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
          <script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
 
 		
 
@@ -474,7 +474,7 @@
 	            				</div>
 	            				<div class="faq__radio-button">
 	            				<input type="radio" name="radio" id="radio4" data-id="level4">	            					
-	            					<label for="radio4">У меня другая проблема </label> -->
+	            					<label for="radio4">У меня другая проблема </label>
 	            				</div>
 	            				<button type="submit" id="btn-check" class="faq__main-btn">Следующий шаг</button>
 	            			</form>
@@ -578,25 +578,39 @@
 								</div>	
 								<div class="main-form__select">
 									<label for="main-address">Адрес подключения:*</label>
-								 	<select id="main-address" name="main-address" class="js-example-basic-single ">
-					                    <option value="0" data-alias="Бережки">Бережки</option>
-					                    <option value="1" data-alias="Москва">Москва</option>
+								 	<select id="main-address" name="main-address" class="js-example-basic-single">
+					                    <option  value="Бережки">Бережки</option>
+					                    <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
 		                			</select>
 								</div>	
 								<div class="main-form__select ">
 									<label for="main-connect">Тип подключения:*</label>
-								 	<select id="main-connect" name="main-connect" >
+								 	<select id="main-connect" name="main-connect" class="js-example-basic-single">
 					                    <option value="Дом">Частный дом</option>
 					                    <option value="Квартира">Квартира</option>
 		                			</select>
 								</div>
-								<div class="main-form__input main-form__input--address">
+								<div class="main-form__input main-form__input--address" >
 									<label for="">Прочий адрес</label>
 									<input type="text">
 								</div>	
 								<div class="main-form__select ">
 									<label for="main-tarif">Тарифный план, если определен</label>
-								 	<select id="main-tarif" name="main-address">
+								 	<select id="main-tarif" name="main-address" class="js-example-basic-single">
 					                    <option value="Домашний">Домашний</option>
 					                    <option value="Турбо">Турбо</option>
 		                			</select>
@@ -699,15 +713,15 @@
 							<input type="email" name="mail" required>
 						</div>	
 						<div class="main-form__select ">
-							<label for="main-address">Адрес подключения:*</label>
-						 	<select id="main-address" name="main-address">
+							<label for="modal-address">Адрес подключения:*</label>
+						 	<select id="modal-address" name="modal-address" class="js-example-basic-single">
 			                    <option value="Бережки">Бережки</option>
 			                    <option value="Москва">Москва</option>
                 			</select>
 						</div>	
 						<div class="main-form__select ">
-							<label for="main-connect">Тип подключения:*</label>
-						 	<select id="main-connect" name="main-connect" >
+							<label for="modal-connect">Тип подключения:*</label>
+						 	<select id="modal-connect" name="modal-connect" class="js-example-basic-single">
 			                    <option value="Дом">Частный дом</option>
 			                    <option value="Квартира">Квартира</option>
                 			</select>
@@ -717,8 +731,8 @@
 							<input type="text">
 						</div>	
 						<div class="main-form__select ">
-							<label for="main-tarif">Тарифный план, если определен</label>
-						 	<select id="main-tarif" name="main-address">
+							<label for="modal-tarif">Тарифный план, если определен</label>
+						 	<select id="modal-tarif" name="modal-address" class="js-example-basic-single">
 			                    <option value="Домашний">Домашний</option>
 			                    <option value="Турбо">Турбо</option>
                 			</select>
@@ -755,14 +769,14 @@
 							<input type="text" required name="number" minlength="10">
 						</div>
 						<div class="main-form__select ">
-							<label for="main-address">Способ для связи*</label>
-						 	<select id="main-address" name="main-address" required>
-			                    <option value="Бережки">Перезвонить</option>
-			                    <option value="Москва">Написать</option>
+							<label for="main-contact">Способ для связи*</label>
+						 	<select id="main-contact" name="main-contact"  class="js-example-basic">
+			                    <option value="Перезвонить">Перезвонить</option>
+			                    <option value="Написать">Написать</option>
                 			</select>
 						</div>	
 						<div class="main-form__input">
-							<label for="main-address">Текст проблемы</label>
+							<label for="">Текст проблемы</label>
 							<textarea name="" id="" cols="30" rows="2"></textarea>
 						</div>
 						<div class="main-form__input main-form__input-privacy">
@@ -780,10 +794,14 @@
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/jquery-migrate-3.0.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-        <script src="js/select2.full.min.js"></script>		 
         <script src="js/jquery.validate.js"></script>
+        <script src="js/select2.full.min.js"></script>	
+        <script src="js/jquery.fancybox.min.js"></script>	        
 		<script src="js/slick.js"></script>
+        <script src="js/map.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 		<script src="js/main.js"></script>
+
 	
 
 </body>

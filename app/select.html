@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+      <title>NetNord</title>
+    <link rel="stylesheet" href="css/slick.css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+         <script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>     
+        <script src="js/jquery.validate.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+
+    
+
+</head>
+<body>
+
+     <div class="site">
+      <header >
+        <nav class="main-nav main-nav--closed main-nav__container">
+          <div class="main-nav__mob">
+            <div class="main-nav__logo">
+              <a href="#"><img src="img/logo-net-nord.svg" alt="" ></a>
+            </div>
+            
+            <div class="main-nav__contacts">
+              <div class="main-nav__tel">
+                <a href="tel:+77777777777">+7 (495) 783-28-33 </a>
+              </div>
+              <div class="main-nav__address">пгт.Поварово</div>
+            </div>
+            
+            <button class="main-nav__toggle main-nav__toggle--off" id="toggle-button" type="button" aria-label="Меню"></button>
+          </div>
+      
+          <div class="main-nav__menu">
+            <div class="main-nav__menu-btns">
+              <div class="main-nav__menu-lk"><a href="#">Личный кабинет</a></div>
+              <div class="main-nav__menu-connect"><a class="simplebox" href="#form-connect">Подключиться</a></div>
+            </div>
+            <div class="main-nav__menu-list site-nav">
+              <ul class="site-nav__list">
+                <li class="site-nav__list-item with-submenu active"><a href="http://kosmas.flowers/">Интернет</a>
+                  <div class="site-nav__submenu ">
+                    <div class="  mob-container">
+                      <ul class="site-nav__submenu-list">
+                        <li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+                        <li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+                      </ul>
+                      <div class="site-nav__submenu-block">
+                        <div class="site-nav__submenu-block-title">
+                          <h3>Оплата</h3>
+                          <p>Оплачивайте различные услуги в одном месте Оплачивайте различные услуги в одном месте</p>
+                          <a class="btn btn--blue" href="#">Оплатить</a>
+                        </div>
+                        <div class="site-nav__submenu-block-img">
+                          <img src="img/menu-img1.svg" alt="">
+                        </div>
+                    </div>
+                      
+                    </div>
+                  </div>
+                </li>
+                         <li class="site-nav__list-item with-submenu"><a href="#">Телевидение</a>
+                  <div class="site-nav__submenu ">
+                    <div class="  mob-container">
+                      <ul class="site-nav__submenu-list">
+                        <li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+                        <li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+                      </ul>
+                      <div class="site-nav__submenu-block">
+                        <div class="site-nav__submenu-block-title">
+                          <h3>Оплата</h3>
+                          <p>Оплачивайте различные услуги в одном месте </p>
+                          <a class="btn btn--blue" href="#">Оплатить</a>
+                        </div>
+                        <div class="site-nav__submenu-block-img">
+                          <img src="img/menu-img1.svg" alt="">
+                        </div>
+                    </div>
+                      
+                    </div>
+                  </div>
+                </li>
+                <li class="site-nav__list-item with-submenu"><a href="http://kosmas.flowers/">Абонентам</a>
+                  <div class="site-nav__submenu ">
+                    <div class="  mob-container">
+                      <ul class="site-nav__submenu-list">
+                        <li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+                        <li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+                      </ul>
+                      <div class="site-nav__submenu-block">
+                        <div class="site-nav__submenu-block-title">
+                          <h3>Оплата</h3>
+                          <p>Оплачивайте различные услуги в одном месте </p>
+                          <a class="btn btn--blue" href="#">Оплатить</a>
+                        </div>
+                        <div class="site-nav__submenu-block-img">
+                          <img src="img/menu-img1.svg" alt="">
+                        </div>
+                    </div>
+                      
+                    </div>
+                  </div>
+                </li>
+                         <li class="site-nav__list-item with-submenu"><a href="#">Оплата</a>
+                  <div class="site-nav__submenu ">
+                    <div class="  mob-container">
+                      <ul class="site-nav__submenu-list">
+                        <li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+                        <li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+                      </ul>
+                      <div class="site-nav__submenu-block">
+                        <div class="site-nav__submenu-block-title">
+                          <h3>Оплата</h3>
+                          <p>Оплачивайте различные услуги в одном месте </p>
+                          <a class="btn btn--blue" href="#">Оплатить</a>
+                        </div>
+                        <div class="site-nav__submenu-block-img">
+                          <img src="img/menu-img1.svg" alt="">
+                        </div>
+                    </div>
+                      
+                    </div>
+                  </div>
+
+                </li>
+
+                <li class="site-nav__list-item with-submenu"><a href="#">Услуги</a>
+                  <div class="site-nav__submenu ">
+                    <div class="  mob-container">
+                      <ul class="site-nav__submenu-list">
+                        <li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+                        <li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+                        <li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+                      </ul>
+                      <div class="site-nav__submenu-block">
+                        <div class="site-nav__submenu-block-title">
+                          <h3>Оплата</h3>
+                          <p>Оплачивайте различные услуги в одном месте </p>
+                          <a class="btn btn--blue" href="#">Оплатить</a>
+                        </div>
+                        <div class="site-nav__submenu-block-img">
+                          <img src="img/menu-img1.svg" alt="">
+                        </div>
+                    </div>
+                      
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav >
+      </header>
+    
+     <main>
+<!--       <script>
+$(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
+</script> -->
+      <div class="main-form">
+      <div class="container main-form__wrapper ">
+                    <form action="" class="main-form__form" id="site-connect-form">
+              
+              <div class="main-form__form-title">
+                Онлайн заявка на подключение
+              </div>
+              
+                <div class="main-form__input main-form__input--name">
+                  <label for="">Имя*</label>
+                  <input type="text" name="name" required>
+                </div>
+                <div class="main-form__input main-form__input--phone">
+                  <label for="">Телефон*</label>
+                  <input class="js-phone" type="tel" name="phone" required>
+                </div>
+                <div class="main-form__input main-form__input--mail">
+                  <label for="">E-mail*</label>
+                  <input type="email" name="email" required email>
+                </div>  
+                <div class="main-form__select">
+                  <label for="main-address">Адрес подключения:*</label>
+                  <select id="main-address" name="main-address" class="js-example-basic-single ">
+                              <option value="0" data-alias="Бережки">Бережки</option>
+                              <option value="1" data-alias="Москва">Москва</option>
+                          </select>
+                </div>  
+                <div class="main-form__select ">
+                  <label for="main-connect">Тип подключения:*</label>
+                  <select id="main-connect" name="main-connect" class="js-example-basic-single ">
+                              <option value="Дом">Частный дом</option>
+                              <option value="Квартира">Квартира</option>
+                          </select>
+                </div>
+                <div class="main-form__input main-form__input--address">
+                  <label for="">Прочий адрес</label>
+                  <input type="text">
+                </div>  
+                <div class="main-form__select ">
+                  <label for="main-tarif">Тарифный план, если определен</label>
+                  <select id="main-tarif" name="main-address" class="js-example-basic-single ">
+                              <option value="Домашний">Домашний</option>
+                              <option value="Турбо">Турбо</option>
+                          </select>
+                </div>
+                <div class="main-form__input">
+                  <label for="main-message">Сообщение</label>
+                  <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div class="main-form__input main-form__input-privacy">
+                  <input type="checkbox" required name="privacy">
+                  <label for="">Даю согласие на обработку персональных данных</label>
+                </div>  
+                <div class="main-form_submit">
+                  <div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+                  <input type="submit" value="Подключиться">
+                </div>                      
+              </form>
+        
+        
+      </div>
+    </div>
+</main>
+</div>
+
+ 
+  
+
+</body>
+</html>

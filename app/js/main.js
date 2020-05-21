@@ -1,6 +1,27 @@
-
+$(document).on("select2:open", "select", function() {
+// Unbind mousewheel event from select2 result lists
+  $(".select2-results ul.select2-results__options").unbind("mousewheel"); 
+          advanced:{
+            updateOnContentResize: true
+          } 
+  $('.select2-results').mCustomScrollbar(
+{
+theme:"minimal-dark",
+scrollButtons:{
+enable:true,
+advanced:{
+updateOnBrowserResize:true,
+updateOnContentResize:true
+}
+} 
+}      
+);
+});
 
 $(document).ready(function(){
+  
+
+
 // ОСНОВНАЯ НАВИГАЦИЯ САЙТА (ВЕРХНЕЕ МЕНЮ)
   var navMain    = $('.main-nav');
   var navToggle  = $('.main-nav__toggle');
@@ -26,7 +47,10 @@ $(document).ready(function(){
  $('.site-nav__list-item a').on('click', function(event) {
  event.stopPropagation();
          });
- 
+
+ // СТИЛИЗАЦИЯ СЕЛЕКТОВ
+    $('.js-example-basic-single').select2();
+       
 // ГЛАВНЫЙ СЛАЙДЕР САЙТА
 
 $('.main-slider').slick({
@@ -70,15 +94,11 @@ $('.btn-return').on('click',(function() {
         event.preventDefault();
         var modal = $(this).attr('href');
       $(modal).fadeIn(300);
-        $('body').css({
-      overflow: 'hidden'
-    });
+        $('body').addClass('modal-body');
   });    
   $('.modal-container').click(function(e) {
          $(this).fadeOut(300);
-         $('body').css({
-      overflow: 'visible'
-    });
+         $('body').removeClass('modal-body');
     // location.reload();
      console.log('parent function');
      })
@@ -87,9 +107,7 @@ $('.btn-return').on('click',(function() {
    });
     $('.close').click(function() {
   $(".modal-container").fadeOut(300);
-$('body').css({
-      overflow: 'visible'
-    });
+$('body').removeClass('modal-body');
 });
     // ВАЛИДАЦИЯ ФОРМ
    jQuery.validator.addMethod("checkMask", function(value, element) {
@@ -230,11 +248,7 @@ $('.btn-back').click(function() {
     $(this).toggleClass('rotate');
   }, 
 );
-  $('.js-example-basic-single').select2({
-        placeholder: 'Select an Industry',
-        allowClear: false,
-        tags: true,
-        maximumSelectionLength: 5
-    });
+
+
 });
 
