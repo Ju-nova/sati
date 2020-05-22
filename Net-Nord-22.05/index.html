@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">   
+	    <title>NetNord</title>
+        <link rel="stylesheet" href="css/slick.css" media="all" />
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css" media="all" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+        <link rel="stylesheet" href="css/main.css">
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+         <script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script>
+
+		
+
+</head>
+<body>
+
+     <div class="site">
+     	<header >
+     		<nav class="main-nav main-nav--closed main-nav__container">
+     			<div class="main-nav__mob">
+     				<div class="main-nav__logo">
+     					<a href="#"><img src="img/logo-net-nord.svg" alt="" ></a>
+     				</div>
+     				
+     				<div class="main-nav__contacts">
+     					<div class="main-nav__tel">
+     						<a href="tel:+77777777777">+7 (495) 783-28-33 </a>
+     					</div>
+     					<div class="main-nav__address">пгт.Поварово</div>
+     				</div>
+     				
+     				<button class="main-nav__toggle main-nav__toggle--off" id="toggle-button" type="button" aria-label="Меню"></button>
+     			</div>
+     	
+     			<div class="main-nav__menu">
+     				<div class="main-nav__menu-btns">
+     					<div class="main-nav__menu-lk"><a href="#">Личный кабинет</a></div>
+     					<div class="main-nav__menu-connect"><a class="simplebox" href="#form-connect">Подключиться</a></div>
+     				</div>
+     				<div class="main-nav__menu-list site-nav">
+     					<ul class="site-nav__list">
+     						<li class="site-nav__list-item with-submenu active"><a href="http://kosmas.flowers/">Интернет</a>
+     							<div class="site-nav__submenu ">
+     								<div class="  mob-container">
+     									<ul class="site-nav__submenu-list">
+     										<li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+     										<li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+     									</ul>
+     									<div class="site-nav__submenu-block">
+     										<div class="site-nav__submenu-block-title">
+     											<h3>Оплата</h3>
+     											<p>Оплачивайте различные услуги в одном месте Оплачивайте различные услуги в одном месте</p>
+     											<a class="btn btn--blue" href="#">Оплатить</a>
+     										</div>
+     										<div class="site-nav__submenu-block-img">
+     											<img src="img/menu-img1.svg" alt="">
+     										</div>
+     								</div>
+     									
+     								</div>
+     							</div>
+     						</li>
+     	                   <li class="site-nav__list-item with-submenu"><a href="#">Телевидение</a>
+     							<div class="site-nav__submenu ">
+     								<div class="  mob-container">
+     									<ul class="site-nav__submenu-list">
+     										<li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+     										<li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+     									</ul>
+     									<div class="site-nav__submenu-block">
+     										<div class="site-nav__submenu-block-title">
+     											<h3>Оплата</h3>
+     											<p>Оплачивайте различные услуги в одном месте </p>
+     											<a class="btn btn--blue" href="#">Оплатить</a>
+     										</div>
+     										<div class="site-nav__submenu-block-img">
+     											<img src="img/menu-img1.svg" alt="">
+     										</div>
+     								</div>
+     									
+     								</div>
+     							</div>
+     						</li>
+     						<li class="site-nav__list-item with-submenu"><a href="http://kosmas.flowers/">Абонентам</a>
+     							<div class="site-nav__submenu ">
+     								<div class="  mob-container">
+     									<ul class="site-nav__submenu-list">
+     										<li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+     										<li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+     									</ul>
+     									<div class="site-nav__submenu-block">
+     										<div class="site-nav__submenu-block-title">
+     											<h3>Оплата</h3>
+     											<p>Оплачивайте различные услуги в одном месте </p>
+     											<a class="btn btn--blue" href="#">Оплатить</a>
+     										</div>
+     										<div class="site-nav__submenu-block-img">
+     											<img src="img/menu-img1.svg" alt="">
+     										</div>
+     								</div>
+     									
+     								</div>
+     							</div>
+     						</li>
+     	                   <li class="site-nav__list-item with-submenu"><a href="#">Оплата</a>
+     							<div class="site-nav__submenu ">
+     								<div class="  mob-container">
+     									<ul class="site-nav__submenu-list">
+     										<li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+     										<li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+     									</ul>
+     									<div class="site-nav__submenu-block">
+     										<div class="site-nav__submenu-block-title">
+     											<h3>Оплата</h3>
+     											<p>Оплачивайте различные услуги в одном месте </p>
+     											<a class="btn btn--blue" href="#">Оплатить</a>
+     										</div>
+     										<div class="site-nav__submenu-block-img">
+     											<img src="img/menu-img1.svg" alt="">
+     										</div>
+     								</div>
+     									
+     								</div>
+     							</div>
+
+     						</li>
+
+     						<li class="site-nav__list-item with-submenu"><a href="#">Услуги</a>
+     							<div class="site-nav__submenu ">
+     								<div class="  mob-container">
+     									<ul class="site-nav__submenu-list">
+     										<li class="site-nav__submenu-item"><a href="http://kosmas.flowers/">Оплата услуг банковскими картами 1</a></li>
+     										<li class="site-nav__submenu-item active "><a href="#">Оплата со счета мобильного телефона 2</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi терминал 3</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через банк 44</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Оплата через qiwi wallet 5</a></li>
+     										<li class="site-nav__submenu-item"><a href="#">Правила оплаты и возврата денежных средств 6</a></li>
+     									</ul>
+     									<div class="site-nav__submenu-block">
+     										<div class="site-nav__submenu-block-title">
+     											<h3>Оплата</h3>
+     											<p>Оплачивайте различные услуги в одном месте </p>
+     											<a class="btn btn--blue" href="#">Оплатить</a>
+     										</div>
+     										<div class="site-nav__submenu-block-img">
+     											<img src="img/menu-img1.svg" alt="">
+     										</div>
+     								</div>
+     									
+     								</div>
+     							</div>
+     						</li>
+     					</ul>
+     				</div>
+     			</div>
+     		</nav >
+     	</header>
+    
+     <main>
+
+     	<!-- СЛАЙДЕР -->
+     	<div class="main-slider__wrapper">
+	     	
+	     		<div class="main-slider">
+	     			<div class="main-slider__slide">
+	     				<div class="container ">
+		                    <div class="main-slider__content">
+		                    	<h2>Интернет в каждый дом</h2>
+		                    	<div>
+		                    		<p>«Нэт-Норд» — это безлимитный интернет в московской области для владельцев частных домов и дач, жителей коттеджных поселков и небольших населенных пунктов, а также для бизнеса. </p>
+		                    		<p>У нас можно подключить телевидение и домашний интернет быстро в десятках населенных пунктов по всему Подмосковью.</p>
+		                    	</div>
+		                    	<div class="main-sliders__content-btns">
+		                    		<a class="big-btn " href="#">Карта покрытия</a>
+		                    		<a  class="big-btn big-btn--blue simplebox" href="#form-connect">Подключиться</a>
+		                    	</div>
+		                    </div>
+	     			
+	     				</div>
+	     				<img class="main-slider__img" src="img/slide-3.png" alt="">
+	     			
+	     			</div>
+	     			<div class="main-slider__slide">
+	     				<div class="container">
+	     					    <div class="main-slider__content">
+		                    	<h2>Интернет в каждый дом</h2>
+		                    	<div>
+		                    		<p>«Нэт-Норд» — это безлимитный интернет в московской области для владельцев частных домов и дач, жителей коттеджных поселков и небольших населенных пунктов, а также для бизнеса. </p>
+		                    		<p>У нас можно подключить телевидение и домашний интернет быстро в десятках населенных пунктов по всему Подмосковью.</p>
+		                    	</div>
+		                    	<div class="main-sliders__content-btns">
+		                    		<a class="big-btn " href="#">Карта покрытия</a>
+		                    		<a  class="big-btn big-btn--blue"  href="#form-connect">Подключиться</a>
+		                    	</div>
+		                    </div>
+	     			
+	     				</div>
+	     				<img class="main-slider__img" src="img/slide-2.png" alt="">
+	     			
+	     			</div>
+	     			<div class="main-slider__slide">
+	     				<div class="container">
+	     					    <div class="main-slider__content">
+		                    	<h2>Интернет в каждый дом</h2>
+		                    	<div>
+		                    		<p>«Нэт-Норд» — это безлимитный интернет в московской области для владельцев частных домов и дач, жителей коттеджных поселков и небольших населенных пунктов, а также для бизнеса. </p>
+		                    		<p>У нас можно подключить телевидение и домашний интернет быстро в десятках населенных пунктов по всему Подмосковью.</p>
+		                    	</div>
+		                    	<div class="main-sliders__content-btns">
+		                    		<a class="big-btn " href="#">Карта покрытия</a>
+		                    		<a  class="big-btn big-btn--blue"  href="#form-connect">Подключиться</a>
+		                    	</div>
+		                    </div>
+	     			
+	     				</div>
+	     				<img class="main-slider__img" src="img/slide-3.png" alt="">
+	     			
+	     			</div>
+	     		</div>	     			
+	     	</div>
+
+
+     	<!-- МЫ ПРЕДЛАГАЕМ -->
+     	<div class="offer">
+     		<div class="container main-wrapper">
+     			<div class="main-title">
+            			<h3 >Мы предлагаем</h3>
+            			<a class="main-title__all" href="#">Все услуги</a>            			
+            	</div>
+            	<div class="offer__wrapper">
+            		<div class="offer__block offer__block1">
+            			<a href="">Интернет</a>
+            			<img  src="img/offer-1.png" alt="">
+            		</div>
+            		<div class="offer__block offer__block2">
+
+            			<a href="">Телевидение</a>
+            			<img  src="img/offer-2.png" alt="">
+            		</div>
+            		<div class="offer__block-little offer__block3">
+            			<img class="offer__block-back" src="img/1.png" alt="">
+            			<img class="offer__block-icon" src="img/icon-3.svg" alt="">
+            			<a  href="">Сдаем в аренду роутеры</a>
+            			<div class="offer__block-links">
+            				<a href="">IP-TV приставки</a> 
+            				<a href="">IP-TV приставки</a>
+            			</div>
+            		</div>
+            		<div class="offer__block-little  offer__block4">
+            			<img class="offer__block-back" src="img/2.png" alt="">
+            			<img class="offer__block-icon" src="img/icon-4.svg" alt="">
+            			<a href=""> Ремонт компьютеров</a></div>
+            		<div class="offer__block-little  offer__block5">
+            			<img class="offer__block-back" src="img/3.png" alt="">
+            			<img class="offer__block-icon" src="img/icon-5.svg" alt="">
+            			<a href=""> Антивирусы</a>
+            			 <div class="offer__block-links">
+            				<a href="">Утилиты</a> 
+            				<a href="">Готовые сайты</a>
+            				<a href="#">Обработка аудио, видео и т.д.</a>
+            			</div>
+            		</div>
+            		<div class="offer__block-little  offer__block6">
+            			<img class="offer__block-back" src="img/4.png" alt="">
+            			<img class="offer__block-icon" src="img/icon-6.svg" alt="">
+            			<a href=""> Видео наблюдение</a>
+            			 <div class="offer__block-links">
+            				<a href="">ИК-барьеры </a> 
+            				<a href="">Системы безопасности</a>
+            			</div>
+            			</div>            		
+            	</div>
+     		</div>		
+     	</div>
+
+     	<!-- БЛОК ПРЕИМУЩЕСТВА -->
+     	<div class="testimonials">
+     		<div class="container testimonials__wrapper">
+     			
+     			<div class="testimonials__block testimonials__block--first">
+     				<img src="img/9-reasons.svg" alt="">
+     				<div class="testimonials__block-reasons"> причин открыть Интернет с NetNord </div>
+     			</div>
+     			<div class="testimonials__block">
+     				<div class="testimonials__title">
+     					<img src="img/icon-safety.svg" alt="">
+     					<h3>Устойчивость и безопасность</h3>
+     				</div>
+     				<p>сеть состоящая из тысячи оптических волокон, являющихся непревзойденной средой передачи данных в части пропускной способности, безопасных в эксплуатации - полная нечувствительность линий связи к внешним электрическим помехам и погодным условиям.
+     				</p>
+     			</div>
+     			<div class="testimonials__block">
+     				<div class="testimonials__title">
+     					<img src="img/icon-time.svg" alt="">
+     					<h3>Скорость</h3>
+     				</div>
+     				<p>Все еще думаете, что подключение частного дома к интернету требует больших затрат? Просто позвоните, мы договоримся о времени выезда наших специалистов, приедем, подключим бесплатно
+     				</p>
+     			</div>
+     			<div class="testimonials__block">
+     				<div class="testimonials__title">
+     					<img src="img/icon-page-not-found.svg" alt="">
+     					<h3>Временная блокировка услуг </h3>
+     				</div>
+     				<p>Все еще думаете, что подключение частного дома к интернету требует больших затрат? Просто позвоните, мы договоримся о времени выезда наших специалистов, приедем, подключим бесплатно 
+     				</p>     				
+     			</div>
+     			<div class="testimonials__block">
+     				<div class="testimonials__title">
+     					<img src="img/icon-question.svg" alt="">
+     					<h3>Обратная связь</h3>
+     				</div>
+     				<p>Если ваш «безлимит» работает не так хорошо, как вы рассчитывали, мы быстро решим любые проблемы, перенастроим оборудование, проверим целостность и работоспособность каждого сегмента сети
+     				</p>     				
+     			</div>
+     			<div class="testimonials__block">
+     				<div class="testimonials__title">
+     					<img src="img/icon-search.svg" alt="">
+     					<h3>Нет скрытым расходам </h3>
+     				</div>
+     				<p>отсутствие комиссии за активацию дополнительных услуг, таких как "Обещанный платеж" и "Турбо кнопка"		
+     				</p>     				
+     			</div>
+     			<div class="testimonials__block">
+     				<div class="testimonials__title">
+     					<img src="img/icon-rocket.svg" alt="">
+     					<h3>Временное увеличение скорости</h3>
+     				</div>
+     				<p>Вам срочно нужно загрузить фильм или повтор футбольного матча и нет ни минуту лишнего времени? Не обязательно менять тарифный план, ведь можно увеличить скорость доступа до максимума всего за 10 рублей в час. Используйте возможности интернета на полную 
+     				</p>     				
+     			</div>
+     			<div class="testimonials__block">
+     				<div class="testimonials__title">
+     					<img src="img/icon-feedback.svg" alt="">
+     					<h3>Универсальность</h3>
+     				</div>
+     				<p>Если ваш «безлимит» работает не так хорошо, как вы рассчитывали, мы быстро решим любые проблемы, перенастроим оборудование, проверим целостность и работоспособность каждого сегмента сети 
+     				</p>     				
+     			</div>
+     			<div class="testimonials__block">     				
+     				<div class="testimonials__title">
+     					<img src="img/icon-warning.svg" alt="">
+     					<h3>Бесплатное подключение</h3>
+     				</div>
+     				<p>Вам срочно нужно загрузить фильм или повтор футбольного матча и нет ни минуту лишнего времени? Не обязательно менять тарифный план, ведь можно увеличить скорость доступа до максимума всего за 10 рублей в час. Используйте возможности интернета на полную
+     				</p>     				
+     			</div>
+     			<div class="testimonials__block testimonials__block--last">
+     				<div class="testimonials__title">
+     					<img src="img/logotype.svg" alt="">
+     					<div>
+     						<h3>Net-Nord</h3>
+     						<p>Все еще думаете, что подключение частного дома к интернету требует больших затрат? Просто позвоните, мы договоримся о времени выезда наших специалистов, приедем, подключим бесплатно</p>
+     					</div>
+     				</div>
+     				
+     			</div>
+
+     		</div>
+     	</div>
+
+           <!-- О КОМПАНИИ -->
+
+           <div class="company">
+           	<img src="img/planet.svg" alt="">
+           	<div class="container">
+           		<div class="company__wrapper main-wrapper">
+           			<h3 class="company__title title">
+           				Компания «Нэт-Норд» - это быстроразвивающийся Интернет-провайдер на территории Московской области.
+           			</h3>	
+           			<div class="company__text">
+           				 <p>При строительстве сети мы делаем акцент на следующих моментах:</p>
+           				 <ul>
+           				   <li>Мы используем ТОЛЬКО волоконно-оптический кабель;</li>
+           				   <li>Скорость между сегментами сети до 10 Гб/сек;</li>
+           				   <li>Современное сертифицированное оборудование и программное обеспечение;</li> <li>Высококвалифицированный персонал.</li>
+           				  </ul>           			
+           			</div>
+           			<div class="company__btn-wrapper">
+           				<a class="company__btn btn" href="#">Подробнее	</a>
+           			</div>
+           		</div>
+           	</div>
+           </div>
+           <!-- ОПЛАТА БАНКОВСКОЙ КАРТОЙ -->
+
+             <div class=" container main-pay">
+           	<div class="main-pay_text">
+           		<h3 class="main-pay__title title">
+           					Быстрая оплата услуг банковской картой
+           		</h3>
+           		<p>банковской картой платежной системы MasterCard или Visa.<br> Комиссия – не взимается.</p>
+           	<div class="main-pay__img main-pay__img-mob">
+           		<img class="main-pay__img1" src="img/karta2.png" alt="">
+           		<img class="main-pay__img2" src="img/karta.png" alt="">
+
+           	</div>
+           		<form class="main-pay__form">
+           			
+                        <div class="main-pay__form-input-wrapper main-pay__form-input--dogovor">
+                            <input class="main-pay__form-input " type="text" placeholder="Номер договора" required name="dogovor">
+                        </div>
+                    
+           			
+                        <div class="main-pay__form-input-wrapper main-pay__form-input--summa"> 
+                            <input class="main-pay__form-input" type="text" placeholder="Сумма" required name="summa">
+                        </div>
+                   
+           			
+                        <div class="main-pay__form-input-wrapper main-pay__form-input--mail">
+                            <input class="main-pay__form-input"  type="email" placeholder="E-mail" required email name="email">
+                        </div>
+                    
+           			<div class="main-pay__form-submit">
+           				<img  src="img/master-card.svg" alt="">
+           				<img  src="img/visa.svg" alt="">
+           				<span > Комиссия 0%</span>
+           				<input type="submit" placeholder="Оплатить">
+           				<div class="main-pay__form-info mobile">Возникли вопросы? Обращайтесь по телефону <a href="">+7 (495) 783-28-33</a></div>
+           			</div>
+           			
+           		</form>
+           		<div class="main-pay__form-info ">Возникли вопросы? Обращайтесь по телефону <a href="">+7 (495) 783-28-33</a></div>
+           	</div>
+           	<div class="main-pay__img">
+           		<img class="main-pay__img1" src="img/karta2.png" alt="">
+           		<img class="main-pay__img2" src="img/karta.png" alt="">
+
+           	</div>
+           </div>
+          <!-- БЛОК ПОМОЩЬ/FAQ -->
+            <div class="faq">
+            	<div class="container" >
+	            	<form class="faq__main faq__wrapper" action="" onsubmit="return false">
+	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
+	            		<p>
+	            			Выберите пункт и нажмите кнопку “Следующий шаг"
+	            		</p>
+	            		
+	            			
+	            				<div class="faq__radio-button">
+	            				<input type="radio" name="radio" id="radio1" data-id="level1">	            					
+	            					<label for="radio1"> Страницы не грузятся, но Вы можете зайти в личный кабинет?</label>
+	            				</div>
+	            				<div class="faq__radio-button">
+	            				 <input type="radio" name="radio" id="radio2" data-id="level2">	            					
+	            					<label for="radio2">Страницы не грузятся или браузер выдает ошибку</label>
+	            				</div>
+	            				<div class="faq__radio-button">	 
+	            				      <input type="radio" name="radio" id="radio3" data-id="level3">      					
+	            					<label for="radio3">Устройство с которого Вы пытаетесь выйти в интернет не реагирует на нажатия</label>
+	            				</div>
+	            				<div class="faq__radio-button">
+	            				<input type="radio" name="radio" id="radio4" data-id="level4">	            					
+	            					<label for="radio4">У меня другая проблема </label>
+	            				</div>
+	            				<button type="submit" id="btn-check" class="faq__main-btn">Следующий шаг</button>
+	            			</form>
+	            		
+	             	
+
+
+	            	<div class="faq__second faq__wrapper" id="level1">
+	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
+	            		<div class="faq__second-content">
+	            			<p>Попробуйте перезагрузить модем, нажав на кнопку “reboot” позади устройства,
+	            				при этом сигнал подключения загорится красным, через несколько секунд желтым и при восстановлении подключения сменится на зеленый.</p>
+	            			<p>
+	            										Если сигнал подключения по прежнему горит желтым и подключение к интентернет не восстановилось, попробуйте “ВЕРНУТЬСЯ НАЗАД” и попробовать другой способ. </p>
+	            			
+	            			<p>Если решить проблему не удалось позвоните в службу технической поддержки по тел.: +7&nbsp;(495)&nbsp;783-28-33 или <a class="simplebox faq__help" href="#form-help"> "напишите оператору онлайн"</a></p>
+	            		</div>
+	            		<button  class="faq__main-btn btn-return" >попробовать другой способ</button>
+	            	</div>
+
+	            		            	<div class="faq__second faq__wrapper" id="level2">
+	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
+	            		<div class="faq__second-content">
+	            			<p>
+	            				контент2
+	            			</p>
+	            		</div>
+	            		<button  class="faq__main-btn btn-return" >попробовать другой способ</button>
+	            	</div>
+
+
+	            	<div class="faq__second faq__wrapper" id="level3">
+	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
+	            		<div class="faq__second-content">
+	            			<p>контент3</p>
+	            		</div>
+	            		<button  class="faq__main-btn btn-return" >попробовать другой способ</button>
+	            	</div>
+
+
+	            	<div class="faq__second faq__wrapper" id="level4">
+	            		<div class="faq__title">Что делать, если не получается зайти в интернет?</div>
+	            		<div class="faq__second-content">
+	            			<p>контент4</p>
+	            		</div>
+	            		<button  class="faq__main-btn btn-return" >попробовать другой способ</button>
+	            	</div>
+
+
+            	</div>
+            </div>
+
+
+           <!-- НОВОСТИ -->
+            <div class="news">
+            	<div class="container news__wrapper main-wrapper">
+            		<div class="main-title">
+            			<h3 >Новости</h3>
+            			<a class="main-title__all" href="#">Все новости</a>
+            		</div>
+            		<div class="news__block">
+            			<div class="news__last news__block-post">
+            				<a class="news__block-link" href="#">Переход на онлайн обслуживание клиентов с 01.04.2020</a>
+            		        <div class="news__block-data">11 марта 2020</div>
+            		    </div>
+            			<div class="news__prev1 news__block-post">
+            				<a class="news__block-link" href="#">
+            					Новые тарифные планы с 01.04.2020
+            				</a>
+            				<div class="news__block-data">10 марта 2020</div>
+            			</div>
+            			<div class="news__prev2 news__block-post">
+            				<a class="news__block-link" href="#">
+            					Офис обслуживания временно закрыт с 17.03.2020 по 30.03.2020 
+            				</a>
+            				<div class="news__block-data">9 марта 2020</div>
+            			</div>
+                      </div>  		            		
+            	</div>           	
+            </div>
+    <!-- БЛОК С ФОРМОЙ ПОДКЛЮЧЕНИЯ -->
+		<div class="main-form">
+			<div class="container main-form__wrapper ">
+		                <form action="" class="main-form__form" id="site-connect-form">
+							
+							<div class="main-form__form-title">
+								Онлайн заявка на подключение
+							</div>
+							
+								<div class="main-form__input main-form__input--name">
+									<label for="">Имя*</label>
+									<input type="text" name="name" required>
+								</div>
+								<div class="main-form__input main-form__input--phone">
+									<label for="">Телефон*</label>
+									<input class="js-phone" type="tel" name="phone" required>
+								</div>
+								<div class="main-form__input main-form__input--mail">
+									<label for="">E-mail*</label>
+									<input type="email" name="email" required email>
+								</div>	
+								<div class="main-form__select">
+									<label for="main-address">Адрес подключения:*</label>
+								 	<select id="main-address" name="main-address" class="js-example-basic-single">
+					                    <option  value="Бережки">Бережки</option>
+					                    <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
+                                        <option  value="Бережки">Бережки</option>
+                                        <option  value="Москва">Москва</option>
+		                			</select>
+								</div>	
+								<div class="main-form__select ">
+									<label for="main-connect">Тип подключения:*</label>
+								 	<select id="main-connect" name="main-connect" class="js-example-basic-single">
+					                    <option value="Дом">Частный дом</option>
+					                    <option value="Квартира">Квартира</option>
+		                			</select>
+								</div>
+								<div class="main-form__input main-form__input--address" >
+									<label for="">Прочий адрес</label>
+									<input type="text">
+								</div>	
+								<div class="main-form__select ">
+									<label for="main-tarif">Тарифный план, если определен</label>
+								 	<select id="main-tarif" name="main-address" class="js-example-basic-single">
+					                    <option value="Домашний">Домашний</option>
+					                    <option value="Турбо">Турбо</option>
+		                			</select>
+								</div>
+								<div class="main-form__input">
+									<label for="main-message">Сообщение</label>
+									<textarea name="" id="" cols="30" rows="2"></textarea>
+								</div>
+								<div class="main-form__input main-form__input-privacy">
+									<input type="checkbox" required name="privacy">
+									<label for="">Даю согласие на обработку персональных данных</label>
+								</div>	
+								<div class="main-form_submit">
+									<div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+									<input type="submit" value="Подключиться">
+								</div>											
+							</form>
+				
+				
+			</div>
+		</div>
+     </main>
+<!-- Подвал сайта -->
+     <footer class="main-footer">
+     	<div class="container">
+     		<div class="main-footer__wrapper">
+     			<div class="main-footer__menu">
+     				<div class="main-footer__logo">
+     					<a href="#"><img src="img/logo-net-nord-white.svg" alt=""></a>
+     				</div>
+     				<ul class="main-footer__nav">
+     					
+     						<li>
+     							<a href="">Интернет</a>
+     						</li>
+     						<li>
+     							<a href="">Телевидение</a>
+     						</li>
+     						<li>
+     							<a href="">Абонентам</a>
+     						</li>
+     						<li>
+     							<a href="">Оплата</a>
+     						</li>
+     						<li>
+     							<a href="">Услуги</a>
+     						</li>     						
+     					
+     				</ul>
+     				<a class="main-footer__lk" href="">Личный кабинет</a>
+     			</div>
+     			<div class="main-footer__info">
+
+     				<div class="main-footer__contacts">
+     				<div class="main-footer__info-logo">
+     					<a href="#"><img src="img/logo-net-nord-white.svg" alt=""></a>
+     				</div>
+      					<a class="main-footer__tel" href="tel:+74957832833">+7 495 783-28-33</a>
+     					<div class="main-footer__address">Московская обл.,<br class="br"> пгт&nbsp;Поварово, ул. Ленинградская, д.&nbsp;2а,&nbsp;офис&nbsp;36</div>
+    					<div class="main-footer__plat">
+    					 <img src="img/master-card.svg" alt=""> 
+    					 <img src="img/visa.svg" alt="">
+    					 <img src="img/pay-keeper.svg" alt="">
+    					</div>    					
+     				</div>
+     				<div class="main-footer__docs">
+     					<h3>Скачать документы</h3>
+     					<div class="main-footer__docs-wrapper">
+     						<a download href="">Лицензия на Телематические услуги связи;</a>
+     						<a download href=""> Лицензия на Оказание услуг связи по предоставлению каналов связи.</a>
+     						<a download href="">Лицензия на Услуги связи по передаче данных, за исключением услуг связи по передаче данных для целей передачи голосовой информации;</a>
+     					</div>
+
+     				</div>	     						
+     			</div>	
+     		</div>
+     	</div>
+     </footer>
+</div>
+
+  <!-- МОДАЛЬНЫЕ ОКНА-ФОРМЫ Подключиться--> 
+  <div class="modal-container" id="form-connect">
+  	<div class="modal">
+				<form action="" class="main-form__form" id="modal-connect-form">
+					<span class="close">close</span>
+					<div class="main-form__form-title">
+						Онлайн заявка на подключение
+					</div>
+					
+						<div class="main-form__input main-form__input--name">
+							<label for="">Имя*</label>
+							<input type="text" name="name" required>
+						</div>
+						<div class="main-form__input main-form__input--phone">
+							<label for="">Телефон*</label>
+							<input class="js-phone" type="tel" name="phone" required>
+						</div>
+						<div class="main-form__input main-form__input--mail">
+							<label for="">E-mail*</label>
+							<input type="email" name="mail" required>
+						</div>	
+						<div class="main-form__select ">
+							<label for="modal-address">Адрес подключения:*</label>
+						 	<select id="modal-address" name="modal-address" class="js-example-basic-single">
+			                    <option value="Бережки">Бережки</option>
+			                    <option value="Москва">Москва</option>
+                			</select>
+						</div>	
+						<div class="main-form__select ">
+							<label for="modal-connect">Тип подключения:*</label>
+						 	<select id="modal-connect" name="modal-connect" class="js-example-basic-single">
+			                    <option value="Дом">Частный дом</option>
+			                    <option value="Квартира">Квартира</option>
+                			</select>
+						</div>
+						<div class="main-form__input main-form__input--address">
+							<label for="">Прочий адрес</label>
+							<input type="text">
+						</div>	
+						<div class="main-form__select ">
+							<label for="modal-tarif">Тарифный план, если определен</label>
+						 	<select id="modal-tarif" name="modal-address" class="js-example-basic-single">
+			                    <option value="Домашний">Домашний</option>
+			                    <option value="Турбо">Турбо</option>
+                			</select>
+						</div>
+						<div class="main-form__input">
+							<label for="main-message">Сообщение</label>
+							<textarea name="" id="" cols="30" rows="2"></textarea>
+						</div>
+						<div class="main-form__input main-form__input-privacy">
+							<input type="checkbox" required name="privacy">
+							<label for="">Даю согласие на обработку персональных данных</label>
+						</div>	
+						<div class="main-form_submit">
+							<div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+							<input type="submit" value="Подключиться">
+						</div>											
+					</form>
+				
+  	</div>
+  </div>
+
+
+  <!-- МОДАЛЬНЫЕ ОКНА-ФОРМЫ Вопрос оператору --> 
+    <div class="modal-container" id="form-help">
+  	<div class="modal">
+				<form action="" class="main-form__form" id="form-online">
+					<span class="close">close</span>
+					<div class="main-form__form-title">
+						Вопрос оператору
+					</div>
+					
+						<div class="main-form__input main-form__input--name">
+							<label for="">Ваш номер лицевого счета*</label>
+							<input type="text" required name="number" minlength="10">
+						</div>
+						<div class="main-form__select ">
+							<label for="main-contact">Способ для связи*</label>
+						 	<select id="main-contact" name="main-contact"  class="js-example-basic">
+			                    <option value="Перезвонить">Перезвонить</option>
+			                    <option value="Написать">Написать</option>
+                			</select>
+						</div>	
+						<div class="main-form__input">
+							<label for="">Текст проблемы</label>
+							<textarea name="" id="" cols="30" rows="2"></textarea>
+						</div>
+						<div class="main-form__input main-form__input-privacy">
+							<input type="checkbox" name="privacy" required>
+							<label for="">Даю согласие на обработку персональных данных</label>
+						</div>	
+						<div class="main-form_submit">
+							<div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+							<input type="submit" value="Подключиться">
+						</div>											
+					</form>
+				
+  	</div>
+  </div> 
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/jquery-migrate-3.0.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script src="js/select2.full.min.js"></script>	
+        <script src="js/jquery.fancybox.min.js"></script>	        
+		<script src="js/slick.js"></script>
+        <script src="js/map.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="js/main.js"></script>
+
+	
+
+</body>
+</html>

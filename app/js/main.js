@@ -86,7 +86,20 @@ $('.btn-return').on('click',(function() {
  $(this).parent().css('display','none');
   $('.faq__main').css('display','block');
 }));
-
+// ТАБЫ
+$('.tab-link').on('click', function () {
+        var container = $(this).parent().parent();
+        var curid = $(this).data('id'),
+                tabs = $('.tab-link'),
+                holderTab = $('.tab-info');
+        // holderTab.hide();
+        // $('#'+ curid).fadeIn(700);
+        container.find('.tab-info').addClass('hide');
+        $('#' + curid).removeClass('hide');
+        container.find('.tab-link').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    });
 // МОДАЛЬНЫЕ ОКНА
     var link = $('.simplebox');
      
@@ -162,7 +175,7 @@ $.validator.addClassRules({
     }
 });
 
-$('.js-phone').mask("+7(999)999-9999", {autoclear: false});
+$('.js-phone').mask("+7 999 999 9999", {autoclear: false});
 
 
 $('.btn-front').click(function() {
@@ -212,16 +225,16 @@ $('.btn-back').click(function() {
        {
       breakpoint: 1025,
       settings: {
-          centerMode: true,
-        slidesToShow:1,
+         
+        slidesToShow:3,
         slidesToScroll: 1,
       }
     },
            {
-      breakpoint: 350,
+      breakpoint: 430,
       settings: {
-          centerMode: false,
-        slidesToShow:1,
+       
+        slidesToShow:2,
         slidesToScroll: 1,
       }
     }
