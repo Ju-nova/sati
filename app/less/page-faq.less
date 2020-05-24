@@ -15,7 +15,7 @@ position: relative;
 	width: 21px;
 	height:13px;
 	display: block;
-	right:0px;
+	right:-30px;
 	top:50%;
 	margin-top: -6.5px;
 	transition: .5s;
@@ -23,6 +23,9 @@ position: relative;
 	background-image:url(../img/arrow.svg);
 	background-size:cover;
 	cursor:pointer;
+@media(max-width: 450px){
+	right:-10px;
+}
 }
 &:before{
 	content:'';
@@ -34,6 +37,9 @@ position: relative;
 	top:-15px;
 	background-image:url(../img/help.png);
 	background-size:cover;
+	@media(max-width: 426px)	{
+	left:-69px;	
+}
 }
 }
 .page-faq__quest.rotate{
@@ -53,9 +59,11 @@ font-size: 16px;
 line-height: 19px;
 }
 .page-faq__block{
-	padding:36px 42px 36px 120px;
-	border-bottom: 2px solid rgba(3, 39, 54, 0.1);;
-	
+	padding:36px 62px 36px 120px;
+	border-bottom: 2px solid rgba(3, 39, 54, 0.1);
+@media(max-width: 426px)	{
+	padding:36px 20px 36px 85px;	
+}
 }
 .page-faq__block:last-child{
 	border:none;

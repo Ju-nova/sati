@@ -394,110 +394,164 @@
           </div>
     </div>
     <!-- КАРТА НА ВСЮ ШИРИНУ --> 
-<!--     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A60107300847ed9694cfdc96150962edd4bda4c505eb59fc2cba751927ee5723a&amp;source=constructor" width="100%" height="700" frameborder="0"></iframe> -->
+
 <div id="map" ></div>
    
 
     <!-- ФОРМА С КАРТОЙ -->
+    <div class="map-form">
+      
+      <div class="container">
+        <form action="" class="main-form__form" id="site-question-form">
+              
+              <div class="main-form__form-title">
+                Задать вопрос
+              </div>
+              
+                <div class="main-form__input main-form__input--name">
+                  <label for="">Имя*</label>
+                  <input type="text" name="name" required>
+                </div>
+                <div class="main-form__input main-form__input--phone">
+                  <label for="">Телефон*</label>
+                  <input class="js-phone" type="tel" name="phone" required>
+                </div>
+                <div class="main-form__input main-form__input--mail">
+                  <label for="">E-mail*</label>
+                  <input type="email" name="email" required email>
+                </div>  
+  
+                <div class="main-form__select ">
+                  <label for="main-connect">Тип подключения:*</label>
+                  <select id="main-connect" name="main-connect" class="js-example-basic-single">
+                              <option value="Дом">Частный дом</option>
+                              <option value="Квартира">Квартира</option>
+                          </select>
+                </div>
+                <div class="main-form__input main-form__input--address" >
+                  <label for="">Прочий адрес</label>
+                  <input type="text">
+                </div>  
+                <div class="main-form__input">
+                  <label for="main-message">Сообщение</label>
+                  <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+                <div class="main-form__input main-form__input-privacy">
+                  <input type="checkbox" required name="privacy">
+                  <label for="">Даю согласие на обработку персональных данных</label>
+                </div>  
+                <div class="main-form_submit">
+                  <div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+                  <input type="submit" value="Подключиться">
+                </div>                      
+              </form>
+        
+      </div>
+      <div id="map" ></div>
+    </div>
+
     <!-- ТАБЛИЦЫ --> 
         <div class="page-table__wrapper">
           <div class="container">
             <h3>Заголовок</h3>
-            <table class="page-table">
-                              <!--ряд с ячейками заголовков-->
-                          <tr class="page-table__head">
-                              <th>Характеристики</th>
-                              <th>Описание</th>
-                              <th>Характеристики</th>
-                              <th>Описание</th>
-                              <th>Характеристики</th>
-                              <th>Описание</th>                              
-                          </tr> 
-                          <!--ряд с ячейками тела таблицы-->
-                          <tr>
-                              <td>SoC</td>
-                              <td>STi206/207 </td>
-                              <td>LAN</td>
-                              <td>RJ-45, 10/100 BASE-T </td>
-                              <td>LAN</td>
-                              <td>RJ-45, 10/100 BASE-T </td>                              
-                          </tr> 
-                          <!--ряд с ячейками тела таблицы-->
-                          <tr>
-                              <td>SoC</td>
-                              <td>STi206/207 </td>
-                              <td>LAN</td>
-                              <td>RJ-45, 10/100 BASE-T </td>
-                              <td>LAN</td>
-                              <td>RJ-45, 10/100 BASE-T </td>
-                          </tr> 
-
-                              <tr>
-                                  <td>SoC</td>
-                                  <td>STi206/207 </td>
-                                  <td>LAN</td>
-                                  <td>RJ-45, 10/100 BASE-T </td>
-                                  <td>LAN</td>
-                                  <td>RJ-45, 10/100 BASE-T </td>
-                              </tr> 
-
-                              <tr>
-                                  <td>SoC</td>
-                                  <td>STi206/207 </td>
-                                  <td>LAN</td>
-                                  <td>RJ-45, 10/100 BASE-T </td>
-                                  <td>LAN</td>
-                                  <td>RJ-45, 10/100 BASE-T </td>
-                              </tr>                          
-                          </table>
-          </div>
+                   <div class="page-table__wrap">
+                        <table class="page-table">
+                                         <!--ряд с ячейками заголовков-->
+                                     <tr class="page-table__head">
+                                         <th>Характеристики</th>
+                                         <th>Описание</th>
+                                         <th>Характеристики</th>
+                                         <th>Описание</th>
+                                         <th>Характеристики</th>
+                                         <th>Описание</th>                              
+                                     </tr> 
+                                     <!--ряд с ячейками тела таблицы-->
+                                     <tr>
+                                         <td>SoC</td>
+                                         <td>STi206/207 </td>
+                                         <td>LAN</td>
+                                         <td>RJ-45, 10/100 BASE-T </td>
+                                         <td>LAN</td>
+                                         <td>RJ-45, 10/100 BASE-T </td>                              
+                                     </tr> 
+                                     <!--ряд с ячейками тела таблицы-->
+                                     <tr>
+                                         <td>SoC</td>
+                                         <td>STi206/207 </td>
+                                         <td>LAN</td>
+                                         <td>RJ-45, 10/100 BASE-T </td>
+                                         <td>LAN</td>
+                                         <td>RJ-45, 10/100 BASE-T </td>
+                                     </tr> 
+                       
+                                         <tr>
+                                             <td>SoC</td>
+                                             <td>STi206/207 </td>
+                                             <td>LAN</td>
+                                             <td>RJ-45, 10/100 BASE-T </td>
+                                             <td>LAN</td>
+                                             <td>RJ-45, 10/100 BASE-T </td>
+                                         </tr> 
+                       
+                                         <tr>
+                                             <td>SoC</td>
+                                             <td>STi206/207 </td>
+                                             <td>LAN</td>
+                                             <td>RJ-45, 10/100 BASE-T </td>
+                                             <td>LAN</td>
+                                             <td>RJ-45, 10/100 BASE-T </td>
+                                         </tr>                          
+                                     </table>
+                     </div>          </div>
         </div>
             <!-- ТАБЛИЦА С ТЕНЬЮ --> 
         <div class="page-table__wrapper">
           <div class="container">
             <h3>Заголовок</h3>
-            <table cellspacing="0"  class="page-table page-table--shadow">
-                              <!--ряд с ячейками заголовков-->
-                          <tr class="page-table__head">
-                              <th>Характеристики</th>
-                              <th>Описание</th>
-                              <th>Характеристики</th>
-                              <th>Описание</th>
-                             
-                          </tr> 
-                          <!--ряд с ячейками тела таблицы-->
-                          <tr>
-                              <td>SoC</td>
-                              <td>STi206/207 </td>
-                              <td>LAN</td>
-                              <td>RJ-45, 10/100 BASE-T </td>
-                             
-                          </tr> 
-                          <!--ряд с ячейками тела таблицы-->
-                          <tr>
-                              <td>SoC</td>
-                              <td>STi206/207 </td>
-                              <td>LAN</td>
-                              <td>RJ-45, 10/100 BASE-T </td>
-
-                          </tr> 
-
-                              <tr>
-                                  <td>SoC</td>
-                                  <td>STi206/207 </td>
-                                  <td>LAN</td>
-                                  <td>RJ-45, 10/100 BASE-T </td>
-
-                              </tr> 
-
-                              <tr>
-                                  <td>SoC</td>
-                                  <td>STi206/207 </td>
-                                  <td>LAN</td>
-                                  <td>RJ-45, 10/100 BASE-T </td>
-
-                              </tr>                          
-                          </table>
+            <div class="page-table__wrap page-table--shadow">
+              <table cellspacing="0"  class="page-table ">
+                                <!--ряд с ячейками заголовков-->
+                            <tr class="page-table__head">
+                                <th>Характеристики</th>
+                                <th>Описание</th>
+                                <th>Характеристики</th>
+                                <th>Описание</th>
+                               
+                            </tr> 
+                            <!--ряд с ячейками тела таблицы-->
+                            <tr>
+                                <td>SoC</td>
+                                <td>STi206/207 </td>
+                                <td>LAN</td>
+                                <td>RJ-45, 10/100 BASE-T </td>
+                               
+                            </tr> 
+                            <!--ряд с ячейками тела таблицы-->
+                            <tr>
+                                <td>SoC</td>
+                                <td>STi206/207 </td>
+                                <td>LAN</td>
+                                <td>RJ-45, 10/100 BASE-T </td>
+              
+                            </tr> 
+              
+                                <tr>
+                                    <td>SoC</td>
+                                    <td>STi206/207 </td>
+                                    <td>LAN</td>
+                                    <td>RJ-45, 10/100 BASE-T </td>
+              
+                                </tr> 
+              
+                                <tr>
+                                    <td>SoC</td>
+                                    <td>STi206/207 </td>
+                                    <td>LAN</td>
+                                    <td>RJ-45, 10/100 BASE-T </td>
+              
+                                </tr>                          
+                            </table>
+            </div>
           </div>
         </div>
 
@@ -505,52 +559,108 @@
 
          <div class="page-table__wrapper">
           <div class="container">
-            <div>
-              <h3>Тарифы</h3>
-              
+            <div class="page-table__title">
+              <div>
+                <h3>Тарифы</h3>
+                <div class="page-table__location">пгт. Поварово</div>
+              </div>
+              <div class="page-table__buttons">
+                <a href="#"  class=" page-table__tab active" data-id="tab-home">Дом</a>
+                <a href="#"  class="page-table__tab" data-id="tab-kvartira">Квартира</a>
+              </div>
+
+
             </div>
-            <table cellspacing="0"  class="page-table page-table--shadow">
-                              <!--ряд с ячейками заголовков-->
-                          <tr class="page-table__head">
-                              <th>Характеристики</th>
-                              <th>Описание</th>
-                              <th>Характеристики</th>
-                              <th>Описание</th>
-                             
-                          </tr> 
-                          <!--ряд с ячейками тела таблицы-->
-                          <tr>
-                              <td>SoC</td>
-                              <td>STi206/207 </td>
-                              <td>LAN</td>
-                              <td>RJ-45, 10/100 BASE-T </td>
-                             
-                          </tr> 
-                          <!--ряд с ячейками тела таблицы-->
-                          <tr>
-                              <td>SoC</td>
-                              <td>STi206/207 </td>
-                              <td>LAN</td>
-                              <td>RJ-45, 10/100 BASE-T </td>
+            <div class="page-table__wrap page-table--shadow">
+              <table  id="tab-home"  class="page-table  page-table__info">
+                                <!--ряд с ячейками заголовков-->
+                            <tr class="page-table__head">
+                                <th>ТАРИФНЫЙ ПЛАН</th>
+                                <th>АБОНЕНТСКАЯ ПЛАТА</th>
+                                <th>СКОРОСТЬ</th>
+                                <th>ОБЪЕМ ВКЛЮЧЕННОГО ТАРФИКА</th>
+                                <th></th>
+                            </tr> 
+                            <!--ряд с ячейками тела таблицы-->
+                            <tr>
+                                <td>Интернет-50</td>
+                                <td>450 руб/месяц </td>
+                                <td>до 50 Мбит/сек</td>
+                                <td>не ограничен</td>
+                               <td><a class="simplebox page-table__connect" href="#form-connect">Подключиться</a><a href=""></a></td>
+                            </tr> 
+                            <!--ряд с ячейками тела таблицы-->
+                            <tr>
+                                <td>Интернет-50</td>
+                                <td>450 руб/месяц </td>
+                                <td>до 50 Мбит/сек</td>
+                                <td>не ограничен</td>
+                               <td><a class="simplebox page-table__connect" href="#form-connect">Подключиться</a><a href=""></a></td>
+                            </tr>  
+              
+                            <tr>
+                                <td>Интернет-50</td>
+                                <td>450 руб/месяц </td>
+                                <td>до 50 Мбит/сек</td>
+                                <td>не ограничен</td>
+                               <td><a class="simplebox page-table__connect" href="#form-connect">Подключиться</a><a href=""></a></td>
+                            </tr>  
+              
+                             <tr>
+                                <td>Интернет-50</td>
+                                <td>450 руб/месяц </td>
+                                <td>до 50 Мбит/сек</td>
+                                <td>не ограничен</td>
+                               <td><a class="simplebox page-table__connect" href="#form-connect">Подключиться</a><a href=""></a></td>
+                            </tr>                           
+                            </table>
+                    </div>
 
-                          </tr> 
+                        <div class="page-table__wrap page-table--shadow">
+                          <table  id="tab-kvartira"  class="page-table  page-table__info hide">
+                                <!--ряд с ячейками заголовков-->
+                            <tr class="page-table__head">
+                                <th>ТАРИФНЫЙ ПЛАН</th>
+                                <th>АБОНЕНТСКАЯ ПЛАТА</th>
+                                <th>СКОРОСТЬ</th>
+                                <th>ОБЪЕМ ВКЛЮЧЕННОГО ТРАФИКА</th>
+                                <th></th>
+                            </tr> 
+                            <!--ряд с ячейками тела таблицы-->
+                            <tr>
+                                <td>Интернет-50</td>
+                                <td>450 руб/месяц </td>
+                                <td>до 50 Мбит/сек</td>
+                                <td>не ограничен</td>
+                               <td><a class="simplebox page-table__connect" href="#form-connect">Подключиться</a><a href=""></a></td>
+                            </tr> 
+                            <!--ряд с ячейками тела таблицы-->
+                            <tr>
+                                <td>Интернет-50</td>
+                                <td>450 руб/месяц </td>
+                                <td>до 50 Мбит/сек</td>
+                                <td>не ограничен</td>
+                               <td><a class="simplebox page-table__connect" href="#form-connect">Подключиться</a><a href=""></a></td>
+                            </tr>  
+                          
+                            <tr>
+                                <td>Интернет-50</td>
+                                <td>450 руб/месяц </td>
+                                <td>до 50 Мбит/сек</td>
+                                <td>не ограничен</td>
+                               <td><a class="simplebox page-table__connect" href="#form-connect">Подключиться</a><a href=""></a></td>
+                            </tr>  
+                          
+                             <tr>
+                                <td>Интернет-50</td>
+                                <td>450 руб/месяц </td>
+                                <td>до 50 Мбит/сек</td>
+                                <td>не ограничен</td>
+                               <td><a class="simplebox page-table__connect" href="#form-connect">Подключиться</a><a href=""></a></td>
+                            </tr>                           
+                            </table>
+                        </div>
 
-                              <tr>
-                                  <td>SoC</td>
-                                  <td>STi206/207 </td>
-                                  <td>LAN</td>
-                                  <td>RJ-45, 10/100 BASE-T </td>
-
-                              </tr> 
-
-                              <tr>
-                                  <td>SoC</td>
-                                  <td>STi206/207 </td>
-                                  <td>LAN</td>
-                                  <td>RJ-45, 10/100 BASE-T </td>
-
-                              </tr>                          
-                          </table>
           </div>
         </div>
                    <!-- ДВЕ ТАБЛИЦЫ --> 
@@ -558,42 +668,46 @@
           <div class="container">
             <h3>Заголовок</h3>
             <div class="page-table__twice">
-              <table class="page-table page-table--shadow">
-                                <!--ряд с ячейками заголовков-->
-                            <tr class="page-table__head">
-                                <th>Характеристики</th>
-                                <th class="page-table--right">Описание</th>                               
-                            </tr> 
-                            <!--ряд с ячейками тела таблицы-->
-                            <tr>
-                                <td>SoC</td>
-                                <td class="page-table--right">STi206/207 </td>                              
-                            </tr> 
-                            <!--ряд с ячейками тела таблицы-->
-                            <tr>
-                                <td>SoC</td>
-                                <td class="page-table--right">STi206/207 </td>            
-                            </tr> 
-                                      
-                </table>
-                              <table class="page-table page-table--shadow">
-                                <!--ряд с ячейками заголовков-->
-                            <tr class="page-table__head">
-                                <th>Характеристики</th>
-                                <th class="page-table--right">Описание</th>                               
-                            </tr> 
-                            <!--ряд с ячейками тела таблицы-->
-                            <tr>
-                                <td>SoC</td>
-                                <td class="page-table--right">STi206/207 </td>                              
-                            </tr> 
-                            <!--ряд с ячейками тела таблицы-->
-                            <tr>
-                                <td>SoC</td>
-                                <td class="page-table--right">STi206/207 </td>            
-                            </tr> 
-                                      
-                </table>
+              <div class="page-table__wrap page-table--shadow">
+                <table class="page-table ">
+                                  <!--ряд с ячейками заголовков-->
+                              <tr class="page-table__head">
+                                  <th>Характеристики</th>
+                                  <th class="page-table--right">Описание</th>                               
+                              </tr> 
+                              <!--ряд с ячейками тела таблицы-->
+                              <tr>
+                                  <td>SoC</td>
+                                  <td class="page-table--right">STi206/207 </td>                              
+                              </tr> 
+                              <!--ряд с ячейками тела таблицы-->
+                              <tr>
+                                  <td>SoC</td>
+                                  <td class="page-table--right">STi206/207 </td>            
+                              </tr> 
+                                        
+                  </table>
+              </div>
+                              <div class="page-table__wrap page-table--shadow">
+                                <table class="page-table ">
+                                  <!--ряд с ячейками заголовков-->
+                                                            <tr class="page-table__head">
+                                  <th>Характеристики</th>
+                                  <th class="page-table--right">Описание</th>                               
+                                                            </tr> 
+                                                            <!--ряд с ячейками тела таблицы-->
+                                                            <tr>
+                                  <td>SoC</td>
+                                  <td class="page-table--right">STi206/207 </td>                              
+                                                            </tr> 
+                                                            <!--ряд с ячейками тела таблицы-->
+                                                            <tr>
+                                  <td>SoC</td>
+                                  <td class="page-table--right">STi206/207 </td>            
+                                                            </tr> 
+                                        
+                                                </table>
+                              </div>
 
             </div>
           </div>
@@ -604,25 +718,27 @@
           <div class="container">
             <h3>Заголовок</h3>
             <div class="page-table__text">
-              <table class="page-table page-table--shadow">
-                                <!--ряд с ячейками заголовков-->
-                            <tr class="page-table__head">
-                                <th>Характеристики</th>
-                                <th class="page-table--right">Описание</th>                               
-                            </tr> 
-                            <!--ряд с ячейками тела таблицы-->
-                            <tr>
-                                <td>SoC</td>
-                                <td class="page-table--right">STi206/207 </td>                              
-                            </tr> 
-                            <!--ряд с ячейками тела таблицы-->
-                            <tr>
-                                <td>SoC</td>
-                                <td class="page-table--right">STi206/207 </td>            
-                            </tr> 
-                                      
-                </table>
-                <div class="page-table__text-block">
+              <div class="page-table__wrap page-table--shadow">
+                <table class="page-table ">
+                                  <!--ряд с ячейками заголовков-->
+                              <tr class="page-table__head">
+                                  <th>Характеристики</th>
+                                  <th class="page-table--right">Описание</th>                               
+                              </tr> 
+                              <!--ряд с ячейками тела таблицы-->
+                              <tr>
+                                  <td>SoC</td>
+                                  <td class="page-table--right">STi206/207 </td>                              
+                              </tr> 
+                              <!--ряд с ячейками тела таблицы-->
+                              <tr>
+                                  <td>SoC</td>
+                                  <td class="page-table--right">STi206/207 </td>            
+                              </tr> 
+                                        
+                  </table>
+              </div>
+                <div class="page-table__text-block page-table__wrap">
                   Апостериори, гравитационный парадокс амбивалентно понимает под собой интеллигибельный знак. Отсюда естественно следует, что автоматизация дискредитирует предмет деятельности. Дискретность амбивалентно транспонирует гравитационный парадокс. Гедонизм осмысляет дедуктивный метод. Апостериори, гравитационный парадокс амбивален
                   
                 </div>
@@ -713,6 +829,106 @@
             </div>
         </div>
      </footer>
+  </div> 
+    <!-- МОДАЛЬНЫЕ ОКНА-ФОРМЫ Подключиться--> 
+  <div class="modal-container" id="form-connect">
+    <div class="modal">
+        <form action="" class="main-form__form" id="modal-connect-form">
+          <span class="close">close</span>
+          <div class="main-form__form-title">
+            Онлайн заявка на подключение
+          </div>
+          
+            <div class="main-form__input main-form__input--name">
+              <label for="">Имя*</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="main-form__input main-form__input--phone">
+              <label for="">Телефон*</label>
+              <input class="js-phone" type="tel" name="phone" required>
+            </div>
+            <div class="main-form__input main-form__input--mail">
+              <label for="">E-mail*</label>
+              <input type="email" name="mail" required>
+            </div>  
+            <div class="main-form__select ">
+              <label for="modal-address">Адрес подключения:*</label>
+              <select id="modal-address" name="modal-address" class="js-example-basic-single">
+                          <option value="Бережки">Бережки</option>
+                          <option value="Москва">Москва</option>
+                      </select>
+            </div>  
+            <div class="main-form__select ">
+              <label for="modal-connect">Тип подключения:*</label>
+              <select id="modal-connect" name="modal-connect" class="js-example-basic-single">
+                          <option value="Дом">Частный дом</option>
+                          <option value="Квартира">Квартира</option>
+                      </select>
+            </div>
+            <div class="main-form__input main-form__input--address">
+              <label for="">Прочий адрес</label>
+              <input type="text">
+            </div>  
+            <div class="main-form__select ">
+              <label for="modal-tarif">Тарифный план, если определен</label>
+              <select id="modal-tarif" name="modal-address" class="js-example-basic-single">
+                          <option value="Домашний">Домашний</option>
+                          <option value="Турбо">Турбо</option>
+                      </select>
+            </div>
+            <div class="main-form__input">
+              <label for="main-message">Сообщение</label>
+              <textarea name="" id="" cols="30" rows="2"></textarea>
+            </div>
+            <div class="main-form__input main-form__input-privacy">
+              <input type="checkbox" required name="privacy">
+              <label for="">Даю согласие на обработку персональных данных</label>
+            </div>  
+            <div class="main-form_submit">
+              <div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+              <input type="submit" value="Подключиться">
+            </div>                      
+          </form>
+        
+    </div>
+  </div>
+
+
+  <!-- МОДАЛЬНЫЕ ОКНА-ФОРМЫ Вопрос оператору --> 
+    <div class="modal-container" id="form-help">
+    <div class="modal">
+        <form action="" class="main-form__form" id="form-online">
+          <span class="close">close</span>
+          <div class="main-form__form-title">
+            Вопрос оператору
+          </div>
+          
+            <div class="main-form__input main-form__input--name">
+              <label for="">Ваш номер лицевого счета*</label>
+              <input type="text" required name="number" minlength="10">
+            </div>
+            <div class="main-form__select ">
+              <label for="main-contact">Способ для связи*</label>
+              <select id="main-contact" name="main-contact"  class="js-example-basic-single">
+                          <option value="Перезвонить">Перезвонить</option>
+                          <option value="Написать">Написать</option>
+                      </select>
+            </div>  
+            <div class="main-form__input">
+              <label for="">Текст проблемы</label>
+              <textarea name="" id="" cols="30" rows="2"></textarea>
+            </div>
+            <div class="main-form__input main-form__input-privacy">
+              <input type="checkbox" name="privacy" required>
+              <label for="">Даю согласие на обработку персональных данных</label>
+            </div>  
+            <div class="main-form_submit">
+              <div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+              <input type="submit" value="Подключиться">
+            </div>                      
+          </form>
+        
+    </div>
   </div> 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>

@@ -21,7 +21,9 @@ updateOnContentResize:true
 $(document).ready(function(){
   
 
-
+$('.js-example-basic-single').css({
+  opacity: '1'
+});
 // ОСНОВНАЯ НАВИГАЦИЯ САЙТА (ВЕРХНЕЕ МЕНЮ)
   var navMain    = $('.main-nav');
   var navToggle  = $('.main-nav__toggle');
@@ -87,16 +89,16 @@ $('.btn-return').on('click',(function() {
   $('.faq__main').css('display','block');
 }));
 // ТАБЫ
-$('.tab-link').on('click', function () {
-        var container = $(this).parent().parent();
+$('.page-table__tab').on('click', function () {
+        var container = $(this).parent().parent().parent();
         var curid = $(this).data('id'),
-                tabs = $('.tab-link'),
-                holderTab = $('.tab-info');
+                tabs = $('.page-table__tab'),
+                holderTab = $('.page-table__info');
         // holderTab.hide();
         // $('#'+ curid).fadeIn(700);
-        container.find('.tab-info').addClass('hide');
+        container.find('.page-table__info').addClass('hide');
         $('#' + curid).removeClass('hide');
-        container.find('.tab-link').removeClass('active');
+        container.find('.page-table__tab').removeClass('active');
         $(this).addClass('active');
         return false;
     });
@@ -168,7 +170,20 @@ $('body').removeClass('modal-body');
       }
     }
   });
+$('#site-question-form').validate({
+    messages: {
+       email: {
+        email: "Необходим формат адреса email"  
+      },
+       phone: {
 
+        tel: "Неверный номер телефона"  
+      },
+      privacy: {
+        required: "Необходимо дать согласие",
+      }
+    }
+  });
 $.validator.addClassRules({
     'js-phone': {
         checkMask: true
@@ -177,7 +192,7 @@ $.validator.addClassRules({
 
 $('.js-phone').mask("+7 999 999 9999", {autoclear: false});
 
-
+// ФЛИП-КАРТОЧКИ С ПЕРЕВОРОТОМ
 $('.btn-front').click(function() {
   $(this).parent().parent().addClass('tariff--flipped');
 });
@@ -249,12 +264,12 @@ $('.btn-back').click(function() {
         'titlePosition' : 'over',
 
     });
-
+// ВЫЕЗЖАЮЩАЯ ТАБЛИЦА
     $('.features__btn').click(function(event) {
       $('tfoot').slideToggle(10);
       $('.features__btn span').toggleClass('features__btn-show');
     });
-
+    // БЛОК FAQ
      $( '.page-faq__quest' ).click(
   function() {
     $(this).next('.page-faq__answer').slideToggle();
