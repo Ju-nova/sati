@@ -102,6 +102,38 @@ $('.page-table__tab').on('click', function () {
         $(this).addClass('active');
         return false;
     });
+// ТАБЫ в блоке с характеристиками
+$('.tab').on('click', function () {
+        var container = $(this).parent().parent();
+        var curid = $(this).data('id'),
+                tabs = $('.tab'),
+                holderTab = $('.tab__info');
+        // holderTab.hide();
+        // $('#'+ curid).fadeIn(700);
+        container.find('.tab__info').addClass('hide');
+        $('#' + curid).removeClass('hide');
+        container.find('.tab').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    });
+$('.btn-arend').on('click', function () {
+        var container = $(this).parent().parent();
+        var curid = $(this).data('id'),
+                tabs = $('.tab'),
+                holderTab = $('.tab__info');
+        // holderTab.hide();
+        // $('#'+ curid).fadeIn(700);
+        $('.features__tabs').find('.tab__info').addClass('hide');
+        $('#' + curid).removeClass('hide');
+         $('.features__tabs').find('.tab').removeClass('active');
+        $('.tab-conditions').addClass('active');
+        return false;
+    });
+// $('a[href*=#arenda]').click(function(event){
+//   event.preventDefault();
+//   var target_top= $('a[name="'+this.href.split("#")[1]+'"]').offset().top;
+//   $('html, body').animate({scrollTop:target_top}, 'slow');
+//  });
 // МОДАЛЬНЫЕ ОКНА
     var link = $('.simplebox');
      
@@ -200,34 +232,34 @@ $('.btn-back').click(function() {
   $(this).parent().parent().removeClass('tariff--flipped');
 });
 
-    $('.products__slider').slick({
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    dots: false,
-    centerMode: false,
-    rows: 0,
-    responsive: [
+  //   $('.products__slider').slick({
+  //   slidesToShow: 2,
+  //   slidesToScroll: 1,
+  //   dots: false,
+  //   centerMode: false,
+  //   rows: 0,
+  //   responsive: [
 
-       {
-      breakpoint: 1025,
-      settings: {
-          centerMode: true,
-        slidesToShow:1,
-        slidesToScroll: 1,
-      }
-    },
-           {
-      breakpoint: 350,
-      settings: {
-          centerMode: false,
-        slidesToShow:1,
-        slidesToScroll: 1,
-      }
-    }
+  //      {
+  //     breakpoint: 1025,
+  //     settings: {
+  //         centerMode: true,
+  //       slidesToShow:1,
+  //       slidesToScroll: 1,
+  //     }
+  //   },
+  //          {
+  //     breakpoint: 350,
+  //     settings: {
+  //         centerMode: false,
+  //       slidesToShow:1,
+  //       slidesToScroll: 1,
+  //     }
+  //   }
 
-  ]
+  // ]
 
-  });
+  // });
     $('.foto-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,

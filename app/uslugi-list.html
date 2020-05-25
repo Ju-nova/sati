@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="css/jquery.fancybox.min.css" media="all" />
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
         <link rel="stylesheet" href="css/main.css">
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 		
 
          <script src="https://www.google.com/recaptcha/api.js" type="text/javascript"></script>
@@ -183,7 +185,7 @@
         <div class="page-title">
             <div class="page-title__wrapper"> 
                  <div class="page-title__img">
-                    <img  src="img/page-title1.png" alt="">
+                    <img  src="img/page-title2.jpg" alt="">
                 </div>
                 <div class="container page-title__content">
                   <h3>Картинка с коротким текстом в заголовке </h3>  
@@ -192,168 +194,55 @@
 
             </div>    
         </div>
-           <!--  ХЛЕБНЫЕ КРОШКИ -->
-            <div class="container">
-                <ul class="breadcrumbs">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a  href="#">Продажа IP-TV приставок</a></li>
-                     <li><a class="active" href="">IP-TV приставка Imaqlick G-box</a></li>
-                </ul>
-            </div>
-        <!--  КАРТОЧКА ТОВАРА -->    
-        <div class="usluga">
-            <div class="container">
-                <div class="usluga-content">
-                    <div class="usluga-content__img">
-                        <img src="img/usluga-img.png" alt="">
-                    </div>
-                    <div class="usluga-content__block">
-                        <h4 class="usluga-content__title">
-                            IP-TV приставка IMAQLIQ G-BOX
-                        </h4>
-                        <p>ИМАКЛИК Г-бокс (или Джи-Дивайс) - превосходная телевизионная приставка для приема сигнала цифрового телевидения в сетях IP-TV и ОТТ.</p>
-                        <div class="usluga-content__price">4500 ₽</div>
-                        <div class="usluga-content__btns">
-                            <a class="btn-buy" href="#">Купить</a>
-                            <a class="btn-arend" onclick="window.location.href='#arenda'" data-id="tab-conditions">Арендовать</a>
-
-                        </div>    
-                    </div>
-                </div>
-            </div>   
-            
-        </div>
-
-
-            <!-- ХАРАКТЕРИСТИКИ ТОВАРА -->
-            <div class="features" id="arenda">
-                <div class="container features__wrapper">
-                    <div class="features__title">Характеристики товара и условия аренды:</div>
-
-                    <div class="features__tabs" >
-                        <div class="features__buttons">
-                            <a href="#"  class="tab active" data-id="tab-features">Характеристики</a>
-                            <a href="#"  class="tab" data-id="tab-information">Информация</a>
-                            <a href="#"  class="tab tab-conditions" data-id="tab-conditions">Условия</a>
-                        </div>
-                        <div id="tab-features"  class="page-table  tab__info">
-                             <div class="features__table-wrapper">
-                                <table class="features__table">
-                                    <!--ряд с ячейками заголовков-->
-                                <tr class="features__table-head">
-                                    <th>Характеристики</th>
-                                    <th>Описание</th>
-                                    <th>Характеристики</th>
-                                    <th>Описание</th>
-                                </tr> 
-                                <!--ряд с ячейками тела таблицы-->
-                                <tr>
-                                    <td>SoC</td>
-                                    <td>STi206/207 </td>
-                                    <td>LAN</td>
-                                    <td>RJ-45, 10/100 BASE-T </td>
-                                </tr> 
-                                <!--ряд с ячейками тела таблицы-->
-                                <tr>
-                                    <td>SoC</td>
-                                    <td>STi206/207 </td>
-                                    <td>LAN</td>
-                                    <td>RJ-45, 10/100 BASE-T </td>
-                                </tr> 
-                                <!--ряд с ячейками тела таблицы-->
-                            
-                                <tfoot class="row-invisible">
-                                    <tr class="">
-                                        <td>SoC</td>
-                                        <td>STi206/207 </td>
-                                        <td>LAN</td>
-                                        <td>RJ-45, 10/100 BASE-T </td>
-                                    </tr> 
-                                    <!--ряд с ячейками тела таблицы-->
-                                    <tr>
-                                        <td>SoC</td>
-                                        <td>STi206/207 </td>
-                                        <td>LAN</td>
-                                        <td>RJ-45, 10/100 BASE-T </td>
-                                    </tr>
-                                </tfoot>
-                                </table>
-                            </div>
-                            <div class="features__btn-wrapper">
-                                <button class="features__btn">
-                                    <span class="features__btn-show">все параметры</span>
-                                    <span>скрыть </span>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <div   id="tab-information"  class="  tab__info hide">
-                            <div class="page-text page-text--transparent">
-           
-               <h3>ТВ-приставка в аренду</h3>
-               <ul class="page-text__ol">
-                   <li>Стоимость 120 руб./месяц;</li>
-                   <li>Постоянно пополняемая библиотека востребованных телеканалов;</li>
-                   <li>Set-top-box современная, компактная приставка с пультом дистанционного управления;</li>                 
-                   <li>Каталог приложений DuneStore.</li>
-               </ul>
-               <div class="features__btn-wrapper">
-                   <a class=" features__btn" href="">Арендовать</a>
-               </div>
-           
-       </div>
-                        </div>
-                        <div   id="tab-conditions"  class="  tab__info hide">
-                            hggh
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ПОХОЖИЕ ТОВАРЫ -->
-
-        <div class="products">
-            <div class="container">
-                <h3>Похожие товары</h3>
-            </div> 
-            <div class="products__slider container">
-                <div class="products__slide">
-                    <div class="products__slide-img">
-                        <img src="img/usluga-img.png" alt="">
-                    </div> 
-                    <div class="products__slide-text">
-                        <h3><a href="#" id="">Приставка IMAQLIQ</a></h3>
-                        <p>Беспроводной двухдиапазонный гигабитный маршрутизатор с поддержкой 3G/CDMA/LTE и USB-портом</p>
-                    </div>
-                    <div class="products__slide-btns">
-                        <div class="products__slide-price">4500 ₽</div>
-                        <a class="btn-buy" href="#">Купить</a>
-                    </div>
-
-                </div>
-                <div class="products__slide">
-                    <div class="products__slide-img">
-                        <img src="img/usluga-img.png" alt="">
-                    </div> 
-                    <div class="products__slide-text">
-                        <h3><a href="#" id="">Приставка IMAQLIQ</a></h3>
-                        <p>Беспроводной двухдиапазонный гигабитный маршрутизатор с поддержкой 3G/CDMA/LTE и USB-портом</p>
-                    </div>
-                    <div class="products__slide-btns">
-                        <div class="products__slide-price">4500 ₽</div>
-                        <a class="btn-buy" href="#">Купить</a>
-                    </div>
-
+       <!--  ХЛЕБНЫЕ КРОШКИ -->
+                <div class="container">
+                    <ul class="breadcrumbs">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a class="active" href="">Продажа IP-TV приставок</a></li>
+                    </ul>
                 </div>
 
-                <div class="products__all">
-                    <a class="btn" href="#">Посмотреть все</a>
-                </div>
 
-            </div>
-            
-        </div>
-         
+ 
+    <!-- ТЕКСТ С МЕНЮ -->
+    <div class="page-sidebar__wrapper">
+      <div class="container page-sidebar">
+        <h3 class="page-sidebar__title">Продажа IP-Tv приставок</h3>
+          <div class="page-sidebar__left">
+              <ul>
+                  <li class="active"><a href="#">Приставки IP-TV</a></li>
+                  <li><a href="#">USb адаптеры WIFI</a></li>
+                  <li><a href="#">Продажа роутеров</a></li>
+                  <li><a href="#">Сетевые карты</a></li>
+              </ul>
+          </div>
+          <div class="page-sidebar__right">
+            <div class="uslugi-list">
+
+              <div class="uslugi-list__item">
+                <div class="uslugi-list__item-price">4500 ₽</div>
+                <img class="uslugi-list__item-img" src="img/usluga-img.png" alt="">
+                <h3 class="uslugi-list__item-title">Приставка IMAQLIQ</h3>
+                <p class="uslugi-list__item-text"> ИМАКЛИК Г-бокс (или Джи-Дивайс) - превосходная телевизионная приставка для приема сигнала цифрового телевидения в сетях IP-TV и ОТТ.</p>
+                <a class="uslugi-list__item-link btn--blue btn" href="#">Подробнее</a>
+              </div>
+
+              <div class="uslugi-list__item">
+                <div class="uslugi-list__item-price">4500 ₽</div>
+                <img class="uslugi-list__item-img" src="img/usluga-img.png" alt="">
+
+                <h3 class="uslugi-list__item-title">Приставка IMAQLIQ</h3>
+                <p class="uslugi-list__item-text"> ИМАКЛИК Г-бокс (или Джи-Дивайс) - превосходная телевизионная приставка для приема сигнала цифрового телевидения в сетях IP-TV и ОТТ.</p>
+                <a class="uslugi-list__item-link btn--blue btn" href="#">Подробнее</a>
+              </div>
+
+            </div>  
+
+          </div>
+      </div>
+    </div>
+
     </main>
          <footer class="main-footer">
         <div class="container">
@@ -411,16 +300,116 @@
         </div>
      </footer>
   </div> 
-        <script src="js/jquery-3.4.1.min.js"></script>
-        <script src="js/jquery-migrate-3.0.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-        <script src="js/jquery.validate.js"></script>
-        <script src="js/select2.full.min.js"></script>  
-        <script src="js/jquery.fancybox.min.js"></script>           
-        <script src="js/slick.js"></script>
-        <script src="js/map.js"></script>
-        <script src="js/main.js"></script>
-	
+    <!-- МОДАЛЬНЫЕ ОКНА-ФОРМЫ Подключиться--> 
+  <div class="modal-container" id="form-connect">
+    <div class="modal">
+        <form action="" class="main-form__form" id="modal-connect-form">
+          <span class="close">close</span>
+          <div class="main-form__form-title">
+            Онлайн заявка на подключение
+          </div>
+          
+            <div class="main-form__input main-form__input--name">
+              <label for="">Имя*</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="main-form__input main-form__input--phone">
+              <label for="">Телефон*</label>
+              <input class="js-phone" type="tel" name="phone" required>
+            </div>
+            <div class="main-form__input main-form__input--mail">
+              <label for="">E-mail*</label>
+              <input type="email" name="mail" required>
+            </div>  
+            <div class="main-form__select ">
+              <label for="modal-address">Адрес подключения:*</label>
+              <select id="modal-address" name="modal-address" class="js-example-basic-single">
+                          <option value="Бережки">Бережки</option>
+                          <option value="Москва">Москва</option>
+                      </select>
+            </div>  
+            <div class="main-form__select ">
+              <label for="modal-connect">Тип подключения:*</label>
+              <select id="modal-connect" name="modal-connect" class="js-example-basic-single">
+                          <option value="Дом">Частный дом</option>
+                          <option value="Квартира">Квартира</option>
+                      </select>
+            </div>
+            <div class="main-form__input main-form__input--address">
+              <label for="">Прочий адрес</label>
+              <input type="text">
+            </div>  
+            <div class="main-form__select ">
+              <label for="modal-tarif">Тарифный план, если определен</label>
+              <select id="modal-tarif" name="modal-address" class="js-example-basic-single">
+                          <option value="Домашний">Домашний</option>
+                          <option value="Турбо">Турбо</option>
+                      </select>
+            </div>
+            <div class="main-form__input">
+              <label for="main-message">Сообщение</label>
+              <textarea name="" id="" cols="30" rows="2"></textarea>
+            </div>
+            <div class="main-form__input main-form__input-privacy">
+              <input type="checkbox" required name="privacy">
+              <label for="">Даю согласие на обработку персональных данных</label>
+            </div>  
+            <div class="main-form_submit">
+              <div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+              <input type="submit" value="Подключиться">
+            </div>                      
+          </form>
+        
+    </div>
+  </div>
+
+
+  <!-- МОДАЛЬНЫЕ ОКНА-ФОРМЫ Вопрос оператору --> 
+    <div class="modal-container" id="form-help">
+    <div class="modal">
+        <form action="" class="main-form__form" id="form-online">
+          <span class="close">close</span>
+          <div class="main-form__form-title">
+            Вопрос оператору
+          </div>
+          
+            <div class="main-form__input main-form__input--name">
+              <label for="">Ваш номер лицевого счета*</label>
+              <input type="text" required name="number" minlength="10">
+            </div>
+            <div class="main-form__select ">
+              <label for="main-contact">Способ для связи*</label>
+              <select id="main-contact" name="main-contact"  class="js-example-basic-single">
+                          <option value="Перезвонить">Перезвонить</option>
+                          <option value="Написать">Написать</option>
+                      </select>
+            </div>  
+            <div class="main-form__input">
+              <label for="">Текст проблемы</label>
+              <textarea name="" id="" cols="30" rows="2"></textarea>
+            </div>
+            <div class="main-form__input main-form__input-privacy">
+              <input type="checkbox" name="privacy" required>
+              <label for="">Даю согласие на обработку персональных данных</label>
+            </div>  
+            <div class="main-form_submit">
+              <div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+              <input type="submit" value="Подключиться">
+            </div>                      
+          </form>
+        
+    </div>
+  </div> 
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/select2.full.min.js"></script>  
+    <script src="js/jquery.fancybox.min.js"></script>         
+    <script src="js/slick.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

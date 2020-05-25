@@ -1,0 +1,69 @@
+.uslugi-list{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	@media(max-width:650px){
+justify-content:center;
+
+	}
+
+}
+
+.uslugi-list__item{
+background: #FFFFFF;
+box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+padding:36px 42px;
+box-sizing:border-box;
+width:48%;
+margin-bottom:30px;
+position: relative;
+overflow:hidden;
+&:after{
+	content:'';
+	display:block;
+	position:absolute;
+	width: 190px;
+	height:190px;
+	background-color:@main-blue;
+	border-radius:100%;
+	top:-93px;
+	right:-67px;
+}
+@media(max-width: 650px){
+	width:80%;
+}
+@media(max-width: 426px){
+	width:100%;
+	padding:20px;
+}
+}
+.uslugi-list__item-price{
+position:absolute;
+top:20px;
+right:10px;
+font-weight: bold;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+z-index:2;
+color: #FFFFFF;
+}
+.uslugi-list__item-img{
+width:179px;
+}
+.uslugi-list__item-title{
+	margin:20px 0;
+	font-size: 24px;
+line-height: 28px;
+}
+
+.uslugi-list__item-text{
+	margin-bottom: 26px;
+	font-size: 14px;
+line-height: 16px;
+}
+.btn.btn--blue.uslugi-list__item-link{
+	padding:16px 45px;
+}

@@ -1,8 +1,25 @@
 .page-sidebar{
 	display:flex;
 	justify-content: space-between;
-		padding-top:20px;
-	padding-bottom:20px;
+		padding-top:28px;
+	padding-bottom:28px;
+flex-wrap:wrap;
+
+	@media(max-width: 768px){
+		padding-top:25px;	
+	}
+}
+.page-sidebar__wrapper{
+	background-image: url(../img/figure2.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0 20px;
+    @media(max-width: 768px){
+    	background:none;
+    }	
+}
+.page-sidebar__title{
+width:100%;
 }
 .page-sidebar__left{
 	width:24%;
@@ -57,7 +74,7 @@ align-self:flex-start;
 
 }
 .page-sidebar__right{
-	width:70%;
+	width:72%;
 	@media(max-width: 768px){
 		width:100%;
 	}
