@@ -411,6 +411,106 @@
         </div>
      </footer>
   </div> 
+      <!-- МОДАЛЬНЫЕ ОКНА-ФОРМЫ Подключиться--> 
+  <div class="modal-container" id="form-connect">
+    <div class="modal">
+        <form action="" class="main-form__form" id="modal-connect-form">
+          <span class="close">close</span>
+          <div class="main-form__form-title">
+            Онлайн заявка на подключение
+          </div>
+          
+            <div class="main-form__input main-form__input--name">
+              <label for="">Имя*</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="main-form__input main-form__input--phone">
+              <label for="">Телефон*</label>
+              <input class="js-phone" type="tel" name="phone" required>
+            </div>
+            <div class="main-form__input main-form__input--mail">
+              <label for="">E-mail*</label>
+              <input type="email" name="mail" required>
+            </div>  
+            <div class="main-form__select ">
+              <label for="modal-address">Адрес подключения:*</label>
+              <select id="modal-address" name="modal-address" class="js-example-basic-single">
+                          <option value="Бережки">Бережки</option>
+                          <option value="Москва">Москва</option>
+                      </select>
+            </div>  
+            <div class="main-form__select ">
+              <label for="modal-connect">Тип подключения:*</label>
+              <select id="modal-connect" name="modal-connect" class="js-example-basic-single">
+                          <option value="Дом">Частный дом</option>
+                          <option value="Квартира">Квартира</option>
+                      </select>
+            </div>
+            <div class="main-form__input main-form__input--address">
+              <label for="">Прочий адрес</label>
+              <input type="text">
+            </div>  
+            <div class="main-form__select ">
+              <label for="modal-tarif">Тарифный план, если определен</label>
+              <select id="modal-tarif" name="modal-address" class="js-example-basic-single">
+                          <option value="Домашний">Домашний</option>
+                          <option value="Турбо">Турбо</option>
+                      </select>
+            </div>
+            <div class="main-form__input">
+              <label for="main-message">Сообщение</label>
+              <textarea name="" id="" cols="30" rows="2"></textarea>
+            </div>
+            <div class="main-form__input main-form__input-privacy">
+              <input type="checkbox" required name="privacy">
+              <label for="">Даю согласие на обработку персональных данных</label>
+            </div>  
+            <div class="main-form_submit">
+              <div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+              <input type="submit" value="Подключиться">
+            </div>                      
+          </form>
+        
+    </div>
+  </div>
+
+
+  <!-- МОДАЛЬНЫЕ ОКНА-ФОРМЫ Вопрос оператору --> 
+    <div class="modal-container" id="form-help">
+    <div class="modal">
+        <form action="" class="main-form__form" id="form-online">
+          <span class="close">close</span>
+          <div class="main-form__form-title">
+            Вопрос оператору
+          </div>
+          
+            <div class="main-form__input main-form__input--name">
+              <label for="">Ваш номер лицевого счета*</label>
+              <input type="text" required name="number" minlength="10">
+            </div>
+            <div class="main-form__select ">
+              <label for="main-contact">Способ для связи*</label>
+              <select id="main-contact" name="main-contact"  class="js-example-basic-single">
+                          <option value="Перезвонить">Перезвонить</option>
+                          <option value="Написать">Написать</option>
+                      </select>
+            </div>  
+            <div class="main-form__input">
+              <label for="">Текст проблемы</label>
+              <textarea name="" id="" cols="30" rows="2"></textarea>
+            </div>
+            <div class="main-form__input main-form__input-privacy">
+              <input type="checkbox" name="privacy" required>
+              <label for="">Даю согласие на обработку персональных данных</label>
+            </div>  
+            <div class="main-form_submit">
+              <div data-sitekey="6LeY1eEUAAAAAHKac45UXYnxRnL9EQqZEZedc69B" class="w-form-formrecaptcha g-recaptcha g-recaptcha-error g-recaptcha-disabled"></div>
+              <input type="submit" value="Подключиться">
+            </div>                      
+          </form>
+        
+    </div>
+  </div> 
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/jquery-migrate-3.0.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>

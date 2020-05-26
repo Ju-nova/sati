@@ -296,6 +296,37 @@ $('.btn-back').click(function() {
         'titlePosition' : 'over',
 
     });
+
+ // СЛАЙДЕР С ОНЛАЙН-КИНОТЕАТРАМИ  
+     $('.kino-online__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: false,
+    centerMode: false,
+    rows: 0,
+    responsive: [
+
+       {
+      breakpoint: 1025,
+      settings: {
+         
+        slidesToShow:3,
+        slidesToScroll: 1,
+      }
+    },
+           {
+      breakpoint: 430,
+      settings: {
+       
+        slidesToShow:2,
+        slidesToScroll: 1,
+      }
+    }
+
+  ]
+
+  });
 // ВЫЕЗЖАЮЩАЯ ТАБЛИЦА
     $('.features__btn').click(function(event) {
       $('tfoot').slideToggle(10);

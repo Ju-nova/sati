@@ -101,3 +101,38 @@ padding-bottom:20px;
 	padding-top:30px
 }
 }
+
+.page-title__list{
+	margin:0;
+	padding:0;
+
+}
+.page-title__list-item{
+	font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+color: #000000;
+padding-left:30px;
+position:relative;
+list-style: none;
+
+&:before{
+
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    left: 0px;
+    top: 2px;
+    border-bottom: 2px solid #46A6E4;
+    border-right: 2px solid #46A6E4;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+@media(max-width: 426px){
+font-size: 16px;
+line-height: 19px;
+}
+}
