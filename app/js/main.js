@@ -1,3 +1,13 @@
+    (function($){
+        $(window).on("load",function(){
+            $(".tv-pack__back-wrapper").mCustomScrollbar(
+              {
+                theme:"minimal-dark"
+              });
+
+        });
+    })(jQuery);
+
 $(document).on("select2:open", "select", function() {
 // Unbind mousewheel event from select2 result lists
   $(".select2-results ul.select2-results__options").unbind("mousewheel"); 
@@ -16,10 +26,11 @@ updateOnContentResize:true
 } 
 }      
 );
+
 });
 
 $(document).ready(function(){
-  
+
 
 $('.js-example-basic-single').css({
   opacity: '1'
@@ -225,11 +236,13 @@ $.validator.addClassRules({
 $('.js-phone').mask("+7 999 999 9999", {autoclear: false});
 
 // ФЛИП-КАРТОЧКИ С ПЕРЕВОРОТОМ
-$('.btn-front').click(function() {
-  $(this).parent().parent().addClass('tariff--flipped');
+$('.tv-pack__btn-front').click(function() {
+
+  $(this).parent().parent().parent().parent().parent().addClass('flipped');
+  console.log('ccccc');
 });
-$('.btn-back').click(function() {
-  $(this).parent().parent().removeClass('tariff--flipped');
+$('.tv-pack__btn-back').click(function() {
+  $(this).parent().parent().removeClass('flipped');
 });
 
   //   $('.products__slider').slick({
@@ -299,7 +312,7 @@ $('.btn-back').click(function() {
 
  // СЛАЙДЕР С ОНЛАЙН-КИНОТЕАТРАМИ  
      $('.kino-online__slider').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     dots: false,
     infinite: false,
@@ -308,10 +321,18 @@ $('.btn-back').click(function() {
     responsive: [
 
        {
-      breakpoint: 1025,
+      breakpoint: 1260,
       settings: {
          
         slidesToShow:3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+         
+        slidesToShow:2,
         slidesToScroll: 1,
       }
     },
@@ -319,8 +340,50 @@ $('.btn-back').click(function() {
       breakpoint: 430,
       settings: {
        
+        slidesToShow:1,
+        slidesToScroll: 1,
+      }
+    }
+
+  ]
+
+  });
+
+     // СЛАЙДЕР С ТЕМАТИЧЕСКИМИ ПАКЕТАМИ
+
+          $('.tv-pack__slider').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: false,
+    infinite: false,
+    centerMode: false,
+    rows: 2,
+    responsive: [
+
+       {
+      breakpoint: 1260,
+      settings: {
+         
         slidesToShow:2,
         slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+         
+        slidesToShow:1,
+        slidesToScroll: 1,
+        rows:1,
+      }
+    },
+           {
+      breakpoint: 430,
+      settings: {
+       
+        slidesToShow:1,
+        slidesToScroll: 1,
+        rows:1,
       }
     }
 
