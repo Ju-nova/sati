@@ -239,10 +239,50 @@ $('.js-phone').mask("+7 999 999 9999", {autoclear: false});
 $('.tv-pack__btn-front').click(function() {
 
   $(this).parent().parent().parent().parent().parent().addClass('flipped');
-  console.log('ccccc');
+
 });
 $('.tv-pack__btn-back').click(function() {
   $(this).parent().parent().removeClass('flipped');
+});
+//
+$('.tarif-front__btn').click(function() {
+
+  $(this).parent().parent().parent().parent().addClass('flipped');
+
+});
+$('.btn-back').click(function() {
+  $(this).parent().parent().removeClass('flipped');
+});
+
+//
+
+
+//
+$('.btn-front-2').click(function() {
+
+  $(this).parent().parent().parent().parent().parent().addClass('flipped-2');
+
+});
+
+
+//
+$('.btn-back2').click(function() {
+  $(this).parent().parent().removeClass('flipped-2');
+});
+$('.btn-back').click(function() {
+  $(this).parent().parent().removeClass('flipped-3');
+});
+$('.btn-back').click(function() {
+  $(this).parent().parent().removeClass('flipped-2');
+});
+//
+// $('.btn-front-2').click(function() {
+
+//   $(this).parent().parent().parent().parent().parent().addClass('flipped-2');
+
+// });
+$('.btn-back3').click(function() {
+  $(this).parent().parent().addClass('flipped-3');
 });
 
   //   $('.products__slider').slick({
