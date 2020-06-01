@@ -4,6 +4,10 @@
               {
                 theme:"minimal-dark"
               });
+            $(".tarif-back__wrapper").mCustomScrollbar(
+              {
+                theme:"minimal-dark"
+              });
 
         });
     })(jQuery);
@@ -68,6 +72,11 @@ $('.js-example-basic-single').css({
 
 $('.main-slider').slick({
   dots:true,
+ autoplay:true,
+ autoplaySpeed:5000,
+ infinite:true,
+ easing:'linear',
+ speed:1000
 });
 // При загрузке страницs слайдер не будет растягиваться по высоте
 $('.main-slider__slide').css({
@@ -77,7 +86,8 @@ $('.main-slider__slide').css({
 
 $('.slider').css({
      overflow: 'visible',
-     opacity: '1'
+     opacity: '1',
+     height: 'auto'
    });
 // ПЕРЕКЛЮЧЕНИЕ БЛОКОВ В FAQ
 $('#btn-check').click(function(){
@@ -138,6 +148,34 @@ $('.btn-arend').on('click', function () {
         $('#' + curid).removeClass('hide');
          $('.features__tabs').find('.tab').removeClass('active');
         $('.tab-conditions').addClass('active');
+        return false;
+    });
+//ТАБЫ ТАРИФЫ (ИНТЕРНЕТ ИЛИ КВАРТИРА)
+$('.tarif__btns-tab').on('click', function () {
+        var container = $(this).parent().parent().parent().parent();
+        var curid = $(this).data('id');
+                 tabs = $('.tarif__btns-tab');
+                holderTab = $('.tarif-slider');
+        // holderTab.hide();
+        // $('#'+ curid).fadeIn(700);
+        $('.tarif-slider').addClass('hide');
+        $('#' + curid).removeClass('hide');
+        container.find('.tarif__btns-tab').removeClass('active');
+        $(this).addClass('active');
+        return false;
+    });
+
+$('.tarif__btns-filtr').on('click', function () {
+        var container = $(this).parent().parent().parent().parent();
+        var curid = $(this).data('id');
+                 tabs = $('.tarif__btns-filtr');
+                holderTab = $('.tarif-card');
+        // holderTab.hide();
+        // $('#'+ curid).fadeIn(700);
+        $('.tarif-card').addClass('hide');
+        $('.' + curid).removeClass('hide');
+        container.find('.tarif__btns-filtr').removeClass('active');
+        $(this).addClass('active');
         return false;
     });
 // $('a[href*=#arenda]').click(function(event){
@@ -235,7 +273,7 @@ $.validator.addClassRules({
 
 $('.js-phone').mask("+7 999 999 9999", {autoclear: false});
 
-// ФЛИП-КАРТОЧКИ С ПЕРЕВОРОТОМ
+// ФЛИП-КАРТОЧКИ С ПЕРЕВОРОТОМ(широкие)
 $('.tv-pack__btn-front').click(function() {
 
   $(this).parent().parent().parent().parent().parent().addClass('flipped');
@@ -244,44 +282,45 @@ $('.tv-pack__btn-front').click(function() {
 $('.tv-pack__btn-back').click(function() {
   $(this).parent().parent().removeClass('flipped');
 });
-//
+//// ФЛИП-КАРТОЧКИ С ПЕРЕВОРОТОМ(узкие)
 $('.tarif-front__btn').click(function() {
 
-  $(this).parent().parent().parent().parent().addClass('flipped');
+  $(this).parent().parent().parent().parent().parent().addClass('flipped');
 
 });
-$('.btn-back').click(function() {
+$('.tarif-back__btn').click(function() {
   $(this).parent().parent().removeClass('flipped');
 });
 
 //
+$('.tarif-back__btn').click(function() {
+  $(this).parent().parent().removeClass('flipped-2');
+});
+$('.tarif-back__btn').click(function() {
+  $(this).parent().parent().removeClass('flipped-3');
+});
+//
+$('.tarif-back2__btn').click(function() {
 
+  $(this).parent().parent().addClass('flipped-2');
 
+});
+$('.tarif-back2__btn').click(function() {
+  $(this).parent().parent().removeClass('flipped-2');
+});
+$('.tarif-front__btn').click(function() {
+  $(this).parent().parent().removeClass('flipped-3');
+});
+$('.tarif-front__btn').click(function() {
+  $(this).parent().parent().removeClass('flipped-2');
+});
 //
 $('.btn-front-2').click(function() {
 
-  $(this).parent().parent().parent().parent().parent().addClass('flipped-2');
+  $(this).parent().parent().parent().addClass('flipped-2');
 
 });
-
-
-//
-$('.btn-back2').click(function() {
-  $(this).parent().parent().removeClass('flipped-2');
-});
-$('.btn-back').click(function() {
-  $(this).parent().parent().removeClass('flipped-3');
-});
-$('.btn-back').click(function() {
-  $(this).parent().parent().removeClass('flipped-2');
-});
-//
-// $('.btn-front-2').click(function() {
-
-//   $(this).parent().parent().parent().parent().parent().addClass('flipped-2');
-
-// });
-$('.btn-back3').click(function() {
+$('.tarif-back2__btn-canals').click(function() {
   $(this).parent().parent().addClass('flipped-3');
 });
 
@@ -317,7 +356,11 @@ $('.btn-back3').click(function() {
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: false,
-    infinite: false,
+   autoplay:true,
+   autoplaySpeed:3000,
+   speed:1000,
+   infinite:true,
+   easing:'linear',
     centerMode: false,
     rows: 0,
     responsive: [
@@ -355,7 +398,11 @@ $('.btn-back3').click(function() {
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: false,
-    infinite: false,
+     autoplay:true,
+     autoplaySpeed:3000,
+     infinite:true,
+     easing:'linear',
+     speed:1000,
     centerMode: false,
     rows: 0,
     responsive: [
@@ -388,14 +435,59 @@ $('.btn-back3').click(function() {
   ]
 
   });
+// СЛАЙДЕР С ТАРИФАМИ 
+     $('.tarif-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+     autoplay:true,
+     autoplaySpeed:3000,
+     infinite:true,
+     easing:'linear',
+     speed:1000,
+    centerMode: false,
+    rows: 0,
+    responsive: [
 
+       {
+      breakpoint: 1260,
+      settings: {
+         
+        slidesToShow:3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 950,
+      settings: {
+         
+        slidesToShow:2,
+        slidesToScroll: 1,
+      }
+    },
+           {
+      breakpoint: 613,
+      settings: {
+       
+        slidesToShow:1,
+        slidesToScroll: 1,
+      }
+    }
+
+  ]
+
+  });
      // СЛАЙДЕР С ТЕМАТИЧЕСКИМИ ПАКЕТАМИ
 
           $('.tv-pack__slider').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     dots: false,
-    infinite: false,
+     autoplay:true,
+     autoplaySpeed:3000,
+     infinite:true,
+     easing:'linear',
+     speed:1000,
     centerMode: false,
     rows: 2,
     responsive: [

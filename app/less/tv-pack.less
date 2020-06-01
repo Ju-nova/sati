@@ -2,6 +2,7 @@
 	overflow:hidden;
 	position:relative;
 	padding-top:55px;
+  max-height:680px;
 
 	& .slick-slide  > div{
 	margin:15px;
@@ -250,6 +251,24 @@ min-height:100%;
   & .mCustomScrollBox{
   	overflow:hidden;
   }
+  & .mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical {
+    right: 14px;
+    margin: 44px 0 16px;
+}
+& .mCS-minimal-dark.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #EDF1F3;
+    border-radius:10px;
+}
+& .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  width: 10px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 100px;
+}
+& .mCS-autoHide > .mCustomScrollBox ~ .mCSB_scrollTools {
+    opacity: 1;
+}
 }
 .tv-pack__back-wrapper{
   padding:23px 28px 0px 28px;
