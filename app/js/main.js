@@ -11,6 +11,9 @@
 
         });
     })(jQuery);
+$(document).on('click','label.error',function(e){
+ $(this).remove();
+});
 
 $(document).on("select2:open", "select", function() {
 // Unbind mousewheel event from select2 result lists
@@ -272,6 +275,8 @@ $.validator.addClassRules({
 });
 
 $('.js-phone').mask("+7 999 999 9999", {autoclear: false});
+
+
 
 // ФЛИП-КАРТОЧКИ С ПЕРЕВОРОТОМ(широкие)
 $('.tv-pack__btn-front').click(function() {

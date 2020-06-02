@@ -3,7 +3,13 @@
 	position:relative;
 	padding-top:55px;
   max-height:680px;
-
+  background-color: #5AA8E1;
+@media(max-width: 1414px){
+  max-height:750px;
+}
+@media(max-width: 426px){
+  background-color: #5AA8E1;
+}
 	& .slick-slide  > div{
 	margin:15px;
 }
@@ -30,6 +36,9 @@ z-index:-1;
 	height:100%;
 	background:	 
 	linear-gradient(270deg, #5AA8E1 1.12%, rgba(99, 176, 231, 0) 43.3%);
+}
+@media(max-width: 426px){
+  display:none;
 }
 }
 .tv-pack__slider{

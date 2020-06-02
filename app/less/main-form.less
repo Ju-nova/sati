@@ -223,8 +223,10 @@ color: #A2A2A2;
 	}
 & #privacy-error{
 	position:absolute;
-	top:25px;
-	padding-left:0px;
+	top:23px;
+	padding:17px 40px 17px 17px;
+	background-color:#fff;
+
 }
 	& input{
 		position:relative;
@@ -415,6 +417,62 @@ border:none;
 	opacity:0;
 }
 label.error{
-	padding:15px 0;
-	display:block;
+	padding: 17px 40px 17px 17px;
+    display: block;
+    border: 1px solid;
+    border-radius: 6px;
+    position:relative;
+    background-color:#fff;
+&:after{
+content:'';
+display:inline-block;
+position:absolute;
+width:12px;
+height:12px;
+right:17px;
+background-image:url(../img/cross-red.svg);
+background-size:cover;
+}
+&:before {
+   content: '';
+  width:12px;
+  height:12px;
+  display:block;
+  background-color:#fff;
+  border-top:1px solid #BE0000;
+  border-right:1px solid #BE0000;
+  transform: rotate(-45deg);
+  margin-top: -24px;
+  margin-left:12px;
+  position:absolute;
+}
+}
+
+.recaptcha-error{
+	margin:40px auto 20px;
+	text-align: center;
+	color: #BE0000 ;
+	padding:20px;
+	font-size: 16px;
+	line-height: 19px;
+	border:2px solid ;
+}
+
+.message-success{
+margin:20px auto;
+	text-align: center;
+	color: green ;
+	padding:20px;
+	font-size: 16px;
+	line-height: 19px;
+	border:2px solid ;
+}
+.message-error{
+margin:20px auto;
+	text-align: center;
+	color: #BE0000;
+	padding:20px;
+	font-size: 16px;
+	line-height: 19px;
+	border:2px solid ;
 }

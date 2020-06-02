@@ -2822,8 +2822,9 @@ a.btn:focus {
 }
 .main-form__input-privacy #privacy-error {
   position: absolute;
-  top: 25px;
-  padding-left: 0px;
+  top: 23px;
+  padding: 17px 40px 17px 17px;
+  background-color: #fff;
 }
 .main-form__input-privacy input {
   position: relative;
@@ -3024,8 +3025,64 @@ a.btn:focus {
   opacity: 0;
 }
 label.error {
-  padding: 15px 0;
+  padding: 17px 40px 17px 17px;
   display: block;
+  border: 1px solid;
+  border-radius: 6px;
+  position: relative;
+  background-color: #fff;
+}
+label.error:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  right: 17px;
+  background-image: url(../img/cross-red.svg);
+  background-size: cover;
+}
+label.error:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  display: block;
+  background-color: #fff;
+  border-top: 1px solid #BE0000;
+  border-right: 1px solid #BE0000;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: -24px;
+  margin-left: 12px;
+  position: absolute;
+}
+.recaptcha-error {
+  margin: 40px auto 20px;
+  text-align: center;
+  color: #BE0000;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 19px;
+  border: 2px solid ;
+}
+.message-success {
+  margin: 20px auto;
+  text-align: center;
+  color: green ;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 19px;
+  border: 2px solid ;
+}
+.message-error {
+  margin: 20px auto;
+  text-align: center;
+  color: #BE0000;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 19px;
+  border: 2px solid ;
 }
 .faq {
   min-width: 320px;
@@ -3384,7 +3441,7 @@ label.error {
 .main-footer__nav li {
   padding: 0;
   list-style: none;
-  margin: 0 35px;
+  margin: 0 15px;
 }
 @media (max-width: 1140px) {
   .main-footer__nav li {
@@ -5423,6 +5480,19 @@ label.error {
     margin-left: 0;
   }
 }
+@media (max-width: 426px) {
+  .page-table__buttons {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .page-table__connect {
   display: block;
   background: #46A6E4;
@@ -5850,6 +5920,17 @@ label.error {
   position: relative;
   padding-top: 55px;
   max-height: 680px;
+  background-color: #5AA8E1;
+}
+@media (max-width: 1414px) {
+  .tv-pack {
+    max-height: 750px;
+  }
+}
+@media (max-width: 426px) {
+  .tv-pack {
+    background-color: #5AA8E1;
+  }
 }
 .tv-pack .slick-slide > div {
   margin: 15px;
@@ -5879,6 +5960,11 @@ label.error {
   background: -webkit-gradient(linear, right top, left top, color-stop(1.12%, #5AA8E1), color-stop(43.3%, rgba(99, 176, 231, 0)));
   background: -o-linear-gradient(right, #5AA8E1 1.12%, rgba(99, 176, 231, 0) 43.3%);
   background: linear-gradient(270deg, #5AA8E1 1.12%, rgba(99, 176, 231, 0) 43.3%);
+}
+@media (max-width: 426px) {
+  .tv-pack__img {
+    display: none;
+  }
 }
 .tv-pack__slider {
   margin: 0 -15px;
@@ -7259,8 +7345,30 @@ label.error {
   margin-right: 26px;
   display: inline-block;
 }
+@media (max-width: 1000px) {
+  .tarif.tarif--internet h3 {
+    width: auto;
+  }
+}
 .tarif.tarif--internet .tarif__title {
   color: #fff;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 730px) {
+  .tarif.tarif--internet .tarif__btns {
+    width: auto;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 426px) {
+  .tarif.tarif--internet .tarif__btns {
+    width: 100%;
+  }
 }
 .tarif.tarif--internet .tarif__btns-tab.btn {
   border: 1px solid #FFFFFF;
@@ -7270,6 +7378,33 @@ label.error {
 .tarif.tarif--internet .tarif__btns-tab.btn.active {
   background: #FFFFFF;
   color: #595959;
+}
+.tarif.tarif--internet .tarif__btns-objects {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+@media (max-width: 426px) {
+  .tarif.tarif--internet .tarif__btns-objects {
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 730px) {
+  .tarif.tarif--internet .tarif__btns-tab.btn {
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 580px) {
+  .tarif.tarif--internet .tarif__btns-tab.btn {
+    margin: 10px 10px 0 0;
+  }
 }
 .tarif__location {
   display: inline-block;

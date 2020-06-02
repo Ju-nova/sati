@@ -843,9 +843,26 @@ background: radial-gradient(74.75% 168.66% at 76.56% 31.67%, #74C0F2 0%, #1D6EBA
 	margin-bottom: 0;
     margin-right: 26px;
     display: inline-block;
+    @media(max-width: 1000px){
+      width:auto;
+    }
 }
 & .tarif__title{
 	color:#fff;
+  align-items:center
+}
+
+
+  & .tarif__btns {
+    @media (max-width: 730px){
+      width: auto;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+  }
+   @media (max-width: 426px){
+    width: 100%;
+  }
 }
 & .tarif__btns-tab.btn{
 	border: 1px solid #FFFFFF;
@@ -857,6 +874,22 @@ background: radial-gradient(74.75% 168.66% at 76.56% 31.67%, #74C0F2 0%, #1D6EBA
 background: #FFFFFF;
 color: #595959;;
 }
+ & .tarif__btns-objects{
+    flex-direction:row; 
+     @media (max-width: 426px){
+    width: 100%;
+    justify-content:center
+  } 
+  }
+  & .tarif__btns-tab.btn{
+ @media (max-width: 730px){
+     margin-bottom: 0;
+     margin-left: 10px;
+  }
+  @media (max-width: 580px){
+     margin:10px 10px 0 0;
+  }
+  }
 }
 .tarif__location{
 display: inline-block;
@@ -876,6 +909,7 @@ display: inline-block;
     left: 0;
 }
 
+ 
 }
 .tarif-card.tarif-card--internet{
 	min-height:474px;
@@ -914,4 +948,5 @@ display: inline-block;
 	& .tarif-back2__connect{
 		margin-bottom: 30px
 	}
+
 }
